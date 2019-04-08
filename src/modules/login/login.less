@@ -1,0 +1,186 @@
+@import './../../css/common.less';
+html,
+body {
+    height: 100%;
+}
+
+#login {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: url('/img/loginBg.png') no-repeat center;
+    filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/loginBg.png', sizingMethod='scale');
+    background-size: 100% 100%;
+    .header_div {
+        height: 60px;
+        position: relative;
+        left: 0;
+        top: 0;
+        line-height: 60px;
+        background: #fff;
+        z-index: 999;
+        border-bottom: 1px solid #e9e9e9;
+        .right_web {
+            padding-right: 40px;
+            ul {
+                li {
+                    float: left;
+                    padding: 0 10px;
+                    cursor: pointer;
+                }
+                .web_li {
+                    a {
+                        padding: 0 20px;
+                        border-left: 1px solid #ece8e8;
+                    }
+                }
+            }
+        }
+    }
+    .login_box {
+        width: 850px;
+        height: 414px;
+        border-radius: 5px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -425px;
+        margin-top: -207px;
+        color: #666;
+        .login_box_left {
+            width: 50%;
+            height: 100%;
+            border-right: 1px solid #ece8e8;
+            overflow: hidden;
+            img {
+                border-radius: 5px 0 0 5px;
+            }
+        }
+        .login_box_right {
+            width: 50%;
+            height: 100%;
+            .log_top {
+                width: 100%;
+                border-bottom: 1px solid #ece8e8;
+                li {
+                    width: 50%;
+                    text-align: center;
+                    padding: 20px 0;
+                    cursor: pointer;
+                }
+                .appdo {
+                    border-left: 1px solid #ece8e8;
+                }
+                .login_active {
+                    color: @_color;
+                }
+            }
+            .acctPass_div {
+                margin-top: 20px;
+                text-align: center;
+                .inputOrgan {
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: 1px solid #ece8e8;
+                    width: 85%;
+                    height: 30px;
+                    margin-top: 60px;
+                    input {
+                        width: 90%;
+                        height: 28px;
+                        border: 0;
+                        border: none;
+                        background: none;
+                    }
+                    .logUserPng {
+                        width: 10%;
+                        height: 29px;
+                        background: url("/img/loginPhone.png") no-repeat center;
+                    }
+                    .logPassPng {
+                        width: 10%;
+                        height: 29px;
+                        background: url("/img/loginpwd.png") no-repeat center;
+                    }
+                }
+                .passWork {
+                    width: 85%;
+                    margin: 15px auto;
+                    .checkBox {
+                        height: 16px;
+                        cursor: pointer;
+                    }
+                }
+                .forgetDiv {
+                    margin-top: 10px;
+                    height: 50px;
+                    line-height: 50px;
+                    input {
+                        line-height: 20px;
+                    }
+                    .yzm_input {
+                        width: 50%;
+                        margin: 10px 5%;
+                    }
+                    .verCode {
+                        background: @_color;
+                        padding: 5px 10px;
+                        border-radius: 20px;
+                        line-height: 20px;
+                        color: #ffffff;
+                        margin-top: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .log_btn,
+            .forget_btn {
+                width: 85%;
+                margin-top: 40px !important;
+                border-radius: 20px;
+                background-image: linear-gradient(90deg, #6590ff 0%, #4ca6ff 100%);
+            }
+            .return_log {
+                width: 85%;
+                color: @_color;
+                margin-left: 40px;
+                margin-top: 20px;
+                font-size: 15px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .qrCode {
+                text-align: center;
+                .qrCode_img {
+                    margin-top: 60px;
+                    p {
+                        margin: 20px 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .passMiss {
+        cursor: pointer;
+    }
+    .Remarks {
+        background: rgba(0,0,0,0.5);
+    }
+}
+
+.Remarks {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	color: #ece8e8;
+	background: #6f7b91;
+	z-index: 999;
+	margin-top: 30px;
+}

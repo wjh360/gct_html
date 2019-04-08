@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>领料单详情</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="inventory_Manage">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content " id="storagePutId">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <!--市场资料-->
+                <div class="borderE9" style="margin-bottom: 10px">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">领料单信息</div>
+                    </div>
+                    <div class="white_Page">
+                        <div class="inven_detail_text"><span>领料单号：</span><span class="collerNo"></span></div>
+                        <div class="borderE9" style="margin-left: 15px;margin-right: 10px">
+                            <div class="page uploader_Table">
+                                <table id="matterTable"></table>
+                            </div>
+                        </div>
+                        <div class="inven_detail_text">
+                            <span>制单人：</span><span class="createrName"></span>
+                        </div>
+                        <div class=" " style="border-top: 1px solid #e9e9e9">
+                            <div class="inven_detail_text"><span>发单时间：</span><span class="createTime"></span></div>
+                            <div class="inven_detail_text status2Request"><span>领料时间：</span><span class="confirmTime"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" borderE9">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">领料人信息</div>
+                    </div>
+                    <div class="white_Page detailMaterial">
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">领料人：</div>
+                            <span class="f_l details_Text overf_E receiveUserName"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">领料人电话：</div>
+                            <span class="f_l details_Text overf_E receiveUserTel"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">库房名称：</div>
+                            <span class="f_l details_Text overf_E storageName"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">库房地址：</div>
+                            <span class="f_l details_Text overf_E storageAddr"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

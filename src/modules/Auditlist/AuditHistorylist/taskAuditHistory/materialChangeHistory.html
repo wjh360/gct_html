@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>工单详情</title>
+</head>
+
+<body id="construction_taskDetails">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs first_nav">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#applyData" data-toggle="tab">申请详情</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#WorkInformation" data-toggle="tab">工单资料</a>
+                    </li>
+                </ul>
+                <div>
+                    <!-- 申请详情   applyData-->
+                    <div class="tab-pane fade" id="applyData">
+                        <div class="commonCon" style="margin: 10px 0;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">审核详情</div>
+                            </div>
+                            <div class="page" style="margin: 10px 0px;padding: 10px;">
+                                <table id="auditRecordList"></table>
+                            </div>
+                        </div>
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l clearfix">
+                                    <span class="clearfix f_l">
+                                        <span class="f_l">申请人:</span>
+                                        <span class="applyName overf_E f_l" style="min-width:100px;padding-left: 10px;"></span>
+                                    </span>
+                                    <span style="padding:0 10px;" class="clearfix f_l">
+                                        <span class="f_l">申请时间:</span>
+                                        <span class="applyTime f_l" style="min-width:200px;padding-left: 10px;"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">变更原因：</span>
+                                    <span class="nameCon bidName"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 工单资料  WorkInformation -->
+                    <div class="tab-pane fade" id="WorkInformation">
+                        @taskData
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="/modules/engineerManagement/constructionManagement/NotAssigned/detailsNotAssigned/taskDtaDeatils.js"></script>
+
+</html>

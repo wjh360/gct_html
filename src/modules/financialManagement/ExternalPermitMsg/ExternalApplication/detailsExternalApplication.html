@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>外管证列表详情</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#ExternalMsg" data-toggle="tab">外管证信息</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#ExternalRecord" data-toggle="tab">操作记录</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 0 10px">
+                <div>
+                    <!-- 外管证申请  tab内容 -->
+                    <div class="tab-pane fade" id="ExternalMsg" style="margin: 10px -10px;">
+                        <div class="commonCon pad0">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">外管证信息</div>
+                            </div>
+                            <!--内容区-->
+                            <div class="Role-noticeCon addcountyMore"> </div>
+                        </div>
+                        <div class="serList">
+                        </div>
+                    </div>
+                    <!--操作记录 tab内容 -->
+                    <div class="tab-pane fade" id="ExternalRecord">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

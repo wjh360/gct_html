@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加回款通知</title>
+</head>
+
+<body id="">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">通知信息</div>
+                    <button class="btn btn-primary clickBtn f_r queryObjectBtn">查询收款对象</button>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>付款方名称：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入付款方名称" value="" class="fName" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>到账金额：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入到账金额" value="" class="amount" type="text" maxlength="13" style="width: 350px;">元
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="float: left;"><i>*</i>到账日期：</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput bidTimeStr" id="bidTimeStr" placeholder="请选择到账日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0" style="display:none;">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        收款对象
+                    </div>
+                </div>
+                <div class="objectList">
+                </div>
+            </div>
+            <div class="commonCon pad0" style="display:none;">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        通知对象
+                    </div>
+                </div>
+                <ul class="msgObjectList">
+                </ul>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnThree clearfix">
+                <button class="btn btn-primary postBtn">提交</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

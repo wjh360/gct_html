@@ -1,0 +1,196 @@
+<div class="commonCon" style="margin: 0;margin-top:10px;">
+    <div class="inforHeader clearfix">
+        <div class="verHang f_l"></div>
+        <div class="headerText f_l">
+            工单信息
+        </div>
+    </div>
+    <div class="Role-noticeCon">
+        <div class="RoleDiv">
+            <span class=" nameId">项目名称：</span>
+            <span class="nameCon bidName projectName"></span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">项目类型：</span>
+            <span class="nameCon typeName"></span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">工单名称：</span>
+            <span class="nameCon taskName"></span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">工单类别：</span>
+            <span class="nameCon categoryName "></span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">计划开工日期：</span>
+            <span class="nameCon startDate"></span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">计划完工日期：</span>
+            <span class="nameCon endDate"></span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">工单周期：</span>
+            <span class="nameCon hours"></span> 天
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">施工造价估算：</span>
+            <span class="nameCon estimate"></span> 元
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId">施工地点：</span>
+            <span class="nameCon ">
+                <span class="provinceName"></span>
+                <span class="cityName"></span>
+                <span class="countyName"></span>
+                <span class="taskRegion"></span>
+            </span>
+        </div>
+        <div class="RoleDiv">
+            <span class=" nameId" style="float: left;">施工队长：</span>
+            <span class="nameCon userName"></span>
+        </div>
+        <div class="RoleDiv " style="margin-bottom: 0px">
+            <span class="nameId " style="vertical-align:top">工单说明：</span>
+            <span class="nameCon taskCommit "></span>
+        </div>
+    </div>
+</div>
+<div class="commonCon" style="margin: 0;margin-top:10px;">
+    <div class="inforHeader clearfix">
+        <div class="verHang f_l"></div>
+        <div class="headerText f_l">
+            工单需求
+        </div>
+    </div>
+    <div class="Role-noticeCon" style="padding:10px;">
+        <div class="taskDemand lineDemand">
+            <ul>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">需求编号</span>
+                        <span class="overf_E demandCode"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr">施工终点</span>
+                        <span class="overf_E end"></span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">建设名称</span>
+                        <span class="overf_E demandName"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr">建设规模(公里)</span>
+                        <span class="overf_E scale"></span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">施工区域</span>
+                        <span class="overf_E rangeArea"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr">施工类型</span>
+                        <span class="overf_E demandType"></span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">施工起点</span>
+                        <span class="overf_E start"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr"></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="taskDemand stationDemand" style="display:none;">
+            <ul>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">需求编号</span>
+                        <span class="overf_E demandCode"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr">建设地点</span>
+                        <span class="overf_E locale"></span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">建设区域</span>
+                        <span class="overf_E rangeArea"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr">经度</span>
+                        <span class="overf_E projectLng"></span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">施工专业</span>
+                        <span class="overf_E major"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr">纬度</span>
+                        <span class="overf_E projectLat"></span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div>
+                        <span class="demendAttr">施工类型</span>
+                        <span class="overf_E demandType"></span>
+                    </div>
+                    <div>
+                        <span class="demendAttr"></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="commonCon" style="margin: 0;margin-top:10px;">
+    <div class="inforHeader clearfix">
+        <div class="verHang f_l"></div>
+        <div class="headerText f_l">
+            工单物料
+        </div>
+    </div>
+    <div class="Role-noticeCon">
+        <div class="page uploader_Table" style="padding:10px 20px;">
+            <table id="workSheetMaterial"></table>
+        </div>
+    </div>
+</div>
+<div class="commonCon" style="margin: 0;margin-top:10px;">
+    <div class="inforHeader clearfix">
+        <div class="verHang f_l"></div>
+        <div class="headerText f_l">
+            隐蔽工程量
+        </div>
+    </div>
+    <div class="Role-noticeCon">
+        <div class="page uploader_Table" style="padding:10px 20px;">
+            <table id="workTaskHides"></table>
+        </div>
+    </div>
+</div>
+<div class="commonCon" style="margin: 0;margin-top:10px;">
+    <div class="inforHeader clearfix">
+        <div class="verHang f_l"></div>
+        <div class="headerText f_l">
+            设计文件
+        </div>
+    </div>
+    <div class="Role-noticeCon">
+        <div class="page uploader_Table" style="padding:10px 20px;">
+            <table id="fileListTable"></table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>类型管理</title>
+</head>
+
+<body id="TypeManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 表格 -->
+            <div class="typeTable">
+                <div class="commonCon" style="padding: 10px">
+                    <button data_power="Add-expense-type-operation" class="btn btn-primary clickBtn addcostType" style="width: 110px;">添加费用类型</button>
+                    <div class="page" style="padding-top:10px;">
+                        <table id="typeListTable"></table>
+                    </div>
+                </div>
+                <div id="typeListTablePage"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

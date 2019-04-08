@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>业务费用申请</title>
+</head>
+
+<body id="">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="commonCon" style="min-height:50px;">
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入投标名称"></div>
+                </div>
+            </div>
+            <div class="searchList" style="display: none;border: solid 1px #e9e9e9; margin: 10px 10px 10px 10px;">
+                <div class="querytr clearfix">
+                    <div class="queryText ">投标名称</div>
+                    <div class="queryBox">
+                        <input type="text" class="queryInput bidName" placeholder="请输入投标名称" maxlength="100">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">发标单位</div>
+                    <div class="queryBox">
+                        <input type="text" class="queryInput bidUnit" placeholder="请输入发标单位" maxlength="100">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">项目类型</div>
+                    <div class="queryBox">
+                        <div id="type" class="downSelect" style="margin-top: 3px;width: 150px;"> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div style="padding: 0 10px;">
+                <div class="page">
+                    <table id="BusinessListTable"></table>
+                </div>
+            </div>
+            <div class="BusinessListTablePage"></div>
+        </div>
+    </div>
+</body>
+
+</html>

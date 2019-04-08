@@ -1,0 +1,91 @@
+
+
+#process{
+    .processContent{
+        margin: 10px;
+        .processContent_top{
+            padding: 10px;
+            border-bottom: 1px solid #e9e9e9;
+        }
+        .processContent_bottom{
+            padding-bottom: 10px;
+            ul{
+                li{
+                    border: 1px solid #e9e9e9;
+                    margin: 20px;
+                    position: relative;
+                    .listOne{
+                        min-height: 83px;
+                        width: 5%;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                    }
+                    .listTwo{
+                        width: 95%;
+                        position: absolute;
+                        top: 0;
+                        left: 5%;
+                        bottom: 0;
+                        .listTwo_top{
+                            span{
+                                line-height: 41px;
+                            }
+                            border-bottom: 1px solid #e9e9e9;
+                        }
+                        .listTwo_bottom{
+                            span{
+                                line-height: 41px;
+                            }
+                        }
+                        .ns_Id{
+                            display: inline-block;
+                            width: 5%;
+                            text-align: center;
+                            
+                        }
+                        .nd_sp{
+                            border-left: 1px solid #e9e9e9;
+                            display: inline-block;
+                            max-width: 85%;
+                            min-height: 41px;
+                            padding-left: 10px;
+                        }
+                    }
+                    .listFour{
+                        // width: 6%;
+                        min-height: 83px;
+                        border-bottom: 1px solid #e9e9e9;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        span{
+                            display: inline-block;
+                            width: 50px;
+                            height: 100%;
+                            text-align: center;
+                        }
+                        .editProcess{
+                            background: #6590ff;
+                            cursor: pointer;
+                            .edit_process{
+                                height: 16px;
+                                background: url('/img/edit_process.png') no-repeat center;
+                            }
+                        }
+                        .cancelProcess{
+                            background: #ff5454;
+                            cursor: pointer;
+                            .cancel_process{
+                                height: 16px;
+                                background: url('/img/del_process.png') no-repeat center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

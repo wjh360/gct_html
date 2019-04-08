@@ -1,0 +1,26 @@
+{
+	"presets": [
+		[
+			"env",
+			{
+				"modules": false //false是为了可以识别this，在浏览器环境中有用
+			}
+		]
+	],
+	"plugins": [
+		"transform-remove-strict-mode"
+	]
+}
+/*
+
+安装babel及相关插件
+npm install -g babel-cli // 注意版本为6.xx
+npm install babel-cli --save-dev
+npm install babel-preset-env --save-dev //babel编译模板
+npm install babel-plugin-transform-remove-strict-mode // 编译时移除全局严格模式
+
+安装gulp-babel插件，注意版本为7.xx，与babel版本有关
+npm install gulp-babel@7 --save-dev
+
+
+*/

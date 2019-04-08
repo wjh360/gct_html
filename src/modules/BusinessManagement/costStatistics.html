@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>外管证管理</title>
+</head>
+
+<body id="costSraristics">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs">
+                    <!--Project-cost-list-->
+                    <li data_index="0" data_power='Project-cost-list' class="">
+                        <a class="overf_E" href="#projectCost" data-toggle="tab">项目成本</a>
+                    </li>
+                    <!--Departmental-cost-list-->
+                    <li data_index="1" data_power='Departmental-cost-list' class="">
+                        <a class="overf_E" href="#depmentCost" data-toggle="tab">部门成本</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" data_index="0" attr="easy high" val="请输入项目名称" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div style="margin: 0 10px">
+                <!-- 市场审核 搜索内容 -->
+                <div class="searchList" data_index="0" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput projectName " placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">执行部门</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="10" class="queryInput costDepName" placeholder="请输入执行部门">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目状态</div>
+                        <div class="queryBox">
+                            <div id="projectStatus" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="projectStatus downSet  overf_E" index="" fl_val="请选择项目状态">
+                                    <a href="javascript:void(0);" style="color:#666;">请选择项目状态</a>
+                                </span>
+                                <ul>
+                                    <li class="overf_E" index="" title="请选择">请选择</li>
+                                    <li class="overf_E" index="4" title="施工中">施工中</li>
+                                    <li class="overf_E" index="5" title="完工审核中">完工审核中</li>
+                                    <li class="overf_E" index="6" title="完工未过审">完工未过审</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目审核 -->
+                <div class="searchList" data_index="1" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">部门名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="20" class="queryInput depNameDep" placeholder="请输入部门名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">单位名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput companyName" placeholder="请输入单位名称">
+                        </div>
+                    </div>
+                </div>
+                <div class="marT10">
+                    <!-- 市场审核  tab内容  MarketAudit-->
+                    <div class="tab-pane fade" id="projectCost">
+                        <div class="borderE9 pad10 ">
+                            <a data_power="Cost-statistics_derived-operation" class="zy btn btn-primary clickBtn f_r export_project"
+                                href="" downLoad="downLoad">导出</a>
+                            <div class="page">
+                                <table id="projectCostTable"></table>
+                            </div>
+                        </div>
+                        <div id="projectCostTablePage"></div>
+                    </div>
+                    <!--项目审核 tab内容 ProjectAudit -->
+                    <div class="tab-pane fade" id="depmentCost">
+                        <div class="borderE9 pad10 ">
+                            <div class="f_l">
+                                <div id="depmentYear" class="downSelect f_l" style="margin-top: 3px;width: 80px;"></div>
+                                <span class="tableTopText">年度部门成本统计</span>
+                            </div>
+                            <a data_power="Cost-statistics_derived-operation" class="zy btn btn-primary clickBtn f_r export_depment"
+                                href="" downLoad="downLoad">导出</a>
+                            <div class="page">
+                                <table id="depmentCostTable"></table>
+                            </div>
+                        </div>
+                        <div id="depmentCostTablePage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

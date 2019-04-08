@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>采购计划申请</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="project_Manager">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div style="margin: 0 10px 0 10px">
+                <div class="borderE9 marT10">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">审核详情</div>
+                    </div>
+                    <div class="page" style="margin: 10px 0px;padding: 10px;">
+                        <table id="auditRecordList"></table>
+                    </div>
+                </div>
+                <!--市场资料-->
+                <div class="borderE9 marT10">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">采购计划详情</div>
+                    </div>
+                    <div class="white_Page">
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">采购计划名称：</div>
+                            <span class="f_l details_Text overf_E "></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">采购项目：</div>
+                            <span class="f_l details_Text overf_E "></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">采购站点：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">费用类型：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">采购日期：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">付款方式：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">采购用途：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">采购发起人：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileTable_White borderE9 marT10 markerTableTender">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">采购物料</div>
+                    </div>
+                    <div class="white_Page">
+                        <div class="boxtr clearfix">
+                            <div class="purseboxTd f_r">采购总金额：<span class="purMaterSumMoney">0</span>元</div>
+                        </div>
+                        <div class="page uploader_Table">
+                            <table id="butMaterailTable"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderE9 marT10">
+                    <div class="inforHeader clearfix ">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">供应商信息</div>
+                    </div>
+                    <div class="white_Page bidDocApplyBox">
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">供应商：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">供应商地址：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">供应商开户行：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">供应商账户：</div>
+                            <span class="f_l details_Text overf_E"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileTable_White markerTableBuy borderE9 marT10">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">采购合同</div>
+                    </div>
+                    <div class="white_Page">
+                        <div class="page uploader_Table">
+                            <table id="markerTableBuy"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../purchasingManagement/procurementPlan/procurementDetails/procurementDetails.js"></script>
+
+</html>

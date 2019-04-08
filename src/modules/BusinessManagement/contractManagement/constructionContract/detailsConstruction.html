@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>施工合同详情</title>
+</head>
+
+<body id="addConstruction">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">基本信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同名称：</span>
+                        <span class="nameCon contractName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同编号：</span>
+                        <span class="nameCon contractNo"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同乙方：</span>
+                        <span class="nameCon secondParty"></span>
+                    </div>
+                    <div class="RoleDiv clearfix" style="margin-bottom: 25px">
+                        <span class="nameId f_l">合同周期：</span>
+                        <span class="nameCon startTime startDate f_l"></span>
+                        <span class="f_l">至</span>
+                        <span class="nameCon endTime endDate f_l"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">付款方式：</span>
+                        <span class="nameCon paymentMode"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">结算方式：</span>
+                        <span class="nameCon balanceMode"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">有无预付：</span>
+                        <span class="nameCon isAdvance"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">框架合同：</span>
+                        <span class="nameCon contractName"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">乙方信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">统一社会信用代码：</span>
+                        <span class="nameCon creditCode"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">负责人：</span>
+                        <span class="nameCon person"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">联系电话：</span>
+                        <span class="nameCon tel"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">收款账号：</span>
+                        <span class="nameCon accountNum"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">开户行： </span>
+                        <span class="nameCon openBank"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">合同附件</div>
+                </div>
+                <div class="page uploader_Table" style="margin: 10px 0;padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

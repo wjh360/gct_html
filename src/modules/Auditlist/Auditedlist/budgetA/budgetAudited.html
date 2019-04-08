@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body id="editQuotaBox">
+    <div class="container" id="">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="auditNoPassRemark borderE9Mar10">
+            </div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix" style="border: 1px solid #e9e9e9;">
+                <ul class="nav nav-tabs first_nav" style="margin-bottom: 0px">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#projectDetail" data-toggle="tab">项目详情</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableOne" data-toggle="tab">表一</a>
+                    </li>
+                    <li data_index="2" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableTwo" data-toggle="tab">表二</a>
+                    </li>
+                    <li data_index="3" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableThreeA" data-toggle="tab">表三甲</a>
+                    </li>
+                    <li data_index="4" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableThreeB" data-toggle="tab">表三乙</a>
+                    </li>
+                    <li data_index="5" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableThreeC" data-toggle="tab">表三丙</a>
+                    </li>
+                    <li data_index="6" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableFourA" data-toggle="tab">表四甲</a>
+                    </li>
+                    <li data_index="7" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableFourB" data-toggle="tab">表四乙</a>
+                    </li>
+                    <li data_index="8" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableFourC" data-toggle="tab">表四丙</a>
+                    </li>
+                    <li data_index="9" data_power='noPower' class="">
+                        <a class="overf_E" href="#tableFive" data-toggle="tab">表五</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 0px">
+                <div class="tab-pane fade" id="projectDetail">
+                    <div class="borderE9Mar10">
+                        <!--头部-->
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">项目信息</div>
+                        </div>
+                        <!--内容区-->
+                        <div class="Role-noticeCon">
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId"><i>*</i>项目名称：</span>
+                                <span class="nameCon projectName"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId"><i>*</i>项目编号：</span>
+                                <span class="nameCon projectCode"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId"><i>*</i>单项工程名称：</span>
+                                <span class="nameCon projectSingle"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId"><i>*</i>项目类型：</span>
+                                <span class="nameCon projectTypeName"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId"><i>*</i>项目区域：</span>
+                                <span class="nameCon listProCtiyCounty"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">施工距离：</span>
+                                <span class="nameCon projectDistance"></span> 千米
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 25px">
+                                <span class="nameId "><i>*</i>建设单位：</span>
+                                <span class="nameCon unitName" style="max-width:85%;"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId"><i>*</i>施工销项税率：</span>
+                                <span class="nameCon saleRate"></span> %
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">甲供材料采购税率：</span>
+                                <span class="nameCon nailRate"></span> %
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">设备采购税率：</span>
+                                <span class="nameCon deviceRate"></span> %
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">折扣系数：</span>
+                                <span class="nameCon discount"></span> %
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">订单名称：</span>
+                                <span class="nameCon orderName"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">订单编号：</span>
+                                <span class="nameCon orderNo"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">订单金额：</span>
+                                <span class="nameCon orderAmount"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">施工环境：</span>
+                                <span class="nameCon environment" style="max-width:85%;"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">特殊地区：</span>
+                                <span class="nameCon specialArea" style="max-width:85%;"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">监理单位：</span>
+                                <span class="nameCon supervisor" style="max-width:85%;"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">工程负责人：</span>
+                                <span class="nameCon projectPerson" style="max-width:85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="tableOne">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            工程结算总表（表一）
+                        </div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableOneTable"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableTwo">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            建筑安装工程费用结算表（表二）
+                        </div>
+                        <div class="table_page">
+                            <div style="width:50%;" class="f_l">
+                                <div class="page" style="padding: 5px;">
+                                    <table id="tableTwoTable1"></table>
+                                </div>
+                            </div>
+                            <div style="width:50%;" class="f_l">
+                                <div class="page" style="padding: 5px;">
+                                    <table id="tableTwoTable2"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableThreeA">
+                    <div class="borderE9Mar10">
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableThreeTableA"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableThreeB">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            建筑安装工程机械使用费结算表（表三乙）
+                        </div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableThreeTableB"></table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tableThreeC">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            建筑安装工程仪表使用费结算表（表三丙）
+                        </div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableThreeTableC"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableFourA">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            <a class="f_l equipBtn activeTable" index="1" style="margin-left: 20px;">需安装设备</a>
+                            <a class="f_l" style="padding:0 5px;">|</a>
+                            <a class="f_l equipBtn " index="2">不需安装设备</a>
+                            国内器材结算表（表四）甲
+                        </div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableFourTableA"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableFourB">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            国内器材结算表（表四）乙 （国内主要材料—甲供主材）表
+                        </div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableFourTableB"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableFourC">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">
+                            国内器材结算表（表四）丙 （国内主要材料—乙供主材）表
+                        </div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableFourTableC"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tableFive">
+                    <div class="borderE9Mar10">
+                        <div class="table_title clearfix">工程建设其他费结算表（表五）</div>
+                        <div class="table_page">
+                            <div class="page">
+                                <table id="tableFiveTable"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderE9Mar10">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">
+                            审核意见
+                        </div>
+                    </div>
+                    <div class="Role-noticeCon">
+                        <textarea class="auditRemark" placeholder="请输入审核意见" maxlength="200" name="" id="" cols=""
+                            rows=""></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnApply  clearfix" id="three_Btn_Style">
+                <button class="btn btn-primary f_l auditPass">通过</button>
+                <button class="btn btn-danger  auditNoPass  middle_Btn">驳回</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../budget/budgetList/budgetDetails/budgetDetails.js"></script>
+<!--项目详情的-->
+<script src="./../../../budget/budgetList/editQuota/editQuota.js"></script>
+<script src="./budgetAudited/tableFileJs/tableTwo.js"></script>
+<script src="./budgetAudited/tableFileJs/tableThreeA.js"></script><!-- 表三甲  -->
+<script src="./budgetAudited/tableFileJs/tableThreeB.js"></script><!-- 表三乙  -->
+<script src="./budgetAudited/tableFileJs/tableThreeC.js"></script><!-- 表三丙  -->
+<script src="./budgetAudited/tableFileJs/tableFourA.js"></script>
+<script src="./budgetAudited/tableFileJs/tableFourB.js"></script>
+<script src="./budgetAudited/tableFileJs/tableFive.js"></script>
+
+</html>

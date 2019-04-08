@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>合同管理</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='List-of-External-permit' class="">
+                        <a class="overf_E" href="#InvoiceApplication" data-toggle="tab">外管证申请</a>
+                    </li>
+                    <li data_index="1" data_power='List-of-outer-management-certificates' class="">
+                        <a class="overf_E" href="#InvoiceList" data-toggle="tab">外管证列表</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 0 10px">
+                <div>
+                    <div class="tab-pane fade" id="InvoiceApplication">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button data_power="Add-External-permit-application-operation" class="btn btn-primary clickBtn commonCliclk addInvoice"
+                                style="width: 100px;margin-left:0px !important;">
+                                添加外管证申请
+                            </button>
+                            <div class="page">
+                                <table id="InvoiceApplicationTable"></table>
+                            </div>
+                            <div id="InvoiceApplicationTablePage"></div>
+                        </div>
+                    </div>
+                    <!-- tab内容 -->
+                    <div class="tab-pane fade" id="InvoiceList">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <div class="page">
+                                <table id="InvoiceListTable"></table>
+                            </div>
+                            <div id="InvoiceListTablePage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>入库</title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="addFrame">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">基本信息</div>
+                </div>
+                <!--内容区-->
+                <div class="page uploader_Table">
+                    <table id="markerTableBuy"></table>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目部信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon clearfix">
+                    <div class="companyList f_l"
+                        style="width:25%;border-right: 1px solid #e9e9e9; height: 100%; overflow: auto;">
+                        <p style="padding:10px;">
+                            选择公司：
+                        </p>
+                        <div class="treesBox">
+                            <div id="comply_trees" class="" style="cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depList f_l" style="width:25%;border-right: 1px solid #e9e9e9; overflow: auto;">
+                        <p style="padding:10px;">
+                            选择库房：
+                        </p>
+                        <div class="treesBox">
+                            <div id="dep_trees" class="" style="cursor: pointer; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Selected_dep_box f_l" style="width:50%;">
+                        <p style="padding:10px;">
+                            已选库房:
+                        </p>
+                        <div class="Selected_dep_list"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary  f_l postBtn">提交</button>
+                <button class="btn btn-muted  f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

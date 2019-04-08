@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安全管理</title>
+</head>
+<body id="BidApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="commonCon" style="min-height:50px;">
+                <a data_power="Add-security-check-operation" class="btn btn-primary clickBtn addBidding" style="width: 100px;line-height: 30px;" href="./SecurityMnagement/addSecurityMnagement.html">添加安全检查</a>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox " attr="easy high" val="请输入工单名称"></div>
+                </div>
+            </div>
+            <div class="searchList" style="display: none;border: solid 1px #e9e9e9; margin: 15px 10px 10px 10px;">
+                <div class="querytr clearfix">
+                    <div class="queryText ">工单名称</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="100" class="queryInput taskName" placeholder="请输入工单名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">所属项目</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="100" class="queryInput projectName" placeholder="请输入所属项目">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">检查结果</div>
+                    <div class="queryBox">
+                        <div id="testtype" class="downSelect" style="margin-top: 3px;width: 150px;">
+                            <span class="downSet status" index="" fl_val="请选择检查结果">
+                                <a href="javascript:void(0);">请选择检查结果</a>
+                            </span>
+                            <ul>
+                                <li index="1" title="合格">合格</li>
+                                <li index="2" title="不合格">不合格</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">施工队长</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="10" class="queryInput trueName" placeholder="请输入施工队长">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">检查时间</div>
+                    <div class="queryBox clearfix">
+                        <div class="jeinpbox f_l" style="width: 230px">
+                            <input type="text" class="jeinput startTime" id="startTime" placeholder="" />
+                            <span class="jeinput_icons"></span>
+                        </div>
+                        <span class="f_l" style="padding:0 10px;">至</span>
+                        <div class="jeinpbox f_l" style="width: 230px；margin-right：30px；">
+                            <input type="text" class="jeinput endTime" id="endTime" placeholder="" />
+                            <span class="jeinput_icons"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon" style="padding:0;">
+                 <!-- 表格 -->
+                <div class="page">
+                    <table id="SecurityListTable"></table>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

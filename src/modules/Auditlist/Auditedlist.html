@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>审核列表</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='Market-audit-list' class="">
+                        <a class="overf_E" href="#MarketAudit" data-toggle="tab">市场审核</a>
+                    </li>
+                    <li data_index="1" data_power='Project-audit-list' class="">
+                        <a class="overf_E" href="#ProjectAudit" data-toggle="tab">项目审核</a>
+                    </li>
+                    <li data_index="2" data_power='Work-order-audit-list' class="">
+                        <a class="overf_E" href="#WorkorderAudit" data-toggle="tab">工单审核</a>
+                    </li>
+                    <li data_index="3" data_power='Financial-audit-list' class="">
+                        <a class="overf_E" href="#FinanceAudit" data-toggle="tab">财务审核</a>
+                    </li>
+                    <li data_index="4" data_power='Procurement-audit-list' class="">
+                        <a class="overf_E" href="#PurchaseAudit" data-toggle="tab">采购审核</a>
+                    </li>
+                    <li data_index="5" data_power='Cost-audit-list' class="">
+                        <a class="overf_E" href="#CostAudit" data-toggle="tab">成本审核</a>
+                    </li>
+                    <li data_index="6" data_power='Budget-estimate-audit-list' class="">
+                        <a class="overf_E" href="#budgetAudit" data-toggle="tab">概预算审核</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="" style="margin: 0 10px">
+                <div>
+                    <!-- 市场审核  tab内容  MarketAudit-->
+                    <div class="tab-pane fade" id="MarketAudit">
+                        <div class="page">
+                            <table id="MarketAuditTable"></table>
+                        </div>
+                        <div id="MarketAuditTablePage"></div>
+                    </div>
+                    <!--项目审核 tab内容 ProjectAudit -->
+                    <div class="tab-pane fade" id="ProjectAudit">
+                        <div class="page">
+                            <table id="ProjectAuditTable"></table>
+                        </div>
+                        <div id="ProjectAuditTablePage"></div>
+                    </div>
+                    <!--工单审核 tab内容 WorkorderAudit -->
+                    <div class="tab-pane fade" id="WorkorderAudit">
+                        <div class="page">
+                            <table id="WorkorderAuditTable"></table>
+                        </div>
+                        <div id="WorkorderAuditTablePage"></div>
+                    </div>
+                    <!--财务审核 tab内容 FinanceAudit -->
+                    <div class="tab-pane fade" id="FinanceAudit">
+                        <div class="page">
+                            <table id="FinanceAuditTable"></table>
+                        </div>
+                        <div id="FinanceAuditTablePage"></div>
+                    </div>
+                    <!--采购审核 tab内容 PurchaseAudit -->
+                    <div class="tab-pane fade" id="PurchaseAudit">
+                        <div class="page">
+                            <table id="PurchaseAuditTable"></table>
+                        </div>
+                        <div id="PurchaseAuditTablePage"></div>
+                    </div>
+                    <!--成本审核 tab内容 CostAudit -->
+                    <div class="tab-pane fade" id="CostAudit">
+                        <div class="page">
+                            <table id="CostAuditTable"></table>
+                        </div>
+                        <div id="CostAuditTablePage"></div>
+                    </div>
+                    <!--概预算审核 tab内容 CostAudit -->
+                    <div class="tab-pane fade" id="budgetAudit">
+                        <div class="page">
+                            <table id="budgetAuditTable"></table>
+                        </div>
+                        <div id="budgetAuditTablePage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

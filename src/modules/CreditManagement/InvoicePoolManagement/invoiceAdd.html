@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>发票详情</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="project_Manager">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">添加发票</div>
+                    <button class="btn btn-primary clickBtn f_r all_Cancel_Private">全部取消</button>
+                    <button class="btn btn-primary clickBtn f_r all_Select_Private">全部选中</button>
+                </div>
+                <div class="selectText ">
+                    已选发票可用金额:<span class="m_col userMoney" style="margin: 0 5px">0</span>元
+                </div>
+                <div class="page white_Page uploader_Table" style="max-height: 400px !important;margin: 10px">
+                    <table id="invoiceTable"></table>
+                </div>
+            </div>
+            <!--提交按钮-->
+            <!-- 按钮 -->
+            <div class="btnApply  clearfix">
+                <button class="btn btn-primary  postBtn ">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../js/zyCommon.js"></script>
+
+</html>

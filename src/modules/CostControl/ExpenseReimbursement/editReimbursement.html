@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>编辑报销</title>
+</head>
+
+<body id="detailsNotice">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content ExpenseBox">
+            <div id="curHtmlPath"></div>
+            <div class="auditNoPassRemark borderE9Mar10">
+            </div>
+            <div class="commonCon">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">报销信息</div>
+                    <button class="btn btn-primary clickBtn f_r addMoney">添加费用</button>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>项目名称：</span>
+                        <span class="nameCon f_l">
+                            <div id="projectListBox" class="downSelect" style="margin-top: 3px;"></div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">工单名称：</span>
+                        <span class="nameCon">
+                            <div id="taskListBox" class="downSelect" style="margin-top: 3px;"></div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">费用总金额：</span>
+                        <span class="nameCon sumAmount">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="addMoney_con"></div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn">提交</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../js/zyCommon.js"></script>
+
+</html>

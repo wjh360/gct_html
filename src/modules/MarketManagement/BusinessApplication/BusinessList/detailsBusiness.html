@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>业务费用申请详情</title>
+</head>
+
+<body id="addBidding">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">业务费用申请</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">投标名称：</span>
+                        <span class="nameCon bidName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">费用类型：</span>
+                        <span class="nameCon costName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">费用金额：</span>
+                        <span class="nameCon costAmount"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top">费用是由：</span>
+                        <span class="nameCon costCause"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="float: left;">费用日期：</span>
+                        <span class="nameCon costDate"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top">备注：</span>
+                        <span class="nameCon remark"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">费用申请人：</span>
+                        <span class="nameCon applyUser"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">费用附件</div>
+                </div>
+                <div class="page uploader_Table" style="margin: 10px 0;padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

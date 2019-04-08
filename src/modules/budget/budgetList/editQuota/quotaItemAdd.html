@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加定额项目</title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="qutoItemAdd">
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="qutoBox">
+                <div class="waitChooseBox clearfix">
+                    <div class="waitChooseRight">
+                        <div class="choseHeader">定额目录</div>
+                        <!-- <div class="treesBoxPn" style="height:400px;"> -->
+                        <div class="treesBox">
+                            <div id="comply_trees" class="ztree" style="cursor: pointer;">
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="waitChooseLeft">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">选择定额项目<span style="color: #cccccc">(单击选择定额项目)</span></div>
+                            <button class="btn btn-primary searchBtn searchQuota">搜索</button>
+                            <input type="text" class="inputOrgan "
+                                style="width: 300px;line-height: 26px;padding-left: 5px;" maxlength="100"
+                                placeholder=" 请输入定额项目名称或定额编号或定额项目简称">
+
+                        </div>
+
+                        <div class="page">
+                            <table id="waitChoseTable"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="ChooseBox clearfix">
+                    <div class="ChooseRight">
+                        <div class="choseHeader">已选定额目录</div>
+                        <!-- <div class="treesBoxPn" style="height:400px;"> -->
+                        <div class="treesBox">
+                            <div id="selected_comply_trees" class="ztree" style="cursor: pointer;">
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="chooseLeft">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">已选定额项目</div>
+                            <button class="btn btn-primary searchBtn searchSelectedQuota">搜索</button>
+                            <input type="text" class="inputOrgan "
+                                style="width: 300px;line-height: 26px;padding-left: 5px;" maxlength="100"
+                                placeholder="请输入定额项目名称或定额编号或定额项目简称">
+
+                        </div>
+                        <div class="page">
+                            <table id="SelectedChoseTable"></table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn f_l">提交</button>
+                <button class="btn btn-muted  cancelBtn f_r">取消</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

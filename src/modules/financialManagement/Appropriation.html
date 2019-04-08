@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>工程款支付申请</title>
+</head>
+
+<body id="">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="commonCon">
+                <a class="btn btn-primary clickBtn addAppropriation" data_power="Add-project-payment-application-operation"
+                    style="width: 130px;line-height: 30px;" href="">
+                    添加工程款拨付申请
+                </a>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入合同名称"></div>
+                </div>
+            </div>
+            <div class="searchList" style="display: none;border: solid 1px #e9e9e9;margin-bottom: 10px;margin: 15px 10px 10px 10px;">
+                <div class="querytr clearfix">
+                    <div class="queryText ">施工合同名称</div>
+                    <div class="queryBox ">
+                        <input type="text" maxlength="100" class="queryInput contractName" placeholder="请输入施工合同名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">合同乙方</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="50" class="queryInput secondParty" placeholder="请输入合同乙方名称">
+                    </div>
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div style="padding:0 10px;">
+                <div class="page">
+                    <table id="AppropriationTable"></table>
+                </div>
+                <div id="AppropriationTablePage"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

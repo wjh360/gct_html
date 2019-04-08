@@ -1,0 +1,289 @@
+#mapId {
+    .taskTrajetory{
+        .content{
+            padding-top: 0px !important;
+        }
+    }
+    .content {
+        padding-left: 0;
+        // padding-top: 0px; //=============================
+        height: 100%;
+        padding-bottom: 33px;
+        margin-top: 0!important;
+        padding-top: 90px;
+    } //工单状态
+    .taskMark {
+        font-size: 12px;
+        width: 24px;
+        height: 30px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 20px;
+    } // 类型：1-线路类；2-设备类//状态：1-施工中；2-整改中；3-完工
+    .taskMark11 {
+        //线路施工
+        background: url("../../../img/mapImg/x_shi.png") no-repeat center;
+    }
+    .taskMark12 {
+        //线路整改中
+        background: url("../../../img/mapImg/x_zheng.png") no-repeat center;
+    }
+    .taskMark13 {
+        //线路完工
+        background: url("../../../img/mapImg/x_wan.png") no-repeat center;
+    }
+    .taskMark21 {
+        //设备施工
+        background: url("../../../img/mapImg/s_shi.png") no-repeat center;
+    }
+    .taskMark22 {
+        //设备-整改中
+        background: url("../../../img/mapImg/s_zheng.png") no-repeat center;
+    }
+    .taskMark23 {
+        //设备完工
+        background: url("../../../img/mapImg/s_wan.png") no-repeat center;
+    }
+    .xianIcon {
+        width: 22px;
+        height: 30px;
+    }
+    /*搜索框的css*/
+    .tip {
+        position: absolute;
+        height: 40px;
+        z-index: 1;
+        left: 30px;
+        top: 10px;
+    }
+    .tip input[type="text"] {
+        padding: 0;
+        height: 40px;
+        padding-left: 5px;
+        width: 310px;
+        border-radius: 4px;
+        outline: none;
+        margin: 0;
+        float: left;
+        border: none;
+    }
+    /*搜索按钮的出现*/
+    .tip .searchBtn {
+        float: left;
+        display: inline-block;
+        top: 4px;
+        width: 40px;
+        height: 40px;
+        background: #ffffff url("../../../img/mapImg/serBtn1.png") no-repeat center;
+        border: none;
+        border-right: 1px solid #cccccc;
+    } //.tip .searchBtn:hover{
+    //  background: #ffffff url("../../imgs/serBtn.png") no-repeat center;
+    //}
+    .tip .closeBtn {
+        display: inline-block;
+        float: left;
+        top: 4px;
+        width: 40px;
+        height: 40px;
+        background: #ffffff url("../../../img/mapImg/closeBtn1.png") no-repeat center;
+    }
+    .tip .searchReturn {
+        display: inline-block;
+        float: left;
+        top: 4px;
+        width: 40px;
+        height: 40px;
+        background: #ffffff url("../../../img/mapImg/searchReturn.png") no-repeat center;
+    } //.tip .closeBtn:hover{
+    //  background: #ffffff url("../../../img/mapImg/closeBtn1.png") no-repeat center;
+    //}
+    /*下部复选框的样式*/
+    .checkStatus {
+        position: absolute;
+        right: 5%;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .checkStatus .statusBox {
+        width: 90px;
+        height: 34px;
+        float: right;
+        margin-right: 20px;
+        border-radius: 4px;
+        position: relative;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+    }
+    .checkStatus .statusBox .imgCon {
+        margin-top: 12px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .checkStatus .statusBox .imgCon img {
+        vertical-align: baseline;
+    }
+    .checkStatus .statusBox .checkClick {
+        position: absolute;
+        top: -8px;
+        left: -28px;
+        height: 16px;
+        width: 16px;
+        background: url("../../../img/mapImg/Noselect.png") no-repeat;
+        cursor: pointer;
+    }
+    .checkStatus .statusBox .checkClick.active {
+        background: url("../../../img/mapImg/selectMap.png") no-repeat;
+    }
+    .checkStatus .statusBox .fontSty {
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 13px;
+    }
+    .taskInfoZhan {
+        position: absolute;
+        z-index: 3;
+        top: 0px; //=============================
+        right: 0;
+        color: #FFFFFF;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px 0 0 5px;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 10px;
+        background: #6590ff url("./../../../img/mapImg/whiteDown.png") no-repeat 94px;
+    }
+    .taskInfoZhan.active{
+        background: #6590ff url("./../../../img/mapImg/whiteUp.png") no-repeat 94px;
+    }
+    .taskDesMess,.taskDesMessOne {
+        position: absolute;
+        z-index: 2;
+        width: 370px;
+        top: 0px; //=============================
+        right: 0;
+        padding-top: 0px;
+        overflow: auto;
+        background: transparent; //background: #FFFFFF;
+
+        cursor: pointer;
+        .taskDes_Title {
+            background: #6590ff;
+            height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            line-height: 30px;
+            font-size: 14px;
+            .taskDesMessCancel {
+                width: 12px;
+                height: 12px;
+                background: url("./../../../img/mapImg/closeTask.png");
+                float: right;
+                margin: 9px;
+            }
+        }
+        .taskInfoBox {
+            border-bottom: 1px solid #e9e9e9;
+            background: #FFFFFF;
+            .taskchao {
+                display: inline-block;
+                width: 20px;
+                height: 25px;
+                background: url("./../../../img/mapImg/chao.png");
+            }
+            .taskzhuan {
+                display: inline-block;
+                width: 20px;
+                height: 25px;
+                background: url("./../../../img/mapImg/zhuan.png");
+            }
+            .taskNum {
+                display: inline-block;
+                width: 24px;
+                height: 23px;
+                margin-left: 10px;
+                margin-top: 5px;
+                background: url("./../../../img/mapImg/tanNum.png");
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 23px;
+            }
+            #exportConstructionTrajectory,
+            .seeConstructionTrajectory {
+                float: right;
+                color: #6590ff;
+                margin-right: 10px;
+                padding: 10px 0;
+                cursor: pointer;
+            }
+            .tashInfoTr {
+                line-height: 30px;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+    }
+    .taskDesMessOne{
+        top: 46px;
+    }
+    //  消息框===
+    .info {
+        /*border: solid 1px silver;*/
+        width: 150px;
+        height: 200px;
+        .tashInfoTr {
+            line-height: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+    }
+    div.info-top {
+        position: relative;
+        background-color: #6590ff;
+        height: 30px;
+        border-radius: 10px 10px 0 0;
+    }
+    div.info-top div {
+        display: inline-block;
+        color: #333333;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 31px;
+        padding: 0 10px;
+    }
+    div.info-top img {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        right: 10px;
+        top: 7px;
+        cursor: pointer;
+    }
+    div.info-middle {
+        width: 150px;
+        height: 160px;
+        font-size: 14px;
+        line-height: 20px;
+        overflow-x: visible;
+        overflow-y: auto;
+        padding-bottom: 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    div.info-bottom {
+        height: 0px;
+        width: 100%;
+        clear: both;
+        text-align: center;
+    }
+    div.info-bottom img {
+        position: relative;
+        z-index: 104;
+    }
+    //  消息框===
+
+    .header .inform-top{
+        margin-left: 0;
+    }
+}

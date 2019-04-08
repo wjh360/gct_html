@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>添加设备</title>
+</head>
+
+<body id="detailsNotice">
+<!-- 总盒子,最小宽度 -->
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content ExpenseBox">
+        <div id="curHtmlPath"></div>
+        <div class="reimburseMent">
+            <div class="commonCon materailSum">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">设备<span class="reimIndex">1</span></div>
+                    <button class="btn btn-primary clickBtn f_r addMaterail" style="margin: 5px 20px !important;">添加设备</button>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon equitBox">
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>设备名称：</span>
+                        <span class="nameCon">
+                                <input placeholder="允许输入100个字，允许重复" class="equitName" type="text" maxlength="100" style="width: 350px;">
+                            </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">规格程式：</span>
+                        <span class="nameCon">
+                                <input placeholder="" class="specFormat" type="text" maxlength="100" style="width: 350px;">
+                            </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>单位：</span>
+                        <span class="nameCon">
+                                <div id="measuringUnit1" class="downSelect measuringUnit" style="margin-top: 3px;width: 150px;">
+                                </div>
+                            </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>单价：</span>
+                        <span class="nameCon ">
+                               <input placeholder="" class="money equitPrice" type="text" maxlength="13" style="width: 350px;"> 元
+                            </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>数量：</span>
+                        <span class="nameCon ">
+                               <input placeholder="" class="money equitNum" type="text" maxlength="13" style="width: 350px;">
+                            </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">备注：</span>
+                        <span class="nameCon">
+                                <input placeholder="允许输入20个字" class="remark" type="text" maxlength="20" style="width: 350px;">
+                            </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="btnApply clearfix">
+            <button class="btn btn-primary postBtn f_l">提交</button>
+            <button class="btn btn-muted  cancelBtn f_r">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+<svript src="./equipmentAdd/addUpdateEquip"></svript>
+
+</html>

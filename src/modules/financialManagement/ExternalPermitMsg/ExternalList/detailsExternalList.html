@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>外管证列表详情</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='noPower' class=""><a class="overf_E" href="#ExternalMsg" data-toggle="tab">外管证信息</a></li>
+                    <li data_index="1" data_power='noPower' class=""><a class="overf_E" href="#ExternalRecord"
+                            data-toggle="tab">操作记录</a></li>
+                </ul>
+            </div>
+            <div style="margin: 0 10px">
+                <div>
+                    <!-- 外管证申请  tab内容 -->
+                    <div class="tab-pane fade" id="ExternalMsg">
+                        <div class="commonCon pad0" style="  margin: 15px 0px 10px 0px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">外管证信息</div>
+                            </div>
+                            <!--内容区-->
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">外出经营地：</span>
+                                    <span class="nameCon f_l"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reimburseMent">
+                            <div class="commonCon pad0" style="  margin: 15px 0px 10px 0px;">
+                                <div class="inforHeader clearfix">
+                                    <div class="verHang f_l"></div>
+                                    <div class="headerText f_l">货物或服务<span class="reimIndex">1</span></div>
+                                </div>
+                                <!--内容区-->
+                                <div class="Role-noticeCon">
+                                    <div class="RoleDiv">
+                                        <span class="nameId" style="width: 120px;">货物或服务名称：</span>
+                                        <span class="nameCon "> </span>
+                                    </div>
+                                    <div class="RoleDiv">
+                                        <span class="nameId" style="width: 120px;">外出经营地点：</span>
+                                        <span class="nameCon "></span>
+                                    </div>
+                                    <div class="RoleDiv" style="margin-bottom: 0;">
+                                        <span class="nameId" style="width: 120px;">合同有效期：</span>
+                                        <span class="nameCon">
+                                        </span>
+                                    </div>
+                                    <div class="RoleDiv">
+                                        <span class="nameId" style="vertical-align:top;width: 120px;">金额：</span>
+                                        <span class="nameCon" style="width: 120px;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--操作记录 tab内容 -->
+                    <div class="tab-pane fade" id="ExternalRecord">
+                        <div class="commonCon pad0" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l" style="margin-right:20px;">操作人：<span></span></div>
+                                <div class="headerText f_l">操作时间：<span></span></div>
+                            </div>
+                            <!--内容区-->
+                            <div class="page">
+                                <table id="ExternalRecordTable"></table>
+                                <div id="ExternalRecordTablePage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

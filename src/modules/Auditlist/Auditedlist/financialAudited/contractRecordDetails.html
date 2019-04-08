@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>拨付记录详情</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div style="margin: 0 0px">
+                <!-- 拨付记录  tab内容 -->
+                <div class="commonCon">
+                    <div class="auditNoPassRemark borderE9"></div>
+                    <!--头部-->
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">合同信息</div>
+                    </div>
+                    <!--内容区-->
+                    <div class="Role-noticeCon">
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId">施工合同：</span>
+                            <span class="nameCon contractName"></span>
+                        </div>
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId">合同乙方：</span>
+                            <span class="nameCon secondParty"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="commonCon">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">
+                            工单列表
+                        </div>
+                    </div>
+                    <div class="page" style="padding:10px;">
+                        <table id="taskListTable"></table>
+                    </div>
+                </div>
+                <div class="commonCon">
+                    <!--头部-->
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">拨付信息</div>
+                    </div>
+                    <!--内容区-->
+                    <div class="Role-noticeCon">
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId">拨付比例：</span>
+                            <span class="nameCon ratio"></span>
+                        </div>
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId">待支付金额：</span>
+                            <span class="nameCon nowAmount"></span>
+                        </div>
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId">支付金额：</span>
+                            <span class="nameCon amount"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderE9Mar10">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">
+                            审核意见
+                        </div>
+                    </div>
+                    <div class="Role-noticeCon">
+                        <textarea class="auditRemark" placeholder="请输入审核意见" maxlength="200" name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+                <div class="btnThree clearfix">
+                    <button class="btn btn-primary postBtn auditPass">通过</button>
+                    <button class="btn btn-primary saveBtn auditNoPass">驳回</button>
+                    <button class="btn btn-muted  cancelBtn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../financialManagement/Appropriation/RecordAppropriation/detailsRecordAppropriation/detailsRecordAppropriation.js"></script>
+
+</html>

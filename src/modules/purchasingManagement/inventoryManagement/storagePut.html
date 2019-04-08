@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>入库</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="inventory_Manage">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content " id="storagePutId">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <!--市场资料-->
+                <div class="borderE9" style="margin-bottom: 10px">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">选择物料入库工单
+                            <span style="color: #ccc">（单击选择工单）</span></div>
+                        <div class="f_r" style="line-height: 40px">
+                            <input type="text" class="inputOrgan searchTaskName" style="width: 300px;line-height: 26px"
+                                maxlength="100" placeholder="请输入工单名称">
+                            <button class="btn btn-primary invertBtn searchTask">搜索</button>
+                        </div>
+                    </div>
+                    <div class="white_Page" style="min-height: 200px">
+                        <div class="page uploader_Table">
+                            <table id="taskTable"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileTable_White borderE9">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">物料信息</div>
+                        <button class="f_r btn btn-primary invertBtn addMatterBtn" style="margin-top: 6px !important;">添加</button>
+                    </div>
+                    <div class="white_Page matterPageBox" style="min-height: 300px">
+                        <div class="page uploader_Table" style="max-height: 300px">
+                            <table id="matterTable"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply  clearfix">
+                <button class="btn btn-primary  postBtn ">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

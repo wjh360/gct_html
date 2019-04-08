@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>角色管理</title>
+</head>
+
+<body id="RoleMsg">
+<!-- 总盒子,最小宽度 -->
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+        <div id="curHtmlPath"></div>
+        <!-- 表格 -->
+        <div class="roleTable borderE9 pad10" style="margin-top: 10px">
+            <div class="commonCon" style="margin: 10px 0 10px 0;padding: 0">
+                <a data_power="Add-role-operation"  class="btn btn-primary clickBtn "  style="line-height: 30px;margin: 0px !important;" href="./RoleManagement/addRole.html">添加角色</a>
+            </div>
+            <div class="page">
+                <table id="roleListTable"></table>
+            </div>
+        </div>
+        <div class="roleListTablePage"></div>
+    </div>
+</div>
+</body>
+
+</html>

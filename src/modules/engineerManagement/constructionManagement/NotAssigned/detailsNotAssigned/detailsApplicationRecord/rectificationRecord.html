@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>申请记录详情（整改完成）</title>
+</head>
+
+<body id="designRecord">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <div>
+                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">
+                                整改申请
+                            </div>
+                        </div>
+                        <div class="Role-noticeCon">
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">整改开始日期：</span>
+                                <span class="nameCon createTime"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">整改完成日期：</span>
+                                <span class="nameCon taskEnd"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">整改周期(天)：</span>
+                                <span class="nameCon dateSum"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">整改完成说明：</span>
+                                <span class="nameCon changeContent"></span>
+                            </div>
+                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                <span class="nameId">整改完成照片：</span>
+                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                    <div class="viewPhotoLocation" fileType="6"> 查看照片拍摄位置 </div>
+                                    <div class="taskFileListLog finshImg">
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">
+                                审核详情
+                            </div>
+                        </div>
+                        <div class="Role-noticeCon">
+                            <div class='page uploader_Table' style="padding:10px;">
+                                <table id='taskFormAudit_listCol'></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>融资管理</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='List-of-financing-applications' class="">
+                        <a class="overf_E" href="#Financing" data-toggle="tab">融资申请</a>
+                    </li>
+                    <li data_index="1" data_power='Financial-application-list' class="">
+                        <a class="overf_E" href="#Transactions" data-toggle="tab">理财申请</a>
+                    </li>
+                    <li data_index="2" data_power='List-of-withdrawals' class="">
+                        <a class="overf_E" href="#Drawing" data-toggle="tab">提款申请</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 0 10px">
+                <div>
+                        <!-- 融资申请 -->
+                    <div class="tab-pane fade" id="Financing">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button data_power="Add-financing-application-operation" class="btn btn-primary clickBtn addFinancing"
+                                style="width: 100px;margin-bottom:10px !important;margin-left:0px !important;">
+                                添加融资申请
+                            </button>
+                            <div class="page">
+                                <table id="FinancingTable"></table>
+                                <div id="FinancingTablePage"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 理财申请 -->
+                    <div class="tab-pane fade" id="Transactions">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button class="btn btn-primary clickBtn addTransactions" style="width: 100px;margin-bottom:10px !important;margin-left:0px !important;">
+                                添加理财申请 
+                            </button>
+                            <div class="page">
+                                <table id="TransactionsTable"></table>
+                                <div id="TransactionsTablePage"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 提款申请 -->
+                    <div class="tab-pane fade" id="Drawing">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button data_power="Add-withdrawal-request-operation" class="btn btn-primary clickBtn addDrawing"
+                                style="width: 100px;margin-left:0px !important;margin-bottom:10px !important;">
+                                添加提款申请 
+                            </button>
+                            <div class="page">
+                                <table id="DrawingTable"></table>
+                            </div>
+                        <div id="DrawingTablePage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>添加下级单位</title>
+</head>
+<body id="Role-add">
+<!-- 总盒子,最小宽度 -->
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+        <div id="curHtmlPath"></div>
+        <div class="borderE9Mar10">
+            <!--头部-->
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">单位信息</div>
+            </div>
+            <!--内容区-->
+            <div class="Role-noticeCon">
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>单位名称：</span>
+                    <span class="nameCon">
+                    <input placeholder=" 允许输入100个字，不允许重复" class="companyName" type="text" maxlength="100"
+                           style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>单位缩写：</span>
+                    <span class="nameCon">
+                        <input placeholder="允许输入10个字，允许输入字母、数字" class="companyAbbreviation" type="text" maxlength="10"
+                               style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId">联系人：</span>
+                    <span class="nameCon">
+                    <input placeholder="允许输入10个字" class="companyPerson" type="text" maxlength="10"
+                           style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId">联系电话：</span>
+                    <span class="nameCon">
+                    <input placeholder="请输入手机、座机" class="companyTel" type="text" maxlength="11" style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId">单位邮箱：</span>
+                    <span class="nameCon">
+                    <input placeholder="请输入50位以内邮箱" class="companyEmail" type="text" maxlength="50"
+                           style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>单位地址：</span>
+                    <div id="unitAddress" class="proCtiyCounty f_l"></div>
+                    <input type="text" maxlength="100" class="inputOrgan companyAddress"
+                           placeholder="请输入详情地址，  允许输入100个字" style="width: 350px;">
+                </div>
+            </div>
+        </div>
+        <div class="borderE9Mar10">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">账号信息</div>
+                <p style="color: red;float: left;line-height: 40px;margin-left: 20px;">账号信息可不填，但如填写任意一项其他项均必填</p>
+            </div>
+            <div class="Role-noticeCon">
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>账号：</span>
+                    <span class="nameCon">
+                    <input placeholder="请输入11位手机号" class="userName" type="text" maxlength="11" style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>用户名：</span>
+                    <span class="nameCon">
+                    <input placeholder=" 允许输入10个字" class="trueName" type="text" maxlength="10" style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv updatePass" style="margin-bottom: 25px">
+                    <span class="nameId"><i>*</i>密码：</span>
+                    <span class="nameCon">
+                    <input placeholder="6-20位，仅字母、数字、下划线" class="password" type="password" maxlength="20" style="width: 350px;">
+                </span>
+                </div>
+                <div class="RoleDiv updatePass" style="margin-bottom: 25px">
+                    <span class="nameId"><i>*</i>确认密码：</span>
+                    <span class="nameCon">
+                    <input placeholder="" class="passwordConfirm" type="password" maxlength="20" style="width: 350px;">
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="borderE9Mar10">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">平台权限</div>
+                <button class="zy btn btn-primary clickBtn f_r all_Cancel_Private" style="margin-top: 5px!important;">全部取消</button>
+                <button class="zy btn btn-primary clickBtn f_r all_Select_Private" style="margin-top: 5px!important;">全部选中</button>
+            </div>
+            <div class="unitInfo pcTab"></div>
+        </div>
+        <div class="borderE9Mar10">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">app权限</div>
+                <button class="zy btn btn-primary clickBtn f_r all_Cancel_Private" style="margin-top: 5px!important;">全部取消</button>
+                <button class="zy btn btn-primary clickBtn f_r all_Select_Private" style="margin-top: 5px!important;">全部选中</button>
+            </div>
+            <div class="unitInfo appTab"></div>
+        </div>
+        <!-- 按钮 -->
+        <div class="btnApply clearfix">
+            <button class="btn btn-primary postBtn">提交</button>
+            <button class="btn btn-muted  cancelBtn">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./../../../js/zyCommon.js"></script>
+</html>

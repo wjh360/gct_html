@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加开票申请</title>
+</head>
+
+<body id="addNotice">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content ExpenseBox">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">开票信息</div>
+                    <button class="btn btn-primary clickBtn f_r addSer" style="width: 120px;">添加货物或服务</button>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>发票类型：</span>
+                        <span class="nameCon f_l">
+                            <span class='clearfix'>
+                                <input class='invoice f_l' type='radio' name='invoice' index='1' value='增值税普票'>
+                                <span class='f_l' style='margin: 3px;'>增值税普票</span>
+                                <input class='invoice f_l' type='radio' name='invoice' index='2' checked style='margin-left: 20px;'
+                                    value='专票'>
+                                <span class='f_l' style='margin: 3px;'>专票</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>付款方名称：</span>
+                        <span class="nameCon f_l">
+                            <input placeholder="" class="paymentName name" type="text" maxlength="100" style="width: 300px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>纳税人识别码：</span>
+                        <span class="nameCon f_l">
+                            <input placeholder="" class="idNumber" type="text" maxlength="50" style="width: 300px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>地址、电话：</span>
+                        <span class="nameCon f_l">
+                            <input placeholder="" class="tel" type="text" maxlength="100" style="width: 300px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>开户行及账号：</span>
+                        <span class="nameCon f_l">
+                            <input placeholder="" class="account" type="text" maxlength="100" style="width: 300px;">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="serList">
+            </div>
+            <div class="addMoney_con"></div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary  f_l postBtn">提交审核</button>
+                <button class="btn btn-muted  f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

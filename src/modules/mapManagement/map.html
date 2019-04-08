@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>地图</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main.css?v=1.0" />
+</head>
+
+<body id="mapId">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div class="section map-container" id="map" style="width:100%;height: 100%;position: relative">
+                <div class="tip clearfix">
+                    <input type="text" id="taskkeyword" name="keyword" placeholder="请输入工单名称" />
+                    <div class="searchBtn "></div>
+                    <!--搜索按钮-->
+                    <div class="closeBtn "></div>
+                    <!--搜索按钮-->
+                    <div class="searchReturn" style="display: none"></div>
+                    <!--搜索按钮-->
+                </div>
+                <!--项目地图下部的复选框-->
+                <div class="checkStatus clearfix">
+                    <div class="mapClickBox typeArrBox clearfix">
+                        <div class="statusBox">
+                            <!--图片-->
+                            <div class="imgCon">
+                                <img src="../../img/mapImg/type2.png" style="vertical-align: text-bottom" alt="">
+                            </div>
+                            <!--字-->
+                            <div class="fontSty">
+                                设备类
+                            </div>
+                            <!--复选框-->
+                            <div class="checkClick active" index="2">
+                            </div>
+                        </div>
+                        <div class="statusBox">
+                            <!--图片-->
+                            <div class="imgCon">
+                                <img src="../../img/mapImg/type1.png" alt="" style="vertical-align: text-bottom">
+                            </div>
+                            <!--字-->
+                            <div class="fontSty">
+                                线路类
+                            </div>
+                            <!--复选框-->
+                            <div class="checkClick active" index="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mapClickBox statusArrBox clearfix">
+                        <div class="statusBox">
+                            <!--图片-->
+                            <div class="imgCon">
+                                <img src="../../img/mapImg/typeSearch3.png" alt="">
+                            </div>
+                            <!--字-->
+                            <div class="fontSty">
+                                完 工
+                            </div>
+                            <!--复选框-->
+                            <div class="checkClick active" index="3">
+                            </div>
+                        </div>
+                        <div class="statusBox">
+                            <!--图片-->
+                            <div class="imgCon">
+                                <img src="../../img/mapImg/typeSearch2.png" alt="">
+                            </div>
+                            <!--字-->
+                            <div class="fontSty">
+                                整改中
+                            </div>
+                            <!--复选框-->
+                            <div class="checkClick active" index="2">
+                            </div>
+                        </div>
+                        <div class="statusBox">
+                            <!--图片-->
+                            <div class="imgCon">
+                                <img src="../../img/mapImg/typeSearch1.png" alt="">
+                            </div>
+                            <!--字-->
+                            <div class="fontSty">
+                                施工中
+                            </div>
+                            <!--复选框-->
+                            <div class="checkClick active" index="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--侧边栏的tankaung -->
+                <div class="taskDesMess" style="display: none">
+                </div>
+                <!---->
+                <div class="taskInfoZhan" style="display: none">
+                    展开工单详情
+                </div>
+                <div class="taskDesMessOne" style="display: none">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="http://webapi.amap.com/maps?v=1.4.0&key=46cbbde53bdf9ac6f72e72f10c3e7016"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+
+</html>
+<!--<div class="content" style="position: relative;height: 100%">-->
+<!--<div class="section map-container" id="map" style="width:1200px;height: 100%;position: relative"></div>-->

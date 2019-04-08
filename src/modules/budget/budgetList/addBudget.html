@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>外管证管理</title>
+</head>
+
+<body id="budgetManageId">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>项目名称：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入项目名称" class="projectName" type="text" maxlength="100"
+                                style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>项目编号：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入项目编号" class="projectCode" type="text" maxlength="50"
+                                style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>单项工程名称：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入单项工程名称" class="projectSingle" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>项目类型：</span>
+                        <span class="nameCon">
+                            <div id='projectStatus' class='downSelect' style="width:140px;">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>项目区域：</span>
+                        <span class="nameCon">
+                            <div id='listProCtiyCounty' class='proCtiyCounty f_l clearfix'>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>施工距离：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入施工距离" class="money projectDistance" type="text" maxlength="13" style="width: 350px;"> 千米
+                        </span>
+                    </div>
+                    <div class="RoleDiv clearfix" style="margin-bottom: 25px">
+                        <span class="nameId f_l"><i>*</i>建设单位：</span>
+                        <span class="nameCon f_l bulidCompanyList" style="max-width:85%;">
+                            <div id="projectOperator0" class="downSelect f_l clearfix constructionUnit" style="width:170px;margin: 5px;">
+                            </div>
+
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>施工销项税率：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入施工销项税率" class="smallBai saleRate" type="text" maxlength="13"
+                                style="width: 350px;"> %
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">甲供材料采购税率：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入甲供材料采购税率" class="smallBai nailRate" type="text" maxlength="13"
+                                style="width: 350px;"> %
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">设备采购税率：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入设备采购税率" class="smallBai deviceRate" type="text" maxlength="13"
+                                style="width: 350px;"> %
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">折扣系数：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入折扣系数" class="smallBai discount" type="text" maxlength="13"
+                                style="width: 350px;"> %
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">订单名称：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入订单名称" class="orderName" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">订单编号：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入订单编号" class="orderNo" type="text" maxlength="50" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">订单金额：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入订单金额" class="moneyDiscount orderAmount" type="text" maxlength="13"
+                                style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">施工环境：</span>
+
+                        <span class="nameCon ">
+                            <span class="checkBox" id="environment" index="1" style="margin-right: 2px;margin-left: 0px"></span>
+                            <span>干扰地区</span>
+                            <span class="checkBox" id="isCity" index="1" style="margin-right: 2px"></span>
+                            <span>城区部分</span>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">特殊地区：</span>
+                        <span class="nameCon">
+                            <div id='specialArea' class='downSelect' style="width: 150px;">
+                                <span class="specialArea downSet  overf_E" index="9" fl_val="否">
+                                    <a href="javascript:void(0);" style="color:#666;">否</a>
+                                </span>
+                                <ul>
+                                    <li class="overf_E" index="9" title="否">否</li>
+                                    <li class="overf_E" index="1" title="2000米以上海拔地区">2000米以上海拔地区</li>
+                                    <li class="overf_E" index="2" title="3000米以上海拔地区">3000米以上海拔地区</li>
+                                    <li class="overf_E" index="3" title="4000米以上海拔地区">4000米以上海拔地区</li>
+                                    <li class="overf_E" index="4" title="原始森林（室外）地带">原始森林（室外）地带</li>
+                                    <li class="overf_E" index="5" title="沼泽地区">沼泽地区</li>
+                                    <li class="overf_E" index="6" title="非固定沙漠地带">非固定沙漠地带</li>
+                                    <li class="overf_E" index="7" title="化工地区和工业地区">化工地区和工业地区</li>
+                                    <li class="overf_E" index="8" title="山区无人值守站地区">山区无人值守站地区</li>
+                                </ul>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">监理单位：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入监理单位名称" class="supervisor" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">工程负责人：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入工程负责人" class="projectPerson" type="text" maxlength="10" style="width: 350px;">
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btnApply  clearfix" id="three_Btn_Style">
+                <button class="btn btn-primary f_l saveBtn">保存</button>
+                <button class="btn btn-primary  postBtn  middle_Btn">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./addBudget/budgetAddUpdate.js"></script>
+<script src="./../../../js/zyCommon.js"></script>
+
+
+</html>

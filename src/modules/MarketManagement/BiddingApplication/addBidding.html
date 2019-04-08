@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加投标申请</title>
+</head>
+
+<body id="addBidding">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">投标信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>投标名称:</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入投标名称" class="bidName" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>发标单位:</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入发标单位" class="bidUnit" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">联系人:</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入联系人" class="person" type="text" maxlength="10" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">联系电话:</span>
+                        <span class="nameCon">
+                            <input placeholder="手机号/座机" class="tel phone_tel_Ipt" type="text" maxlength="11" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="Role-noticeCon addcountyMore">
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId"><i>*</i>项目地区：</span>
+                            <span class="nameCon f_l">
+                                <span class="f_l county_con">
+                                    <div id="biddingCounty1" class="proCtiyCounty"></div>
+                                </span>
+                                <span class="f_l btn btn-primary addCounty" style="width: 100px; padding: 5px;">添加地区</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId f_l"><i>*</i>项目类型:</span>
+                        <span class="nameCon f_l">
+                            <div id="proType" class="downSelect" style="margin-top: 3px;width: 150px;"> </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>招标金额:</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入招标金额" class="inviteAmount money" type="text" style="width: 350px;">
+                            元
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>预计中标金额:</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入预计中标金额" class="bidAmount money" type="text" style="width: 350px;">
+                            元
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>预计中标价格:</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入预计中标价格" class="bidOrice money" type="text" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="float: left;"><i>*</i>预计投标日期:</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput bidDate" id="bidTimeStr" placeholder="请选择预计投标日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>招标简介:</span>
+                        <span class="nameCon">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="200" class="boderTextarea inviteDescr"></textarea>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top">备注:</span>
+                        <span class="nameCon">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="200" class="boderTextarea remark"></textarea>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">项目发起人:</span>
+                        <span class="nameCon projectPerson"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        投标附件
+                        <span style="color:  #cccccc;">
+                            （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB）
+                        </span>
+                    </div>
+                    <div id="postFileBtn" class="postFileBtn">上传</div>
+                </div>
+                <div class="page" style="padding: 16px 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply  clearfix" id="three_Btn_Style">
+                <button class="btn btn-primary f_l saveBtn">保存</button>
+                <!--middle_Btn中间按钮-->
+                <button class="btn btn-primary  postBtn  middle_Btn">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

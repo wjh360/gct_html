@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加订单</title>
+</head>
+<body id="">
+	<!-- 总盒子,最小宽度 -->
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+       <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+       <div id="curHtmlPath"></div>
+        <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">订单信息</div> </div>  
+            <!--内容区-->
+            <div class="Role-noticeCon">
+            <div class="RoleDiv"style="margin-bottom: 25px">
+             <span class="nameId"><i>*</i>订单编号：</span>
+             <span class="nameCon">
+                 <input placeholder="" class="orderNo" type="text" maxlength="50" style="width: 350px;">
+             </span>
+            </div>
+            <div class="RoleDiv"style="margin-bottom: 25px">
+                <span class="nameId"><i>*</i>订单名称：</span>
+                <span class="nameCon">
+                    <input placeholder="" class="orderName" type="text" maxlength="100" style="width: 350px;">
+                </span>
+               </div>
+          </div>
+                     
+        </div>
+        <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        竣工技术文件
+                        <span style="color:  #cccccc;">
+                            （可选择多个相同项目下的竣工技术文件）
+                        </span>
+                    </div>
+                    <button class="btn btn-primary clickBtn f_r all_Cancel_Private">全部取消</button>
+                    <button class="btn btn-primary clickBtn f_r all_Select_Private">全部选中</button>
+                </div>
+                <div class="page" style="padding:10px;">
+                    <table id="addOrderTable"></table>
+                </div>
+            </div>
+        <!-- 按钮 -->
+        <div class="btnApply clearfix">
+            <button class="btn btn-primary postBtn">提交</button>
+            <button class="btn btn-muted  cancelBtn">取消</button>
+        </div>
+    </div>
+    
+  </div>
+</body>
+</html>

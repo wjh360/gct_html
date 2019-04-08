@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>编辑发票池</title>
+</head>
+
+<body id="projectContainerBox">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            @header
+        </div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 主题 -->
+            <div id="content_main " class="projectBox">
+                <div class="project_First">
+                    <!--头部-->
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">编辑发票池</div>
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>发票池名称：</div>
+                        <input type="text" maxlength="20" class="input_40 inputOrgan pondName" placeholder="允许输入20个字，不允许重复">
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>工程公司：</div>
+                        <div id="constructCompany" class="downSelect f_l input_40"> </div>
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>联系人：</div>
+                        <input type="text" maxlength="10" class=" inputOrgan poolUser" placeholder="允许输入10个字" style="width: 230px">
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>联系电话：</div>
+                        <input type="text" maxlength="11" class=" inputOrgan poolTel phoneIpt" placeholder="允许输入11个数字"
+                            style="width: 230px">
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>发票池金额：</div>
+                        <input type="text" maxlength="13" class="pondMoney f_l inputOrgan  money" placeholder=" 允许输入10位整数，2位小数"
+                            style="width: 230px">
+                        <span class="f_l details_Text">元</span>
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l">合同编号：</div>
+                        <input type="text" maxlength="20" class="input_40 inputOrgan contractNo" placeholder="允许输入20个字，不允许重复">
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l">合同金额：</div>
+                        <input type="text" maxlength="13" class="contractMoney f_l inputOrgan money" placeholder=" 允许输入10位整数，2位小数"
+                            style="width: 230px">
+                        <span class="f_l details_Text">元</span>
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l">合同有效期：</div>
+                        <div class="jeinpbox f_l" style="width: 230px">
+                            <input type="text" class="jeinput " id="startTime" placeholder="请选择开始日期" />
+                            <span class="jeinput_icons"></span>
+                        </div>
+                        <span class="f_l details_Text" style="margin-right: 10px">至</span>
+                        <div class="jeinpbox f_l" style="width: 230px">
+                            <input type="text" class="jeinput" id="endTime" placeholder="请选择开始日期" />
+                            <span class="jeinput_icons"></span>
+                        </div>
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>发票有效期：</div>
+                        <input type="text" maxlength="3" class="invoiceDate f_l inputOrgan  " placeholder="允许输入3位数正整数，不允许输入0"
+                            style="width: 230px">
+                        <span class="f_l details_Text">月</span>
+                    </div>
+                </div>
+                <!--提交按钮-->
+                <!-- 按钮 -->
+                <div class="btnApply  clearfix">
+                    <button class="btn btn-primary  postBtn ">提交</button>
+                    <button class="btn btn-muted f_r cancelBtn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

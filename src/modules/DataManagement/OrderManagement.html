@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>订单管理</title>
+</head>
+
+<body id="BiddingApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="commonCon">
+                <a data_power="Add-order-operation" class="btn btn-primary clickBtn addBidding" style="width: 100px;line-height: 30px;"
+                    href="./OrderManagement/addOrder.html">
+                    添加订单
+                </a>
+
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入订单名称"></div>
+                </div>
+            </div>
+            <div class="searchList" style="margin: 10px;display: none;border: solid 1px #e9e9e9;">
+                <div class="querytr clearfix">
+                    <div class="queryText ">订单编号</div>
+                    <div class="queryBox ">
+                        <input type="text" maxlength="100" class="queryInput orderNo" placeholder="请输入订单编号">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">订单名称</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="11" class="queryInput orderName" placeholder="请输入订单名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">合同名称</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="11" class="queryInput contractName" placeholder="请输入合同名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">项目名称</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="11" class="queryInput projectName" placeholder="请输入项目名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">创建单位</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="11" class="queryInput companyName" placeholder="请输入创建单位">
+                    </div>
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div class="" style="margin: 10px;max-width: 100%;">
+                <div class="page">
+                    <table id="OrderListTable"></table>
+                    <div id="OrderTablePage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

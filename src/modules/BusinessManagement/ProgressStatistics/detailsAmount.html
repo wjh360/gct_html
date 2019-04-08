@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>施工额明细</title>
+</head>
+
+<body id="BiddingApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 表格 -->
+            <div class="commonCon">
+                <div id="type" class="downSelect f_l" style="margin-top: 3px;width: 100px;text-align: center;margin-left: 40%"></div>
+                <P style="font-size: 16px;line-height: 37px;color: #6590ff;">年度施工额统计</P>
+            </div>
+            <div class="commonCon">
+                <div class="clearfix" style="margin: 10px;">
+                    <p class="f_l" style="margin-right:20px;">施工额：<span style="color: #6590ff;" class="constructionAmount"></span></p>
+                    <p class="f_l">年施工额：<span style="color: #6590ff;" class="yearConstructionAmount"></span></p>
+                    <a data_power="Progress-statistics_derived-operation" class="btn btn-primary clickBtn Amount_exportBtn f_r"
+                        style="width: 60px;margin-bottom:20px;line-height: 30px;cursor: pointer;" href="" downLoad="downLoad">导出</a>
+                </div>
+                <div style="padding: 0 10px;">
+                    <div class="page">
+                        <table id="detailsAmountTable"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

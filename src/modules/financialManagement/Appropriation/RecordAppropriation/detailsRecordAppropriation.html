@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>拨付记录详情</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#Record_appropriation" data-toggle="tab">拨付记录</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#Operation_record" data-toggle="tab">操作记录</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 0px">
+                <div>
+                    <!-- 拨付记录  tab内容 -->
+                    <div class="tab-pane fade" id="Record_appropriation"style="margin: 10px;">
+                        <div  style="background:#fff;">
+                            <!--头部-->
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">合同信息</div>
+                            </div>
+                            <!--内容区-->
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">施工合同：</span>
+                                    <span class="nameCon contractName"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId"style="margin-bottom: 20px;">合同乙方：</span>
+                                    <span class="nameCon secondParty"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background:#fff;">
+                            <div class="inforHeader clearfix"style="margin-top:10px">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    工单列表
+                                </div>
+                            </div>
+                            <div class="page uploader_Table" style="padding:10px;">
+                                <table id="taskListTable"></table>
+                            </div>
+                        </div>
+                        <div class="" style="background:#fff;margin-top: 10px;">
+                            <!--头部-->
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">拨付信息</div>
+                            </div>
+                            <!--内容区-->
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">拨付比例：</span>
+                                    <span class="nameCon ratio"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">待支付金额：</span>
+                                    <span class="nameCon nowAmount"></span>
+                                </div>
+                                <div class="RoleDiv">
+                                    <span class="nameId"style="margin-bottom: 20px;">支付金额：</span>
+                                    <span class="nameCon amount"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--操作记录 tab内容 -->
+                    <div class="tab-pane fade" id="Operation_record">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

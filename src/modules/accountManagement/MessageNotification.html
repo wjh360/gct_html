@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>消息通知</title>
+</head>
+
+<body id="Msgnotice">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#home" data-toggle="tab">工作消息</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#wid" data-toggle="tab">系统通知</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy" val="请输入标题" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div class="Mar10" style="margin: 0 10px;">
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="home">
+                    <div class="borderE9 pad10">
+                        <div class="" style="margin: 0;">
+                            <button class="zy btn btn-primary clickBtn readBtn" style="width:100px;">全部标为已读</button>
+                            <button class="zy btn btn-primary clickBtn msgCancel redBtnBack">删除</button>
+                        </div>
+                        <div class="page" style="padding:10px 0 20px ;background: #fff;">
+                            <table id="workMsgTable"></table>
+                        </div>
+                    </div>
+                    <div id="workMsgTablePage"></div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="wid">
+                    <div class="borderE9 pad10">
+                        <div class="" style="margin: 0;">
+                            <button class="zy btn btn-primary clickBtn readBtn" style="width:100px;">全部标为已读</button>
+                            <button class="zy btn btn-primary clickBtn msgCancel redBtnBack">删除</button>
+                        </div>
+                        <div class="page" style="padding:10px 0 20px ;background: #fff;">
+                            <table id="sysMsgTable"></table>
+                        </div>
+                    </div>
+                    <div id="sysMsgTablePage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

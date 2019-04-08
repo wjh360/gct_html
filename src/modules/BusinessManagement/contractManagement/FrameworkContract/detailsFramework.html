@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>框架合同详情</title>
+</head>
+
+<body id="detailsFrame">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">基本信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">投标名称：</span>
+                        <span class="nameCon bidName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同名称：</span>
+                        <span class="nameCon contractName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同编号：</span>
+                        <span class="nameCon contractNo"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同金额：</span>
+                        <span class="nameCon contractAmount"></span> 元
+                    </div>
+                    <div class="RoleDiv clearfix" style="margin-bottom: 25px">
+                        <span class="nameId f_l">合同周期：</span>
+                        <span class="nameCon startTime f_l"></span>
+                        <span class=" f_l">至</span>
+                        <span class="nameCon endTime f_l"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">建设单位：</span>
+                        <span class="nameCon companyName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">付款方式：</span>
+                        <span class="nameCon paymentMode"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">结算方式：</span>
+                        <span class="nameCon balanceMode"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">有无预付：</span>
+                        <span class="nameCon isAdvance"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">保证金金额：</span>
+                        <span class="nameCon bondAmount"></span> 元
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">投标保证金回款：</span>
+                        <span class="nameCon bondBackAmount">0</span> 元
+                    </div>
+
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">折扣：</span>
+                        <span class="nameCon discount"></span> %
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目部信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon clearfix">
+                    <div class="Selected_dep_box f_l" style="width:50%;">
+                        <!-- <p style="padding:10px;">
+                            已选项目部:
+                        </p> -->
+                        <div class="Selected_dep_list"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        合同附件
+                    </div>
+                </div>
+                <div class="page uploader_Table" style="margin: 10px 0;padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

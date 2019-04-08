@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>质量检查详情</title>
+</head>
+
+<body id="addQualityAssurance">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">工单信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>工单名称：</span>
+                        <span class="nameCon taskName">
+                            <!-- <div id="taskList" class="downSelect" style="margin-top: 3px;width: 230px;"> </div> -->
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">所属项目：</span>
+                        <span class="nameCon projectName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">施工队长：</span>
+                        <span class="nameCon trueName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">检查人：</span>
+                        <span class="nameCon createName"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">基本检查
+                    </div>
+                </div>
+                <div class="testSecurityList" index="baseTest">
+                    <li class="testAttrTit">
+                        <span class="testAttr attrtitle">检查事项</span>
+                        <span class="valTest attrtitle">
+                            检查结果
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">施工人员技术培训检查</span>
+                        <span class="valTest">
+                            <span class="cultivate"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">施工机械、仪表状态检查</span>
+                        <span class="valTest">
+                            <span class="mechanical"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">工程物料质量检查</span>
+                        <span class="valTest">
+                            <span class="material"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">施工作业环境是否符合工程作业要求</span>
+                        <span class="valTest">
+                            <span class="job"></span>
+                        </span>
+                    </li>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        线路工程检查
+                    </div>
+                </div>
+                <div class="testSecurityList" index="lineProTest">
+                    <li class="testAttrTit">
+                        <span class="testAttr attrtitle">检查事项</span>
+                        <span class="valTest attrtitle">
+                            检查结果
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">直埋、架空、管道光缆的布放工艺检查</span>
+                        <span class="valTest">
+                            <span class="pipeline"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">光缆预留及预留架安装质量检查</span>
+                        <span class="valTest">
+                            <span class="bracket  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">光缆布放的弯曲半径质量检查</span>
+                        <span class="valTest">
+                            <span class="radius  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">直埋光缆的埋深检查</span>
+                        <span class="valTest">
+                            <span class="buried  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">直埋光缆的对地绝缘测试检查</span>
+                        <span class="valTest">
+                            <span class="resistance  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">接头盒安装固定及密封检查</span>
+                        <span class="valTest">
+                            <span class="joint  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">架空线路光缆挂钩及吊线垂度质量检查</span>
+                        <span class="valTest">
+                            <span class="hook  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">架空线路及光交箱的接地质量检查</span>
+                        <span class="valTest">
+                            <span class="box  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">立杆及拉线土质夯实、安装、固定质量检查</span>
+                        <span class="valTest">
+                            <span class="stud  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">架空线路与其他设施交越的安全间距检查</span>
+                        <span class="valTest">
+                            <span class="crossover  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">人手孔内光缆保护措施质量检查</span>
+                        <span class="valTest">
+                            <span class="guard  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">光缆成端、接续时的纤序、衰耗质量检查</span>
+                        <span class="valTest">
+                            <span class="welding  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">中继段测试各项质量检查</span>
+                        <span class="valTest">
+                            <span class="quality  "></span>
+                        </span>
+                    </li>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        设备安装工程检查
+                    </div>
+                </div>
+                <div class="testSecurityList" index="deviceTest">
+                    <li class="testAttrTit">
+                        <span class="testAttr attrtitle">检查事项</span>
+                        <span class="valTest attrtitle">
+                            检查结果
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">机架、设备安装固定质量检查</span>
+                        <span class="valTest">
+                            <span class="rack"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">线缆布放及标识质量检查</span>
+                        <span class="valTest">
+                            <span class="cable"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">接地线安装质量检查</span>
+                        <span class="valTest">
+                            <span class="ground"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">电源设备、蓄电池安装测试质量检查</span>
+                        <span class="valTest">
+                            <span class="power"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">天线安装固定、方位角、俯仰角质量检查</span>
+                        <span class="valTest">
+                            <span class="antenna"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">室外馈线及电源线布放、接地、防水处理质量检查</span>
+                        <span class="valTest">
+                            <span class="feeder"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">室外光缆布放及盘留、标识质量检查</span>
+                        <span class="valTest">
+                            <span class="reserved"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">光纤布放、插接工艺、光纤标识质量检查</span>
+                        <span class="valTest">
+                            <span class="splice"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">光电口设备端口的收发测试检查</span>
+                        <span class="valTest">
+                            <span class="port"></span>
+                        </span>
+                    </li>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        管道工程检查
+                    </div>
+                </div>
+                <div class="testSecurityList" index="pipingTest">
+                    <li class="testAttrTit">
+                        <span class="testAttr attrtitle">检查事项</span>
+                        <span class="valTest attrtitle">
+                            检查结果
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">管道沟槽处理质量检查</span>
+                        <span class="valTest">
+                            <span class="groove"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">管道基础混凝土配比质量检查</span>
+                        <span class="valTest">
+                            <span class="concrete"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">人手孔砌筑及口圈、上覆的制作安装质量</span>
+                        <span class="valTest">
+                            <span class="masonry"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">管道铺设及接续质量检查</span>
+                        <span class="valTest">
+                            <span class="pave"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">回填土质量检查</span>
+                        <span class="valTest">
+                            <span class="backfill"></span>
+                        </span>
+                    </li>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l"> 检查结论 </div>
+                </div>
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv">
+                        <div class="nameCon conclusion" style=" max-width: 1000px;padding: 0 40px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">安全检查照片</div>
+                </div>
+                <div class="page uploader_Table" style="margin: 10px 0;padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

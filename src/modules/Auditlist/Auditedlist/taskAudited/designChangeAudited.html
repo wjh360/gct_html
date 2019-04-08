@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>工单详情</title>
+</head>
+
+<body id="construction_taskDetails">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs first_nav">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#applyData" data-toggle="tab">申请详情</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#WorkInformation" data-toggle="tab">工单资料</a>
+                    </li>
+                </ul>
+                <div>
+                    <!-- 申请详情   applyData-->
+                    <div class="tab-pane fade" id="applyData">
+                        <div class="commonCon auditNoPassRemark" style="margin:10px 0;min-height:200px;display: none;"></div>
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l clearfix">
+                                    <span class="clearfix f_l">
+                                        <span class="f_l">申请人:</span>
+                                        <span class="applyName overf_E f_l" style="min-width:100px;padding-left: 10px;"></span>
+                                    </span>
+                                    <span style="padding:0 10px;" class="clearfix f_l">
+                                        <span class="f_l">申请时间:</span>
+                                        <span class="applyTime f_l" style="min-width:200px;padding-left: 10px;"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">变更前工作量：</span>
+                                    <span class="nameCon brfor"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">变更后工作量：</span>
+                                    <span class="nameCon after"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">备注：</span>
+                                    <span class="nameCon remark"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0px;padding-bottom: 10px">
+                                    <span class="nameId">现场照片：</span>
+                                    <span class="nameCon taskFileList" style="color:#6590ff;cursor:pointer;">
+                                        <div class="viewPhotoLocation" fileType="7"> 查看照片拍摄位置 </div>
+                                        <div class="taskFileListLog">
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon" style="margin:10px 0;min-height:200px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    审核意见
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <textarea class="auditRemark" placeholder="请输入审核意见" maxlength="200" name="" id="" cols=""
+                                    rows="" style="padding:5px;margin: 15px 30px;height: 180px;width: 95.5%;border-radius: 5px;border:1px solid #e9e9e9;"></textarea>
+                            </div>
+                        </div>
+                        <div class="btnThree clearfix">
+                            <button class="btn btn-primary postBtn auditPass">通过</button>
+                            <button class="btn btn-primary saveBtn auditNoPass">驳回</button>
+                            <button class="btn btn-muted  cancelBtn">取消</button>
+                        </div>
+                    </div>
+                    <!-- 工单资料  WorkInformation -->
+                    <div class="tab-pane fade" id="WorkInformation">
+                        @taskData
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="/modules/engineerManagement/constructionManagement/NotAssigned/detailsNotAssigned/taskDtaDeatils.js"></script>
+
+</html>

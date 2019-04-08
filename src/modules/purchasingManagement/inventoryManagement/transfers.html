@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>入库</title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="inventory_Manage">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content " id="storagePutId">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <!--市场资料-->
+                <div class="borderE9" style="margin-bottom: 10px">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l"> 选择调拨物料类别
+                            <span style="color: #ccc">（单击选择物料）</span></div>
+                    </div>
+                    <div class="white_Page" style="min-height: 260px;padding-left:15px">
+                        <div class="f_l" style="line-height: 40px">
+                            <span>物料名称：</span><input type="text" class="inputOrgan searchMatterName"
+                                style="width: 300px;line-height: 26px" maxlength="100" placeholder="请输入物料名称">
+                            <span style="margin-left: 20px">物料编码：</span><input type="text"
+                                class="inputOrgan searchMatterCode" style="width: 300px;line-height: 26px"
+                                maxlength="100" placeholder="请输入物料编码">
+                            <button class="btn btn-primary invertBtn searchTask">搜索</button>
+                        </div>
+                        <div class="page uploader_Table">
+                            <table id="materSearchTable"></table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="fileTable_White borderE9">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">已选物料</div>
+                    </div>
+                    <div class="white_Page">
+                        <div class="page uploader_Table" id="inputMatterTable">
+                            <table id="matterTable"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileTable_White borderE9" style="min-height: 200px">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">选择接收库房</div>
+                    </div>
+                    <div class="white_Page ">
+                        <div id="dep_trees" class="" style="cursor: pointer; height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply  clearfix">
+                <button class="btn btn-primary  postBtn ">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

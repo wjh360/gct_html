@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>添加集团单位</title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="projectContainerBox">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            @header
+        </div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 主题 -->
+            <div id="content_main " class="projectBox">
+                <div class="project_First">
+                    <!--头部-->
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">库房信息</div>
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>库房名称：</div>
+                        <input type="text" maxlength="100" style="width: 400px" class="inputOrgan storageName "
+                            placeholder="允许输入100个字" />
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>库房地址：</div>
+                        <input type="text" maxlength="50" style="width: 400px" class="inputOrgan storageAddr "
+                            placeholder="允许输入50个字" />
+                    </div>
+                    <div class="boxtr clearfix">
+                        <div class="boxText f_l"><span class="m_red">*</span>所属部门：</div>
+                        <div class="ztreeBox">
+                            <div id="dep_trees" class="" style="cursor: pointer; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--提交按钮-->
+                <!-- 按钮 -->
+                <div class="btnApply  clearfix">
+                    <button class="btn btn-primary  postBtn ">提交</button>
+                    <button class="btn btn-muted f_r cancelBtn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

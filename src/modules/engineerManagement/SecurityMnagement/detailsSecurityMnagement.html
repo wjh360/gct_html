@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>安全检查详情</title>
+</head>
+
+<body id="addSecurityMnagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">工单信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">工单名称：</span>
+                        <span class="nameCon taskName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">所属项目：</span>
+                        <span class="nameCon projectName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">施工队长：</span>
+                        <span class="nameCon trueName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">检查人：</span>
+                        <span class="nameCon createName"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">检查事项</div>
+                </div>
+                <div class="testSecurityList">
+                    <li class="testAttrTit">
+                        <span class="testAttr attrtitle">检查事项</span>
+                        <span class="valTest attrtitle">
+                            检查结果
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">现场施工人员证件检查</span>
+                        <span class="valTest">
+                            <span class="papers"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">施工安全区域划分及安全生产标识检查</span>
+                        <span class="valTest">
+                            <span class="tips"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">安全劳动用具检查是否齐全合格</span>
+                        <span class="valTest">
+                            <span class="tools"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">施工过程中及施工区域严禁吸烟和防火措施检查</span>
+                        <span class="valTest">
+                            <span class="fire"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">临时用电的安全措施检查</span>
+                        <span class="valTest">
+                            <span class="electricity "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">高空作业及吊装时安全措施检查</span>
+                        <span class="valTest">
+                            <span class="hoisting  "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">带电作业割接时施工计划及安全措施检查</span>
+                        <span class="valTest">
+                            <span class="well "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">人手孔作业操作规程的安全措施检查</span>
+                        <span class="valTest">
+                            <span class="buried "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">冬雨季及高温气候的安全措施检查</span>
+                        <span class="valTest">
+                            <span class="cold "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">施工车辆、机械、仪表安全状态检查</span>
+                        <span class="valTest">
+                            <span class="instrument "></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="testAttr">架空线路与电力线等交越安全措施检查</span>
+                        <span class="valTest">
+                            <span class="line "></span>
+                        </span>
+                    </li>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        检查结论
+                    </div>
+                </div>
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv">
+                        <div class="nameCon">
+                            <div class=" conclusion " style="    max-width: 1000px;padding: 0 40px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">安全检查照片
+                    </div>
+                </div>
+                <div class="page uploader_Table" style="margin-top: 10px;padding:0 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

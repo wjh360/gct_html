@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>收入统计</title>
+</head>
+
+<body id="BiddingApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="commonCon">
+                <a data_power="Income-statistics_derived-operation" class="btn btn-primary clickBtn exportBtn" style="width: 60px;line-height: 30px;cursor: pointer;"
+                    href="" downLoad="downLoad">导出</a>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入项目名称"></div>
+                </div>
+            </div>
+            <div class="searchList" style="display: none;border: solid 1px #e9e9e9; margin: 10px 10px 10px 10px;">
+                <div class="querytr clearfix">
+                    <div class="queryText ">项目名称</div>
+                    <div class="queryBox ">
+                        <input type="text" maxlength="100" class="queryInput bidName projectName" placeholder="请输入项目名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">部门单位</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="10" class="queryInput bidUnit depName" placeholder="请输入部门单位">
+                    </div>
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div style="padding: 0 10px;">
+                <div class="page">
+                    <table id="RevenueListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

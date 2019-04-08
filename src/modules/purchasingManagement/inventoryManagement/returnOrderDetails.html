@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>入库</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="inventory_Manage">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content " id="storagePutId">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <!--市场资料-->
+                <div class="borderE9" style="margin-bottom: 10px">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">退料单信息</div>
+                    </div>
+                    <div class="white_Page">
+                        <div class="inven_detail_text"><span>退料单号：</span><span class="collerNo"></span></div>
+                        <div class="borderE9" style="margin-left: 15px;margin-right: 10px">
+                            <div class="page uploader_Table">
+                                <table id="matterTable"></table>
+                            </div>
+                        </div>
+                        <div class="inven_detail_text"><span>退料人：</span><span class="createrName"></span></div>
+                        <div class="inven_detail_text"><span>退料人电话：</span><span class="creatertel"></span></div>
+                        <div class="inven_detail_text"><span>退料申请时间：</span><span class="createTime"></span></div>
+                    </div>
+                </div>
+                <div class="borderColor" style="margin-top:10px;">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">
+                            退料原因
+                        </div>
+                    </div>
+                    <div class="Role-noticeCon auditApply" style="padding: 10px;background: #ffffff;min-height: 150px">
+                    </div>
+                </div>
+                <div class=" borderE9 confirmBox">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">确认人信息</div>
+                    </div>
+                    <div class="white_Page detailMaterial">
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">确认人：</div>
+                            <span class="f_l details_Text overf_E receiveUserName"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">确认人电话：</div>
+                            <span class="f_l details_Text overf_E receiveUserTel"></span>
+                        </div>
+                        <div class="boxtr  clearfix">
+                            <div class="boxText f_l">退料确认时间：</div>
+                            <span class="f_l details_Text overf_E confirmTime"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 按钮 -->
+                <div class="btnApply  clearfix" style="display: none">
+                    <button class="btn btn-primary  postBtn ">确认</button>
+                    <button class="btn btn-muted f_r noPassBtn ">驳回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

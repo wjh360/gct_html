@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>编辑项目</title>
+
+
+</head>
+
+<body id="projectContainerBox">
+<!-- 总盒子,最小宽度 -->
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">
+        @header
+    </div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+        <div id="curHtmlPath"></div>
+        <!-- 主题 -->
+        <div id="content_main " class="projectBox">
+            <div class="auditNoPassRemark borderE9 marb10">
+
+            </div>
+            <div class=" borderE9 clearfix marb10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目变更说明</div>
+
+                </div>
+                <div class="white_Page">
+                    <textarea name="" id="cRemark" class="auditRemark" maxlength="200" style="margin-top: 0px;min-height: 100px" placeholder="请填写项目变更说明"></textarea>
+                </div>
+            </div>
+            <div class="project_First clearfix">
+
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目信息</div>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l"><span class="m_red">*</span>框架合同：</div>
+                    <div id="kj_contract" class="downSelect f_l input_40"></div>
+                </div>
+                <div class="boxtr kj_contract_show clearfix">
+                    <div class="boxText f_l">合同编号：</div>
+                    <span class="f_l details_Text contractName"></span>
+                </div>
+                <div class="boxtr kj_contract_show clearfix">
+                    <div class="boxText f_l">合同周期：</div>
+                    <span class="f_l details_Text contractTime"></span>
+                </div>
+                <div class="boxtr kj_contract_show clearfix">
+                    <div class="boxText f_l">折扣系数：</div>
+                    <span class="f_l details_Text contractMoney"></span>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l"><span class="m_red">*</span>项目名称：</div>
+
+                    <input type="text" maxlength="100" class="input_40 inputOrgan projectName" placeholder="允许输入100个字，不允许重复">
+
+
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l"><span class="m_red">*</span>项目编号：</div>
+
+                    <input type="text" maxlength="50" class="inputOrgan input_40 projectCode " placeholder="允许输入50个字" />
+
+
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l"><span class="m_red">*</span>项目金额：</div>
+                    <input type="text" maxlength="13" class="projectAmount f_l inputOrgan input_30 money"
+                           placeholder=" 允许输入10位整数，2位小数">
+                    <span class="f_l details_Text">元</span>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l"><span class="m_red">*</span>安全生产费：</div>
+                    <input type="text" maxlength="13" class="sateAmount f_l inputOrgan input_30 money" placeholder=" 允许输入10位整数，2位小数">
+                    <span class="f_l details_Text">元</span>
+                    <div class="boxText f_l" style="margin-left: 30px"><span class="m_red">*</span>施工服务费：</div>
+                    <input type="text" maxlength="13" class="serveAmount f_l inputOrgan money input_30 money"
+                           placeholder=" 允许输入10位整数，2位小数">
+                    <span class="f_l details_Text">元</span>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l"><span class="m_red">*</span>规费：</div>
+                    <input type="text" maxlength="13" class="guiAmount f_l inputOrgan money input_30" placeholder=" 允许输入10位整数，2位小数">
+                    <span class="f_l details_Text">元</span>
+                    <div class="boxText f_l" style="margin-left: 30px"><span class="m_red">*</span>税金：</div>
+                    <input type="text" maxlength="13" class="tax f_l inputOrgan money input_30" placeholder=" 允许输入10位整数，2位小数">
+                    <span class="f_l details_Text">元</span>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">计划开工日期：</div>
+                    <div class="jeinpbox f_l" style="width: 230px">
+                        <input type="text" class="jeinput " id="startTime" placeholder="请选择开工日期" />
+                        <span class="jeinput_icons"></span>
+                    </div>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">计划完工日期：</div>
+
+                    <div class="jeinpbox f_l" style="width: 230px">
+                        <input type="text" class="jeinput" id="endTime" placeholder="请选择完工日期" />
+                        <span class="jeinput_icons"></span>
+                    </div>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">项目类型：</div>
+                    <span class="f_l details_Text project_Type"></span>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">项目周期：</div>
+                    <input type="text" maxlength="10" class="projectCycle f_l inputOrgan input_30" placeholder="允许输入10位整数">
+                    <span class="f_l details_Text">天</span>
+                </div>
+                <div class="boxtr clearfix  constructionType">
+                    <div class="boxText f_l"><span class="m_red">*</span>施工类型：</div>
+                    <div class="radioBox">
+                        <span class="radioClick danCheck" index="1"></span>
+                        <span class="radioTex">包工包料</span>
+                    </div>
+                    <div class="radioBox">
+                        <span class="radioClick danCheck" index="2"></span>
+                        <span class="radioTex">包工不包料</span>
+                    </div>
+                    <div class="radioBox ">
+                        <span class="radioClick danCheck " index="3"></span>
+                        <span class="radioTex">清包工</span>
+                    </div>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">项目区域：</div>
+                    <span class="f_l details_Text projectRegion"></span>
+
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">建设单位：</div>
+                    <span class="f_l details_Text projectOperator"></span>
+
+                </div>
+                <div class="boxtr  clearfix">
+                    <div class="boxText f_l">参与项目：</div>
+                    <span class="f_l details_Text overf_E isParticipate">参与</span>
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">监理单位：</div>
+                    <div class="f_l  clearfix constructStr">
+                        <div class=" details_Text "></div>
+                        <div class=" details_Text "></div>
+                    </div>
+
+                </div>
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">设计单位：</div>
+                    <div class="f_l  clearfix designUnit">
+                        <div class=" details_Text "></div>
+                        <div class=" details_Text "></div>
+                    </div>
+
+
+                </div>
+
+                <div class="boxtr clearfix ">
+                    <div class="boxText f_l">施工单位：</div>
+                    <span class="f_l details_Text constructionCompany" style="margin-right: 20px"></span>
+                </div>
+
+                <div class="boxtr clearfix">
+                    <div class="boxText f_l">项目说明：</div>
+                    <textarea name="" id="projectDescription" maxlength="1000"></textarea>
+                </div>
+
+            </div>
+            <div class="project_First">
+                <!--头部-->
+                <div class="inforHeader clearfix" style="position: relative">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目需求列表<span style="color: #cccccc">(请选择项目类型后下载模板正确填写后现在模板)</span>
+                    </div>
+                    <a class="zy btn btn-primary downlown_template f_r tempXian" href="" downLoad="downLoad">下载模板</a>
+                    <div id="postFileBtn1" class="postFileBtn f_r ">上传</div>
+                    <a class="zy btn btn-primary f_r deleteProjectRequire">删除</a>
+
+                </div>
+                <div class="projectRequirements">
+                    <div class="page">
+                        <table id="projectRequirementsXianTable"></table>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="project_First fileTable_White">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目合同<span style="color: #cccccc">（支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB。）</span>
+                    </div>
+                    <div id="postFileBtn2" class="postFileBtn f_r ">上传</div>
+                </div>
+                <div class="page uploader_Table">
+                    <table id="projectContractTable"></table>
+                </div>
+
+
+            </div>
+            <div class="project_First fileTable_White">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">开工报告<span style="color: #cccccc">（支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB。）</span>
+                    </div>
+                    <div id="postFileBtn3" class="postFileBtn f_r ">上传</div>
+                </div>
+                <div class="page uploader_Table">
+                    <table id="workstartReports"></table>
+                </div>
+
+
+            </div>
+
+            <!--提交按钮-->
+            <!-- 按钮 -->
+            <div class="btnApply  clearfix" >
+
+                <button class="btn btn-primary  postBtn ">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="./../../../js/zyCommon.js"></script>
+
+</html>

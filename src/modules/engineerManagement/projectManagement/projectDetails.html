@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>项目详情</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="project_Manager">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix" style="border: 1px solid #e9e9e9;">
+                <ul class="nav nav-tabs first_nav" style="margin-bottom: 0px">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#markMaterial" data-toggle="tab">市场资料</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#projectMaterial" data-toggle="tab">项目资料</a>
+                    </li>
+                    <li data_index="2" data_power='noPower' class="">
+                        <a class="overf_E" href="#workMaterial" data-toggle="tab">施工资料</a>
+                    </li>
+                    <li data_index="3" data_power='noPower' class="">
+                        <a class="overf_E" href="#applyRecord" data-toggle="tab">操作记录</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 0 10px 0 10px">
+                <div class="tab-pane fade" id="markMaterial" style="display: none">
+                    <!--市场资料-->
+                    <div class="borderColor bacFF">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">投标信息</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">投标名称：</div>
+                                <span class="f_l details_Text overf_E bidName"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">发标单位：</div>
+                                <span class="f_l details_Text overf_E bidUnit"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">联系人：</div>
+                                <span class="f_l details_Text overf_E bidPerson"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">联系方式：</div>
+                                <span class="f_l details_Text overf_E bidTel"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目地区：</div>
+                                <span class="f_l details_Text overf_E bidProjectAddress"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目类型：</div>
+                                <span class="f_l details_Text overf_E bidTypeName"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">招标金额：</div>
+                                <span class="f_l details_Text overf_E inviteAmount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">预计中标金额：</div>
+                                <span class="f_l details_Text overf_E bidAmount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">预计中标价格：</div>
+                                <span class="f_l details_Text overf_E bidOrice"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">预计投标日期：</div>
+                                <span class="f_l details_Text overf_E bidDate"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">招标简介：</div>
+                                <span class="f_l details_Text overf_E inviteDescr"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">备注：</div>
+                                <span class="f_l details_Text bidRemark"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目发起人：</div>
+                                <span class="f_l details_Text bidProjectPerson"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileTable_White borderColor markerTableTender">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">投标附件</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="page uploader_Table">
+                                <table id="markerTableTender"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="borderColor borderColor">
+                        <div class="inforHeader clearfix ">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">标书购买申请</div>
+                        </div>
+                        <div class="white_Page bidDocApplyBox">
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">标书购买费用：</div>
+                                <span class="f_l details_Text overf_E purchaseAmount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l ">备注：</div>
+                                <span class="f_l details_Text bidDocApplyRemark"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileTable_White markerTableBuy borderColor">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">标书购买附件</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="page uploader_Table">
+                                <table id="markerTableBuy"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="borderColor bacFF">
+                        <div class="inforHeader clearfix bondApplyBox">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">保证金申请</div>
+                        </div>
+                        <div class="white_Page bondApplyBox">
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">保证金收款单位：</div>
+                                <span class="f_l details_Text overf_E bondUnit"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">收款单位开户行：</div>
+                                <span class="f_l details_Text overf_E openBank"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">银行账户：</div>
+                                <span class="f_l details_Text overf_E bankAccount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">保证金金额：</div>
+                                <span class="f_l details_Text overf_E perforAmount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">保证金缴纳日期：</div>
+                                <span class="f_l details_Text overf_E bondDate"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">备注：</div>
+                                <span class="f_l details_Text overf_E bidApplyRemark"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileTable_White borderColor markerTableMargin">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">保证金附件</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="page uploader_Table">
+                                <table id="markerTableMargin"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="projectMaterial">
+                    <div class="borderColor bacFF">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">项目信息</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">框架合同：</div>
+                                <span class="f_l details_Text overf_E contractName"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">合同编号：</div>
+                                <span class="f_l details_Text overf_E contractNo"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">合同周期：</div>
+                                <span class="f_l details_Text overf_E frameContractTime"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">折扣系数：</div>
+                                <span class="f_l details_Text overf_E contractDiscount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目名称：</div>
+                                <span class="f_l details_Text overf_E projectName"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目编号：</div>
+                                <span class="f_l details_Text overf_E  projectCode"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目金额：</div>
+                                <span class="f_l details_Text overf_E projectAmount"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">安全生产费：</div>
+                                <span class="f_l details_Text overf_E sateAmount" style="width: 300px"></span>
+                                <div class="boxText f_l">施工服务费：</div>
+                                <span class="f_l details_Text overf_E serveAmount" style="width: 300px"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">规费：</div>
+                                <span class="f_l details_Text overf_E guiAmount" style="width: 300px">方法</span>
+                                <div class="boxText f_l">税金：</div>
+                                <span class="f_l details_Text overf_E tax" style="width: 300px"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">计划开工日期：</div>
+                                <span class="f_l details_Text overf_E planStartDate"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">计划完工日期：</div>
+                                <span class="f_l details_Text overf_E planEndDate"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目类型：</div>
+                                <span class="f_l details_Text overf_E projectType"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目周期：</div>
+                                <span class="f_l details_Text overf_E projectCycle"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">施工类型：</div>
+                                <span class="f_l details_Text overf_E constructType" ></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目区域：</div>
+                                <span class="f_l details_Text overf_E projectAddress"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">建设单位：</div>
+                                <span class="f_l details_Text overf_E operatorCompanyName" style="width: 600px">
+                            </span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">参与项目：</div>
+                                <span class="f_l details_Text overf_E isParticipate">参与</span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">监理单位：</div>
+                                <div class="f_l details_Text constructStr" style="width: 600px">
+                                </div>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">设计单位：</div>
+                                <div class="f_l details_Text designUnit" style="width: 600px">
+                                </div>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">施工单位：</div>
+                                <span class="f_l details_Text createCompanyName"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">项目说明：</div>
+                                <span class="f_l details_Text overf_E remarks"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileTable_White borderColor">
+                        <div class="inforHeader clearfix ">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">项目需求列表</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="page uploader_Table">
+                                <table id="projectTableRequire"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileTable_White borderColor">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">项目合同</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="page uploader_Table">
+                                <table id="projectTableContruct"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileTable_White borderColor">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">开工报告</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="page uploader_Table">
+                                <table id="projectTableRecord"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="borderColor bacFF">
+                        <div class="inforHeader outApply clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">完工申请</div>
+                        </div>
+                        <div class="white_Page outApply">
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">申请人：</div>
+                                <span class="f_l details_Text overf_E applyName"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">申请时间：</div>
+                                <span class="f_l details_Text overf_E applyTime"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">完工说明：</div>
+                                <span class="f_l details_Text overf_E finishApply"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="workMaterial">
+                    <ul class="nav nav-tabs twos_nav bacFF">
+                        <li data_index="0" data_power='noPower'>
+                            <a class="overf_E" href="#projectTask" data-toggle="tab">项目工单</a>
+                        </li>
+                        <li data_index="1" data_power='noPower' class="">
+                            <a class="overf_E" href="#projectMaterials" data-toggle="tab">项目物料</a>
+                        </li>
+                        <li data_index="2" data_power='noPower' class="">
+                            <a class="overf_E" href="#projectProty" data-toggle="tab">项目工作量</a>
+                        </li>
+                    </ul>
+                    <div class="threePage">
+                        <div class="tab-pane fade" id="projectTask">
+                            <div class="white_Page clearfix">
+                                <div class="tabTop_box clearfix">
+                                    <div class="tab_status_record f_l" style="width: 70%">
+                                        工单数量：<span class="m_col totalTask">0</span> 未派单：<span class="m_col saveTask">0</span>
+                                        未接单：<span class="m_col sendTask">0</span> 已接单：<span class="m_col meetTask">0</span>
+                                        施工中：<span class="m_col constructionInTask">0 </span>
+                                        完工审核中 ：<span class="m_col finishAuditTask">0</span> 整改中： <span class="m_col changeInTask">0</span>
+                                        整改审核中：<span class="m_col changeAuditInTask">0</span> 已完工：<span class="m_col finishTask">0</span>
+                                        直接完工：<span class="m_col roundFinishTask">0</span>
+                                    </div>
+                                    <div class="f_r clearfix" style="width: 15%">
+                                        <a class="zy btn btn-primary clickBtn f_r  export_Table" style="line-height: 30px"
+                                            href="" downLoad="downLoad">导出</a>
+                                    </div>
+                                </div>
+                                <div class="page ">
+                                    <table id="MaterialTableTask"></table>
+                                </div>
+                            </div>
+                            <div class="MaterialTableTaskPage"></div>
+                        </div>
+                        <div class="tab-pane fade" id="projectMaterials">
+                            <div class="white_Page clearfix">
+                                <div class="tabTop_box clearfix">
+                                    <div class="tab_status_record f_l" style="width: 70%">
+                                        物料数量：<span class="m_col totalMaterail">0</span>
+                                    </div>
+                                </div>
+                                <div class="page ">
+                                    <table id="MaterialTableMater"></table>
+                                </div>
+                            </div>
+                            <div class="MaterialTableMaterPage"></div>
+                        </div>
+                        <div class="tab-pane fade" id="projectProty">
+                            <div class="white_Page clearfix">
+                                <div class="page ">
+                                    <table id="MaterialTableWork"></table>
+                                </div>
+                            </div>
+                            <div class="MaterialTableWorkPage"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="applyRecord">
+                    <div class="white_Page clearfix">
+                        <div class="page">
+                            <table id="operatorTable"></table>
+                        </div>
+                    </div>
+                    <div class="operatorTablePage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

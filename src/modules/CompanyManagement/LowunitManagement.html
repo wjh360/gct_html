@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>下级单位管理</title>
+</head>
+
+<body id="LowunitMsg">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="" style="margin: 10px">
+                <div class="commonCon borderE9 clearfix" style="margin: 0;padding-bottom: 0 !important;">
+                    <button data_power="Add-lower-unit-operation" class="btn btn-primary clickBtn " style="width: 100px;"><a
+                            href="./LowunitManagement\addLowmsg.html">添加下级单位</a></button>
+                    <a data_power="Derived-lower-unit-operation" class="zy btn btn-primary clickBtn  export_Btn" style="line-height: 30px"
+                        href="" downLoad="downLoad">导出</a>
+                    <div class="clearfix f_r" style=" margin-top: -8px;">
+                        <div class="searchBox" attr="easy high" val="请输入单位名称"></div>
+                    </div>
+                </div>
+                <div class="searchList" style="display: none;border: solid 1px #e9e9e9;margin-bottom: 10px">
+                    <div class="querytr clearfix">
+                        <div class="queryText ">单位名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput companyName" placeholder="请输入单位名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText ">账号</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="11" class="queryInput userName " placeholder="请输入账号">
+                        </div>
+                    </div>
+                </div>
+                <div class="marT10">
+                    <div class="page">
+                        <table id="LowListTable"></table>
+                    </div>
+                </div>
+                <div class="LowListTablePage"></div>
+            </div>
+            <!-- 表格 -->
+        </div>
+    </div>
+</body>
+
+</html>

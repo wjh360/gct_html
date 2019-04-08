@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加决算值</title>
+</head>
+<body id="">
+	<!-- 总盒子,最小宽度 -->
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+       <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+       <div id="curHtmlPath"></div>
+        <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">决算值信息</div> </div>  
+            <!--内容区-->
+          <div class="Role-noticeCon">
+            <div class="RoleDiv"style="margin-bottom: 25px">
+             <span class="nameId"><i>*</i>决算值金额：</span>
+             <span class="nameCon">
+                 <input placeholder="" class="finalValue money" type="text"  style="width: 350px;">元
+             </span>
+            </div>
+          </div>
+                     
+        </div>
+        <div class="commonCon pad0">
+                <div class="inforHeader clearfix"style="margin-bottom: 10px;">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        附件
+                        <span style="color:  #cccccc;">
+                            （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB）
+                        </span>
+                    </div>
+                    <div id="postFileBtn" class="postFileBtn">上传</div>
+
+                </div>
+                <div class="page" style="padding: 0 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+        <!-- 按钮 -->
+        <div class="btnApply clearfix">
+            <button class="btn btn-primary postBtn">提交</button>
+            <button class="btn btn-muted  cancelBtn">取消</button>
+        </div>
+    </div>
+    
+  </div>
+</body>
+</html>

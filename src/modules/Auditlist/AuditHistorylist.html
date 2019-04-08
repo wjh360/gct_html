@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>审核历史列表</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='Market-audit-history-list' class="">
+                        <a class="overf_E" href="#MarketAudit" data-toggle="tab">市场审核</a>
+                    </li>
+                    <li data_index="1" data_power='Project-audit-history-list' class="">
+                        <a class="overf_E" href="#ProjectAudit" data-toggle="tab">项目审核</a>
+                    </li>
+                    <li data_index="2" data_power='Job-order-audit-history-list' class="">
+                        <a class="overf_E" href="#WorkorderAudit" data-toggle="tab">工单审核</a>
+                    </li>
+                    <li data_index="3" data_power='Financial-audit-history-list' class="">
+                        <a class="overf_E" href="#FinanceAudit" data-toggle="tab">财务审核</a>
+                    </li>
+                    <li data_index="4" data_power='Procurement-audit-history-list' class="">
+                        <a class="overf_E" href="#PurchaseAudit" data-toggle="tab">采购审核</a>
+                    </li>
+                    <li data_index="5" data_power='Cost-audit-history-list' class="">
+                        <a class="overf_E" href="#CostAudit" data-toggle="tab">成本审核</a>
+                    </li>
+                    <li data_index="6" data_power='Budget-estimate-audit-history-list' class="">
+                        <a class="overf_E" href="#budgetAudit" data-toggle="tab">概预算审核</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入投标名称" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div style="margin: 0 10px">
+                <!-- 市场审核 搜索内容 -->
+                <div class="searchList searchListMarket" data_index="0"
+                    style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">投标名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput Marketname " placeholder="请输入投标名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">发标单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput Marketunit " placeholder="请输入发标单位">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目类型</div>
+                        <div class="queryBox">
+                            <div id="MarkettypeId" class="downSelect" style="top: 3px; width:180px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目审核 -->
+                <div class="searchList searchListProject" data_index="1"
+                    style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput ProjectName" placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput Projectunit" placeholder="请输入申请单位">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目状态</div>
+                        <div class="queryBox">
+                            <div id="ProjecttypeId" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="typeId downSet_s overf_E" index="" fl_val="请选择项目状态">
+                                    <a href="javascript:void(0);" style="color:#666;">请选择项目状态</a>
+                                </span>
+                                <ul>
+                                    <li class="overf_E" index="1" title="已保存">已保存</li>
+                                    <li class="overf_E" index="2" title="立项审核中">立项审核中</li>
+                                    <li class="overf_E" index="3" title="立项未过审">立项未过审</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 工单审核  WorkorderAudit -->
+                <div class="searchList searchListWorkorder" data_index="2"
+                    style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">工单编号</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput pageTaskno" placeholder="请输入工单编号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">工单名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput pageTaskname" placeholder="请输入工单名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput TaskprojectName" placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput pageTaskunit" placeholder="请输入申请单位">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="searchList searchListBudget" data_index="6"
+                    style="border: solid 1px #e9e9e9; display: none;">
+
+
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput projectName" placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">单项工程名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput name" placeholder="请输入单项工程名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目编号</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput no" placeholder="请输入项目编号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目类型</div>
+                        <div class="queryBox">
+                            <div id="budgetProjecttypeId" class="downSelect" style="margin-top: 3px;width: 150px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目地区</div>
+                        <div class="queryBox">
+                            <div id='budgetAuditPro' class='proCtiyCounty f_l clearfix' style="margin-top:3px;"></div>
+
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput unit" placeholder="请输入申请单位">
+                        </div>
+                    </div>
+                </div>
+                <!-- 财务审核 tab内容 FinanceAudit - -->
+                <div class="searchList searchListFinance" data_index="3"
+                    style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请类型</div>
+                        <div class="queryBox">
+                            <div id="FinanceitemCode" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="itemCode downSet_s overf_E" index="" fl_val="请选择财务类型">
+                                    <a href="javascript:void(0);" style="color:#666;">请选择财务类型</a>
+                                </span>
+                                <ul>
+                                    <li class="overf_E" index="6001" title="外管证申请">外管证申请</li>
+                                    <li class="overf_E" index="6002" title="开票申请">开票申请</li>
+                                    <li class="overf_E" index="6003" title="工程款拨付申请">工程款拨付申请</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput  Financeunit" placeholder="请输入申请单位">
+                        </div>
+                    </div>
+                </div>
+                <!-- 采购审核  PurchaseAudit -->
+                <div class="searchList searchListPurchase" data_index="4"
+                    style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">采购名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput  Purchasename" placeholder="请输入采购名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">供应商</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput  Purchaseunit" placeholder="请输入供应商">
+                        </div>
+                    </div>
+                </div>
+                <!-- 成本审核  CostAudit-->
+                <div class="searchList searchListCost" data_index="5" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput   CostprojectName"
+                                placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput  Costunit" placeholder="请输入申请单位">
+                        </div>
+                    </div>
+                </div>
+                <div class="marT10">
+                    <!-- 市场审核  tab内容  MarketAudit-->
+                    <div class="tab-pane fade" id="MarketAudit">
+                        <div class="page">
+                            <table id="MarketAuditTable"></table>
+                        </div>
+                        <div id="MarketAuditTablePage"></div>
+                    </div>
+                    <!--项目审核 tab内容 ProjectAudit -->
+                    <div class="tab-pane fade" id="ProjectAudit">
+                        <div class="page">
+                            <table id="ProjectAuditTable"></table>
+                        </div>
+                        <div id="ProjectAuditTablePage"></div>
+                    </div>
+                    <!--工单审核 tab内容 WorkorderAudit -->
+                    <div class="tab-pane fade" id="WorkorderAudit">
+                        <div class="page">
+                            <table id="WorkorderAuditTable"></table>
+                        </div>
+                        <div id="WorkorderAuditTablePage"></div>
+                    </div>
+                    <!--财务审核 tab内容 FinanceAudit -->
+                    <div class="tab-pane fade" id="FinanceAudit">
+                        <div class="page">
+                            <table id="FinanceAuditTable"></table>
+                        </div>
+                        <div id="FinanceAuditTablePage"></div>
+                    </div>
+                    <!--采购审核 tab内容 PurchaseAudit -->
+                    <div class="tab-pane fade" id="PurchaseAudit">
+                        <div class="page">
+                            <table id="PurchaseAuditTable"></table>
+                        </div>
+                        <div id="PurchaseAuditTablePage"></div>
+                    </div>
+                    <!--成本审核 tab内容 CostAudit -->
+                    <div class="tab-pane fade" id="CostAudit">
+                        <div class="page">
+                            <table id="CostAuditTable"></table>
+                        </div>
+                        <div id="CostAuditTablePage"></div>
+                    </div>
+                    <!--概预算审核 tab内容 CostAudit -->
+                    <div class="tab-pane fade" id="budgetAudit">
+                        <div class="page">
+                            <table id="budgetAuditTable"></table>
+                        </div>
+                        <div id="budgetAuditTablePage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

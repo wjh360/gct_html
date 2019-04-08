@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="addprocess">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div>
+                <div class="addprocess_Content">
+                    <div class="applyContent">
+                        <div class="applyTitle">
+                            <span class="iden">|</span> 申请人
+                        </div>
+                        <div class="applyCheck clearfix">
+                            <div class="comply scord_box" style="width:30%">
+                                <p>选择公司：</p>
+                                <div class="treesBox">
+                                    <div id="apply_comply_trees" class="" style="cursor: pointer;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="depMent scord_box" style="width:25%">
+                                <p>选择部门：</p>
+                                <div class="treesBox">
+                                    <div id="depMent_trees" class="" style="cursor: pointer;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person scord_box" style="width:45%">
+                                <p>选择人员：</p>
+                                <p class="apply_checkAllPersonP" style="display:none;"><span
+                                        class="checkBox checkAllPerson"></span>全选</p>
+                                <div class="applyPersonList"></div>
+                            </div>
+                        </div>
+                        <div class="apply_SelectedContent" style="min-height:100px;">
+                            <p>已选申请人:</p>
+                            <div class="apply_SelectedContent_list"></div>
+                        </div>
+                    </div>
+                    <div class="auditContent">
+                        <div class="auditTitle">
+                            <span class="iden">|</span> 审核人
+                        </div>
+                        <div class="auditCheck clearfix">
+                            <div class="comply scord_box" style="width:30%">
+                                <p>选择公司：</p>
+                                <div class="treesBox">
+                                    <div id="audit_comply_trees" class="" style="cursor: pointer;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="depMent scord_box" style="width:25%">
+                                <p>选择部门：</p>
+                                <div class="treesBox">
+                                    <div id="audit_depMent_trees" class="" style="cursor: pointer;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person scord_box" style="width:45%">
+                                <p>选择人员：</p>
+                                <!-- <p class="audit_checkAllPersonP" style="display:none;"><span class="checkBox audit_checkAllPerson"></span>全选</p> -->
+                                <div class="auditPersonList"></div>
+                            </div>
+                        </div>
+                        <div class="audit_SelectedContent" style="min-height:100px;">
+                            <p>已选审核人:</p>
+                            <div class="audit_SelectedContent_list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn">提交</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

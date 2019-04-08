@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>工单详情</title>
+</head>
+
+<body id="construction_taskDetails">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix" style="display:none;">
+                <ul class="nav nav-tabs first_nav">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#ProjectInformation" data-toggle="tab">项目资料</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#WorkInformation" data-toggle="tab">工单资料</a>
+                    </li>
+                    <li data_index="2" data_power='noPower' class="constructionDetails">
+                        <a class="overf_E" href="#ConstructionDetails" data-toggle="tab">施工详情</a>
+                    </li>
+                    <li data_index="3" data_power='noPower' class="ApplicationRecord">
+                        <a class="overf_E" href="#ApplicationRecord" data-toggle="tab">操作记录</a>
+                    </li>
+                </ul>
+                <div>
+                    <!-- 项目资料   ProjectInformation-->
+                    <div class="tab-pane fade" id="ProjectInformation">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    项目信息
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" >
+                                    <span class="nameId">框架合同：</span>
+                                    <span class="nameCon proContractName"></span>
+                                </div>
+                                <div class="RoleDiv">
+                                    <span class="nameId">合同编号：</span>
+                                    <span class="nameCon proContractNo"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">合同周期：</span>
+                                    <span class="nameCon proContractTime"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">折扣系数：</span>
+                                    <span class="nameCon proDiscount"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">项目名称：</span>
+                                    <span class="nameCon proProjectName"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">项目编号：</span>
+                                    <span class="nameCon proProjectCode"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">项目金额：</span>
+                                    <span class="nameCon proProjectAmount"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">安全生产费：</span>
+                                    <span class="nameCon proSateAmount" style="width: 300px"></span>
+                                    <span class="nameId">施工服务费：</span>
+                                    <span class="nameCon proServeAmount" style="width: 300px"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">规费：</span>
+                                    <span class="nameCon proGuiAmount" style="width: 300px"></span>
+                                    <span class="nameId">税金：</span>
+                                    <span class="nameCon proTax" style="width: 300px"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId" style="float: left;">计划开工日期：</span>
+                                    <span class="nameCon proPlanStartDate"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId" style="vertical-align:top">计划完工日期：</span>
+                                    <span class="nameCon proPlanEndDate"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId f_l" style="vertical-align:top">项目类型：</span>
+                                    <div class="nameCon proProjectType"></div>
+                                </div>
+                                <div class="RoleDiv">
+                                    <span class="nameId">项目周期：</span>
+                                    <span class="nameCon proProjectCycle"></span>
+                                </div>
+                                <div class="RoleDiv">
+                                    <span class="nameId">施工类型：</span>
+                                    <span class="nameCon proConstructType"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">项目区域：</span>
+                                    <span class="nameCon proProjectAddress"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">建设单位：</span>
+                                    <span class="nameCon proOperatorCompanyName"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">参与项目：</span>
+                                    <span class="nameCon isParticipate">参与</span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">监理单位：</span>
+                                    <span class="nameCon proConstructStr"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">设计单位：</span>
+                                    <span class="nameCon proDesignStr"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">施工单位：</span>
+                                    <span class="nameCon proCreateCompanyName"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">项目说明：</span>
+                                    <span class="nameCon proRemark"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon fileTable_White" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    项目需求列表
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <div class="white_Page">
+                                    <div class="page uploader_Table" style="padding:10px 20px;">
+                                        <table id="projectTableRequire"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon fileTable_White" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    项目合同
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <div class="white_Page">
+                                    <div class="page uploader_Table" style="padding:10px 20px;">
+                                        <table id="projectTableContruct"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon fileTable_White" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    开工报告
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon">
+                                <div class="white_Page">
+                                    <div class="page uploader_Table" style="padding:10px 20px;">
+                                        <table id="projectTableRecord"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon outApply" style="margin: 0;margin-top:10px;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    完工申请
+                                </div>
+                            </div>
+                            <div class="Role-noticeCon ">
+                                <div class="RoleDiv" >
+                                    <span class="nameId">申请人：</span>
+                                    <span class="nameCon proApplyName"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">申请时间：</span>
+                                    <span class="nameCon proApplyTime"></span>
+                                </div>
+                                <div class="RoleDiv" >
+                                    <span class="nameId">完工说明：</span>
+                                    <span class="nameCon proFinishApply"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 工单资料  WorkInformation -->
+                    <div class="tab-pane fade" id="WorkInformation">
+                        @taskData
+                    </div>
+                    <!-- 施工详情   ConstructionDetails -->
+                    <div class="tab-pane fade" id="ConstructionDetails">
+                        <div class="tabHeader clearfix" style="margin: 10px 0;">
+                            <ul class="nav nav-tabs ConstructionDetails_nav twos_nav">
+                                <li data_index="0" data_power='noPower' class="Work_Ready">
+                                    <a class="overf_E" href="#Work_Ready" data-toggle="tab">工前准备</a>
+                                </li>
+                                <li data_index="1" data_power='noPower' class="Construct_Record">
+                                    <a class="overf_E" href="#Construct_Record" data-toggle="tab">施工记录</a>
+                                </li>
+                                <li data_index="2" data_power='noPower' class="Rectify_Record">
+                                    <a class="overf_E" href="#Rectify_Record" data-toggle="tab">整改记录</a>
+                                </li>
+                                <li data_index="3" data_power='noPower' class="Completed_Information">
+                                    <a class="overf_E" href="#Completed_Information" data-toggle="tab">完工信息</a>
+                                </li>
+                            </ul>
+                            <div class="twos_nav_box">
+                                <!-- 工前准备 -->
+                                <div class="tab-pane fade" id="Work_Ready">
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                <span>接单时间：</span>
+                                                <span class="acceptTime" style="display:inline-block;min-width: 200px;"></span>
+                                                <span>工前准备时间：</span>
+                                                <span class="beforTime" style="display:inline-block;min-width: 200px;"></span>
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">是否领料：</span>
+                                                <span class="nameCon isAllMatter"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">工具完备：</span>
+                                                <span class="nameCon isAllTool"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">施工条件正常：</span>
+                                                <span class="nameCon isConstructConditions"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">其他备注：</span>
+                                                <span class="nameCon remark"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">施工前照片：</span>
+                                                <span class="nameCon taskFile">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施工记录 -->
+                                <div class="tab-pane fade" id="Construct_Record">
+                                    <div class="work_day clearfix bacFF" style="margin: 10px 0px;padding-top: 10px">
+                                        <div class="jeinpbox" style="margin: 0 auto; width: 130px;">
+                                            <input style="width:130px;" type="text" class="jeinput ConstructLogDate"
+                                                   format="YYYY-MM" id="ConstructLogDate" placeholder="请选择日期">
+                                            <span class="jeinput_icons"></span>
+                                        </div>
+                                        <div class="work_day_log">
+                                        </div>
+                                    </div>
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                工前安全
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">施工人员：</span>
+                                                <span class="nameCon constructionMember"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">天气状况：</span>
+                                                <span class="nameCon weather"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">其他备注：</span>
+                                                <span class="nameCon safeRemind"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">安全照片：</span>
+                                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                                    <div class="viewPhotoLocation" fileType="3"> 查看照片拍摄位置 </div>
+                                                    <div class="taskFileListSafe">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                施工过程
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">施工记录：</span>
+                                                <span class="nameCon constructionLog"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">施工照片：</span>
+                                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                                    <div class="viewPhotoLocation" fileType="4"> 查看照片拍摄位置 </div>
+                                                    <div class="taskFileListLog">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                当天用料
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="page uploader_Table" style="padding:10px 20px;">
+                                                <table id="workLog_matterList"></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                隐藏工作量
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="page uploader_Table" style="padding:10px 20px;">
+                                                <table id="workLog_hideList"></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 整改记录 -->
+                                <div class="tab-pane fade" id="Rectify_Record">
+                                    <div class="work_day clearfix bacFF" style="margin: 10px 0px;padding-top: 10px">
+                                        <div class="jeinpbox" style="margin: 0 auto; width: 130px;">
+                                            <input style="width:130px;" type="text" class="jeinput changeLogDate"
+                                                   format="YYYY-MM" id="changeLogDate" placeholder="请选择日期">
+                                            <span class="jeinput_icons"></span>
+                                        </div>
+                                        <div class="work_day_log">
+                                        </div>
+                                    </div>
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                工前安全
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">施工人员：</span>
+                                                <span class="nameCon constructionMember"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">天气状况：</span>
+                                                <span class="nameCon weather"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">其他备注：</span>
+                                                <span class="nameCon safeRemind"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">安全照片：</span>
+                                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                                    <div class="viewPhotoLocation" fileType="3"> 查看照片拍摄位置 </div>
+                                                    <div class="taskFileListSafe">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                整改过程
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">整改记录：</span>
+                                                <span class="nameCon constructionLog"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">整改照片：</span>
+                                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                                    <div class="viewPhotoLocation" fileType="4"> 查看照片拍摄位置 </div>
+                                                    <div class="taskFileListLog">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 完工信息 -->
+                                <div class="tab-pane fade" id="Completed_Information">
+                                    <div class="commonCon" style="margin: 0;margin-top:10px;">
+                                        <div class="inforHeader clearfix">
+                                            <div class="verHang f_l"></div>
+                                            <div class="headerText f_l">
+                                                <span>申请人：</span>
+                                                <span class="applyName"></span>
+                                                <span style="padding-left:20px;">申请时间：</span>
+                                                <span class="applyDate"></span>
+                                            </div>
+                                        </div>
+                                        <div class="Role-noticeCon">
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">实际开工日期：</span>
+                                                <span class="nameCon actualStartDate" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                                <span class="nameId">计划开工日期：</span>
+                                                <span class="nameCon planStartDate" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                                <span class="nameId">整改开始日期：</span>
+                                                <span class="nameCon changeStart" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                            </div>
+                                            <div class="RoleDiv" >
+                                                <span class="nameId">实际完工日期：</span>
+                                                <span class="nameCon actualEndDate" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                                <span class="nameId">计划完工日期：</span>
+                                                <span class="nameCon planEndDate" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                                <span class="nameId">整改完成日期：</span>
+                                                <span class="nameCon changeEnd" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                            </div>
+                                            <div class="RoleDiv">
+                                                <span class="nameId">执行周期：</span>
+                                                <span class="nameCon actualHours" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                                <span class="nameId">工单周期：</span>
+                                                <span class="nameCon planHours" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                                <span class="nameId">整改周期：</span>
+                                                <span class="nameCon changeHours" style="display:inline-block; min-width:200px; height: 34px;"></span>
+                                            </div>
+                                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                                <span class="nameId">完工说明：</span>
+                                                <span class="nameCon commit"></span>
+                                            </div>
+                                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                                <span class="nameId">施工后照片：</span>
+                                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                                    <div class="viewPhotoLocation" fileType="5"> 查看照片拍摄位置 </div>
+                                                    <div class="taskFileListLog finshImg">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                                <span class="nameId">完工草图：</span>
+                                                <span class="nameCon ">
+                                                    <div class="taskFileListLog finshSketch">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <div class="RoleDiv" style="margin-bottom: 0;">
+                                                <span class="nameId">整改完成说明：</span>
+                                                <span class="nameCon changeCommit"></span>
+                                            </div>
+                                            <div class="RoleDiv" style="margin-bottom: 0px">
+                                                <span class="nameId">整改完成照片：</span>
+                                                <span class="nameCon " style="color:#6590ff;cursor:pointer">
+                                                    <div class="viewPhotoLocation" fileType="4"> 查看照片拍摄位置 </div>
+                                                    <div class="taskFileListLog finshChangeImg">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 操作记录   ApplicationRecord -->
+                    <div class="tab-pane fade" id="ApplicationRecord">
+                        <div class="commonCon" style="margin: 10px 0">
+                            <div class="page" style="padding: 10px;">
+                                <table id="ApplicationRecordTable"></table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./detailsNotAssigned/projectDetails.js"></script>
+<script src="./detailsNotAssigned/taskDtaDeatils.js"></script>
+<script src="./detailsNotAssigned/task_constructiobLog.js"></script>
+
+</html>

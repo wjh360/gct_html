@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>施工管理</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='Unassigned-list' class="">
+                        <a class="overf_E" href="#NotAssigned" data-toggle="tab">未派</a>
+                    </li>
+                    <li data_index="1" data_power='Unconnected-list' class="">
+                        <a class="overf_E" href="#Unanswered" data-toggle="tab">未接</a>
+                    </li>
+                    <li data_index="2" data_power='Connected-list' class="">
+                        <a class="overf_E" href="#AlreadyConnected" data-toggle="tab">已接</a>
+                    </li>
+                    <li data_index="3" data_power='Construction-list' class="">
+                        <a class="overf_E" href="#Construction" data-toggle="tab">施工</a>
+                    </li>
+                    <li data_index="4" data_power='Rectification-list' class="">
+                        <a class="overf_E" href="#Rectification" data-toggle="tab">整改</a>
+                    </li>
+                    <li data_index="5" data_power='Completion-list' class="">
+                        <a class="overf_E" href="#Finished" data-toggle="tab">完工</a>
+                    </li>
+                    <li data_index="6" data_power='my-participation-list' class="">
+                        <a class="overf_E" href="#Involved" data-toggle="tab">我参与的</a>
+                    </li>
+                    <li data_index="7" data_power='Work-order-list' class="">
+                        <a class="overf_E" href="#WorkList" data-toggle="tab">工单列表</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入工单名称" style="margin: -40px 20px;"></div>
+                </div>
+                <!-- 框架合同 搜索内容 -->
+                <div class="searchList " data_index="0" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">工单编号</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput TaskCode" placeholder="请输入工单编号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">工单名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput taskName" placeholder="请输入工单名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput projectName" placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix disUnit">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">创建单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput companyName" placeholder="请输入创建单位">
+                        </div>
+                    </div>
+                    <!-- tab内容 -->
+                </div>
+                <div>
+                    <!-- 未派   NotAssigned-->
+                    <div class="tab-pane fade" id="NotAssigned">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button class="btn btn-primary clickBtn " style="width: 100px;margin-left:0px !important;">
+                                <a href="./constructionManagement/NotAssigned/addNotAssigned.html">添加工单</a>
+                            </button>
+                        </div>
+                        <div class="commonCon" style="margin: 0;border: none;">
+                            <div class="page">
+                                <table id="NotAssignedTable"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 未接  Unanswered -->
+                    <div class="tab-pane fade" id="Unanswered">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskSend"></table>
+                        </div>
+                    </div>
+                    <!-- 已接   AlreadyConnected -->
+                    <div class="tab-pane fade" id="AlreadyConnected">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskMeet"></table>
+                        </div>
+                    </div>
+                    <!-- 施工  Construction -->
+                    <div class="tab-pane fade" id="Construction">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskConstructionIn"></table>
+                        </div>
+                    </div>
+                    <!-- 整改  Rectification -->
+                    <div class="tab-pane fade" id="Rectification">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskChange"></table>
+                        </div>
+                    </div>
+                    <!-- 完工  Finished -->
+                    <div class="tab-pane fade" id="Finished">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button data_power="Add-completion-order-operation" class="btn btn-primary clickBtn "
+                                style="width: 100px;margin-left:0px !important;">
+                                <a href="./constructionManagement/NotAssigned/addCompletionTask.html">添加完工工单</a>
+                            </button>
+                        </div>
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskFinish"></table>
+                        </div>
+                    </div>
+                    <!-- 我参与的   Involved -->
+                    <div class="tab-pane fade" id="Involved">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskInvolved"></table>
+                        </div>
+                    </div>
+                    <!-- 工单列表  WorkList -->
+                    <div class="tab-pane fade" id="WorkList">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="getTaskList"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

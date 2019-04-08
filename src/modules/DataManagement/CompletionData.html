@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>竣工资料</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='Completion-data-packing-list' class="" style="width:120px;">
+                        <a class="overf_E" href="#DataPackage" data-toggle="tab">竣工资料打包</a>
+                    </li>
+                    <li data_index="1" data_power='completion-technical-document-list' class="" style="width:120px;">
+                        <a class="overf_E" href="#DataTechnical" data-toggle="tab">竣工技术文件</a>
+                    </li>
+                </ul>
+                <div>
+                    <!-- 打包资料 -->
+                    <div class="tab-pane fade" id="DataPackage">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="DataPackageTable"></table>
+                        </div>
+                        <!-- </div> -->
+                        <div id="DataPackageTablePage"></div>
+                    </div>
+                    <!-- 技术文件 -->
+                    <div class="tab-pane fade" id="DataTechnical">
+                        <div class="page" style="margin-top:10px;">
+                            <table id="DataTechnicalTable"></table>
+                        </div>
+                        <!-- </div> -->
+                        <div id="DataTechnicalTablePage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

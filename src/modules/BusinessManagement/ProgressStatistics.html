@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>进度统计</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='Contract-schedule-list' class="">
+                        <a class="overf_E" href="#ContractProgress" data-toggle="tab">合同进度</a>
+                    </li>
+                    <li data_index="1" data_power='Project-schedule-list' class="">
+                        <a class="overf_E" href="#ContractProject" data-toggle="tab">项目进度</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入名称" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div style="margin: 0 10px">
+                <!-- 合同进度 搜索内容 -->
+                <div class="searchList searchListContractProgress" data_index="0" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">合同名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput name" placeholder="请输入合同名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">合同编号</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput code" placeholder="请输入合同编号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">建设单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput   companyName " placeholder="请输入建设单位">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText ">合同周期</div>
+                        <div class="queryBox">
+                        <span>
+                        <div class="jeinpbox f_l" style="width: 230px">
+                        <input type="text" class="jeinput startDate" id="bidTimeStr" placeholder="" />
+                        <span class="jeinput_icons"></span>
+                        </div>
+                        <span class="f_l">至</span>
+                        <div class="jeinpbox f_l" style="width: 230px">
+                        <input type="text" class="jeinput endDate" id="bidTimeStr1" placeholder="" />
+                        <span class="jeinput_icons"></span>
+                        </div>
+                        </span>
+                        </div>
+                        </div>
+                </div>
+                <!-- 项目进度 搜索内容 -->
+                <div class="searchList searchListContractProject" data_index="1" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput projectName" placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目编号</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput projectCode" placeholder="请输入项目编号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">建设单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput companyName" placeholder="请输入建设单位">
+                        </div>
+                    </div>
+                </div>
+                <div class="marT10">
+                    <div class="tab-pane fade" id="ContractProgress">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <a data_power="Progress-statistics_derived-operation" class="btn btn-primary clickBtn Progress_exportBtn"
+                                style="width: 60px;margin-bottom:20px;line-height: 30px;cursor: pointer;" href=""
+                                downLoad="downLoad">导出</a>
+                            <div class="page" style="margin-top:10px">
+                                <table id="ContractProgressTable"></table>
+                            </div>
+                            <div id="ContractProgressTablePage"></div>
+                        </div>
+                    </div>
+                    <!-- tab内容 -->
+                    <div class="tab-pane fade" id="ContractProject">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <a data_power="Progress-statistics_derived-operation" class="btn btn-primary clickBtn Project_exportBtn"
+                                style="width: 60px;margin-bottom:20px;line-height: 30px;cursor: pointer;" href=""
+                                downLoad="downLoad">导出</a>
+                            <div class="page" style="overflow-x:auto;margin-top:10px">
+                                <table id="ContractProjectTable"></table>
+                            </div>
+                            <div id="ContractProjectTablePage"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

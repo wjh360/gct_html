@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编辑拨付记录</title>
+</head>
+
+<body id="">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">合同信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">施工合同：</span>
+                        <span class="nameCon contractName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">合同乙方：</span>
+                        <span class="nameCon secondParty"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        工单列表
+                    </div>
+                </div>
+                <div class="page uploader_Table" style="padding: 10px;">
+                    <table id="taskListTable"></table>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">拨付信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">拨付比例：</span>
+                        <span class="nameCon ratio"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">待支付金额：</span>
+                        <span class="nameCon nowAmount"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">支付金额：</span>
+                        <span class="nameCon">
+                            <input placeholder="" class="money amount" type="text" style="width: 350px;">元
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn">提交审核</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

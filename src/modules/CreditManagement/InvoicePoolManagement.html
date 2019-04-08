@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>发票池管理</title>
+</head>
+
+<body id="invoice_Pool_Manager">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs ">
+                    <li data_index="0" data_power='List-of-normal-invoice-pools' class="">
+                        <a class="overf_E" href="#normalPool" data-toggle="tab">正常发票池</a>
+                    </li>
+                    <li data_index="1" data_power='List-of-closed-invoice-pools' class="">
+                        <a class="overf_E" href="#notPool" data-toggle="tab">已关闭发票池</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy " val="请输入工程公司名称" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div style="margin: 10px">
+                <div class="tab-pane fade" id="normalPool">
+                    <div class="borderE9 pad10 ">
+                        <button data_power="Add-invoice-pool-operation" class="zy btn btn-primary  clickBtn invoicePoolAdd"
+                            style="width: 100px;margin-left:0px !important;margin-bottom: 10px !important;">
+                            添加发票池
+                        </button>
+                        <div class="page ">
+                            <table id="normalPoolTable"></table>
+                        </div>
+                    </div>
+                    <div id="normalPoolTablePage"></div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="notPool">
+                    <div class="page ">
+                        <table id="notPoolTable"></table>
+                    </div>
+                    <div id="notPoolTablePage"></div>
+                </div>
+            </div>
+            <!-- 表格 -->
+        </div>
+    </div>
+</body>
+
+</html>

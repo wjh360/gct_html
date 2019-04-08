@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+
+<body id="process">
+	<!-- 总盒子,最小宽度 -->
+	<div class="container">
+		<!-- 头部 -->
+		<div class="header">@header</div>
+		<!-- 侧边栏 -->
+		<div class="asider">
+			<div id="navContent" class="div_radius"></div>
+		</div>
+		<!-- 内容区域 -->
+		<div class="content">
+			<div id="curHtmlPath"></div>
+			<div class="processContent" style="background:#fff;">
+                <div class="processContent_top clearfix">
+                    <div id="matterType" class="downSelect f_l"> </div>
+                    <div id="matterCate" class="downSelect f_l" style="width: 140px;"> </div>
+                    <div data_power="Add-process-operation" class="btn btn-primary f_l addProcess">添加流程</div>
+				</div>
+				<div class="processContent_bottom">
+					<ul class="processContent_list">
+					</ul>
+				</div>
+			</div>
+			<div class="page">
+				<div id="processContent_listPage"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

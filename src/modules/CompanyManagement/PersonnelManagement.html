@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>人员管理</title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="PersonnelMsg">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="personCon">
+                <!-- left -->
+                <div class="leftCon">
+                    <button class="btn btn-primary clickLbtn  creatFirstDep"
+                        data_power="Add-first-level-departmental-operations">创建一级部门</button>
+                    <div class="treesBox">
+                        <div id="trees" class="" style="cursor: pointer;">
+                            <ul id="treeDemo" class="ztree"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="rightCon">
+                    <div class="borderE9" style="height: 50px;padding-top: 10px">
+                        <a data_power="Add-personnel-operation" class="btn btn-primary clickLbtn "
+                            style="line-height: 30px;" href="./PersonnelManagement/addPersonnel.html">添加人员</a>
+                        <div class="clearfix f_r" style=" margin-top: -8px;">
+                            <div class="searchBox" attr="easy high" val="请输入人员姓名"></div>
+                        </div>
+                    </div>
+                    <div class="searchList" style="display: none;border: solid 1px #e9e9e9;">
+                        <div class="querytr clearfix">
+                            <div class="queryText " style="text-align: center;padding-right:0px;">姓名</div>
+                            <div class="queryBox ">
+                                <input type="text" maxlength="10" class="queryInput trueName" placeholder="请输入人员姓名">
+                            </div>
+                        </div>
+                        <div class="querytr clearfix">
+                            <div class="queryText " style="text-align: center;padding-right:0px;">账号</div>
+                            <div class="queryBox">
+                                <input type="text" maxlength="11" class="queryInput userName" placeholder="请输入手机号">
+                            </div>
+                        </div>
+                        <div class="querytr clearfix">
+                            <div class="queryText " style="text-align: center;padding-right:0px;">角色</div>
+                            <div class="queryBox">
+                                <div id="roleAllList" class="downSelect" style="margin-top: 3px;width: 150px;"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marT10">
+                        <div class="page">
+                            <table id="perSonListTable" style="width:100% !important;"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

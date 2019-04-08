@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>开票管理</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='Invoice-application-list' class="">
+                        <a class="overf_E" href="#InvoiceApplication" data-toggle="tab">开票申请</a>
+                    </li>
+                    <li data_index="1" data_power='Invoice-list' class="">
+                        <a class="overf_E" href="#InvoiceList" data-toggle="tab">开票列表</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入付款方名称" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div style="margin: 0 10px">
+                <!-- 框架合同 搜索内容 -->
+                <div class="searchList searchListInvoiceApplication" data_index="0" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">付款方名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="50" class="queryInput name" placeholder="请输入付款方名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">纳税人识别号</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput idNumber" placeholder="请输入纳税人识别号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">发票类型</div>
+                        <div class="queryBox">
+                            <div id="invoicetype" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="downSet invoicetype" index="" fl_val="请选择">
+                                    <a href="javascript:void(0);">请选择</a>
+                                </span>
+                                <ul>
+                                    <li index="1" title="增值税普票">增值税普票</li>
+                                    <li index="2" title="专票">专票</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">申请状态</div>
+                        <div class="queryBox">
+                            <div id="applytype" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="downSet applytype" index="" fl_val="请选择">
+                                    <a href="javascript:void(0);">请选择</a>
+                                </span>
+                                <ul>
+                                    <li index="3" title="审核中">审核中</li>
+                                    <li index="4" title="未过审">未过审</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">创建单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput companyName" placeholder="请输入创建单位">
+                        </div>
+                    </div>
+                </div>
+                <!-- 开票列表 搜索内容 -->
+                <div class="searchList searchListInvoiceList" data_index="1" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">付款方名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="50" class="queryInput name" placeholder="请输入付款方名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">纳税人识别号</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput idNumber" placeholder="请输入纳税人识别号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">发票类型</div>
+                        <div class="queryBox">
+                            <div id="invoicetype" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="downSet invoicetype" index="" fl_val="请选择">
+                                    <a href="javascript:void(0);">请选择</a>
+                                </span>
+                                <ul>
+                                    <li index="1" title="增值税普票">增值税普票</li>
+                                    <li index="2" title="专票">专票</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">创建单位</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput companyName" placeholder="请输入创建单位">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="tab-pane fade" id="InvoiceApplication">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <button data_power="Add-Invoice-application-operation" class="btn btn-primary clickBtn commonCliclk Invoice-list addInvoice"
+                                style="width: 100px;margin-left:0px !important;">
+                                添加开票申请
+                            </button>
+                            <div class="page">
+                                <table id="InvoiceApplicationTable"></table>
+                            </div>
+                            <div id="InvoiceApplicationTablePage"></div>
+                        </div>
+                    </div>
+                    <!-- tab内容 -->
+                    <div class="tab-pane fade" id="InvoiceList">
+                        <div class="commonCon" style="margin: 0;margin-top:10px;">
+                            <div class="page">
+                                <table id="InvoiceListTable"></table>
+                            </div>
+                            <div id="InvoiceListTablePage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

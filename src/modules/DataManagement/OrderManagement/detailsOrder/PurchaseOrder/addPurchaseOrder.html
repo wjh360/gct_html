@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加采购订单</title>
+</head>
+
+<body id="addPurchaseOrder">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">订单信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv">
+                        <span class="nameId"><i>*</i>框架合同：</span>
+                        <span class="nameCon">
+                            <div id="contractId" class="downSelect" style="margin-top: 3px;width: 270px;"> </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId"><i>*</i>项目名称：</span>
+                        <span class="nameCon ">
+                            <div id="projectId" class="downSelect projectName" style="margin-top: 3px;width: 270px;">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId"><i>*</i>项目编号：</span>
+                        <span class="nameCon projectCode"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="width: 110px;"><i>*</i>采购订单编号：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入建设方订单编号" class="serveAmount orderNo " type="text"
+                                style="width: 270px;" maxlength="50">
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId"><i>*</i>订单属性：</span>
+                        <span class="nameCon">
+                            <div id="propertyId" class="downSelect" style="margin-top: 3px;width: 270px;"></div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId"><i>*</i>订货单位：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入建设方单位名称" class="serveAmount goodsUnit " maxlength="100" type="text"
+                                style="width: 270px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId f_l">开工日期：</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput dateS startDate" id="bidTimeStr1"
+                                    placeholder="请选择开工日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId f_l">交工日期：</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput dateS finishDate" id="bidTimeStr2"
+                                    placeholder="请选择交工日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId f_l">试运行开始日期：</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput dateS testStart" id="bidTimeStr3"
+                                    placeholder="请选择试运行开始日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId f_l">试运行结束日期：</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput dateS testEnd" id="bidTimeStr4"
+                                    placeholder="请选择试运行结束日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId">供货商名称：</span>
+                        <span class="nameCon centerUnitName"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId">施工服务费：</span>
+                        <span class="nameCon serviceFee"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId">安全生产费：</span>
+                        <span class="nameCon prodUctFee"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId">规费：</span>
+                        <span class="nameCon guiFees"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId">订单名称：</span>
+                        <span class="nameCon  orderName"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId">订单编号：</span>
+                        <span class="nameCon  orderNo"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix" style="margin-bottom: 10px;">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">订单费用明细 </div>
+                    <button class="btn btn-primary addFeeBtn f_r addMaterBtn"
+                        style="width: 86px !important;">添加规费</button>
+                    <button class="btn btn-primary addSafetyFeeBtn f_r addMaterBtn">添加安全生产费</button>
+                    <button class="btn btn-primary addServiceFeeBtn f_r addMaterBtn">添加施工服务费</button>
+                </div>
+                <div class="" style="min-height: 300px">
+                    <div class="page uploader_Table " style="max-height: 400px">
+                        <table id="FeeTable"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix" style="margin-bottom: 10px;">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">施工清单明细表</div>
+
+                    <span id="addImportFile" class="btn btn-primary importConlistBtn f_r addMaterBtn "
+                        style="width: 70px; position: relative;">
+                        导入
+                        <input type="file" accept=".xls,.xlsx" onchange="sendfile(this)"
+                            style="position: absolute;top: 0;;left: 0;opacity: 0;width: 70px;height:33px;" />
+                    </span>
+                    <button class="btn btn-primary addconlistBtn f_r addMaterBtn">添加施工明细</button>
+                </div>
+                <div class="" style="min-height: 300px">
+                    <div class="page uploader_Table " style="max-height: 400px">
+                        <table id="ConlistTable"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix" style="margin-bottom: 10px;">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        合同附件
+                        <span style="color:  #cccccc;">
+                            （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB）
+                        </span>
+                    </div>
+                    <div id="postFileBtn" class="postFileBtn f_r ">上传</div>
+                </div>
+                <div class="page uploader_Table" style="padding: 10px 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnThree clearfix">
+                <button class="btn btn-primary postBtn">提交</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/xlsx.full.min.js"></script>
+<script src="./addPurchaseOrder/addBasePur.js"></script>
+
+</html>

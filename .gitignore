@@ -1,0 +1,16 @@
+node_modules
+coverage
+.idea
+npm-debug.log
+.DS_Store
+.vscode
+dist
+dbconfig1.js
+dump
+build 
+dev.md
+# gulpDev.js
+jsconfig.json
+gulpfile.js
+src.zip
+gulpDev.js

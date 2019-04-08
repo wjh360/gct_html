@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>外管证管理</title>
+</head>
+
+<body id="budgetManageId">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='List-to-be-submitted' class="">
+                        <a class="overf_E" href="#waitAudit" data-toggle="tab">待提交</a>
+                    </li>
+                    <li data_index="4" data_power='List-in-Audit' class="">
+                        <a class="overf_E" href="#auditList" data-toggle="tab">审核中</a>
+                    </li>
+                    <li data_index="5" data_power='Unaudited-List' class="">
+                        <a class="overf_E" href="#untried" data-toggle="tab">未过审</a>
+                    </li>
+                    <li data_index="3" data_power='Completed-List' class="">
+                        <a class="overf_E" href="#completed" data-toggle="tab">已完成</a>
+                    </li>
+                    <li data_index="2" data_power='List-of-my-involvement' class="">
+                        <a class="overf_E" href="#myProject" data-toggle="tab">我参与的</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" data_index="0" attr="easy high" val="请输入项目名称" style="margin: -40px 20px;">
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0 10px">
+                <!-- 搜索内容 -->
+                <div class="searchList" data_index="0" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput projectName " placeholder="请输入项目名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">单项工程名称</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="100" class="queryInput singleProjectName"
+                                placeholder="请输入单项工程名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目编号</div>
+                        <div class="queryBox">
+                            <input type="text" maxlength="50" class="queryInput noProjectCode" placeholder="请输入项目编号">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目类型</div>
+                        <div class="queryBox">
+                            <div id='projectStatus' class='downSelect' style="width:140px;margin-top:3px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">项目地区</div>
+                        <div class="queryBox">
+                            <div id='listProCtiyCounty' class='proCtiyCounty f_l clearfix' style="margin-top:3px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marT10">
+                    <!-- 待审核  tab内容  MarketAudit-->
+                    <div class="tab-pane fade" id="waitAudit">
+                        <div class="borderE9 pad10 " style="min-height: 55px;">
+                            <a data_power="Adding-Budget-Estimate-Item-Operation" href="./budgetList/addBudget.html"
+                                class="btn btn-primary clickBtn addFrameWork commonCliclk"
+                                style="margin-left:0px !important;margin-bottom: 10px !important;">
+                                添加概预算项目
+                            </a>
+                            <div class="page">
+                                <table id="waitAuditTable"></table>
+                            </div>
+                        </div>
+                        <div id="waitAuditTablePage"></div>
+                    </div>
+                    <!--审核中 tab内容 ProjectAudit -->
+                    <div class="tab-pane fade" id="auditList">
+                        <div class="borderE9 pad10 " style="min-height: 55px;">
+                            <div class="page">
+                                <table id="auditListTable"></table>
+                            </div>
+                        </div>
+                        <div id="auditListTablePage"></div>
+                    </div>
+                    <div class="tab-pane fade" id="untried">
+                        <div class="borderE9 pad10 " style="min-height: 55px;">
+                            <div class="page">
+                                <table id="untriedTable"></table>
+                            </div>
+                        </div>
+                        <div id="untriedTablePage"></div>
+                    </div>
+                    <div class="tab-pane fade" id="completed">
+                        <div class="borderE9 pad10 " style="min-height: 55px;">
+                            <div class="page">
+                                <table id="completedTable"></table>
+                            </div>
+                        </div>
+                        <div id="completedTablePage"></div>
+                    </div>
+
+                    <div class="tab-pane fade" id="myProject">
+                        <div class="borderE9 pad10 " style="min-height: 55px;">
+                            <div class="page">
+                                <table id="myProjectTable"></table>
+                            </div>
+                        </div>
+                        <div id="myProjectTablePage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

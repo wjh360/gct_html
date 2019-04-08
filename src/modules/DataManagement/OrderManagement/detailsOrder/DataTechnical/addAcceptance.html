@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加验收证书</title>
+</head>
+
+<body id="addAcceptance">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+
+                        初步验收证书
+                        <span style="color:  #cccccc;">
+                        （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB，支持多选上传。）
+                        </span>
+                    </div>
+                    
+                    <div id="postFileBtn" class="postFileBtn">上传</div>
+                </div>
+                <div class="page uploader_Table" style="padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+
+                        竣工验收证书
+                        
+                        <span style="color:  #cccccc;">
+                        （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB，支持多选上传。）
+                        </span>
+                    </div>
+                    <div id="postFileBtn1" class="postFileBtn1">上传</div>
+                </div>
+                <div class="page uploader_Table" style="padding: 10px;">
+                    <table id="fileListTable1"></table>
+                </div>
+            </div>
+            <!-- 按钮 -->
+         <div class="btnApply clearfix">
+            <button class="btn btn-primary postBtn">提交</button>
+            <button class="btn btn-muted  cancelBtn">取消</button>
+        </div>
+        </div>
+        
+
+    </div>
+</body>
+
+</html>

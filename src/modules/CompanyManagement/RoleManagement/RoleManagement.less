@@ -1,0 +1,205 @@
+@import './../../../css/common.less';
+// mystyle
+// 红*
+i {
+    color: red;
+    padding-right: 10px;
+}
+
+// 头部
+.inforHeader {
+    height: 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e9e9e9;
+    .verHang {
+        height: 16px;
+        width: 2px;
+        background: @_color;
+        margin: 12px 14px 0px 20px
+    }
+    .headerText {
+        line-height: 40px;
+        color: @_color;
+
+    }
+}
+
+// 内容区
+.Role-noticeCon {
+    .RoleDiv {
+        margin-bottom: 0px !important;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        
+        .nameId {
+            display: inline-block;
+            width: 100px;
+            text-align: right !important;
+            margin-right: 10px;
+            float: left;
+        }
+        .nameCon {
+            max-width: 85%;
+			float: left;
+			word-break:break-all; 
+            word-wrap:break-word;
+            // width: 80%;
+            input {
+                height: 37px;
+                border-radius: 4px;
+                border: solid 1px #e9e9e9;
+
+                padding-left: 10px;
+            }
+            .boderTextarea {
+                width: 500px;
+                height: 100px;
+                border-radius: 5px;
+                border: 1px solid #e9e9e9;
+                margin-right: 10px;
+                word-break: break-all;
+            }
+            .editTextarea {
+                border: 1px solid #ffffff;
+                min-height: 200px;
+                width: 500px;
+                text-indent: 2rem;
+                padding: 5px;
+                line-height: 35px;
+            }
+        }
+	}
+	.RoleDiv:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+		font-size: 0;
+	}
+	.RoleDiv {
+		zoom: 1;
+	}
+}
+
+// 按钮
+.commonCon {
+    min-width: 378px;
+    background-color: #ffffff;
+    // border: solid 1px #e9e9e9;
+    margin: 15px 10px 10px 10px;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 10px;
+    .clickBtn {
+        width: 80px;
+        height: 30px;
+        padding: 0;
+        font-size: 13px;
+        margin-left: 10px;
+        a {
+            color: #ffffff !important;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            line-height: 30px;
+        }
+    }
+    .btn {
+        margin: 0 20px !important;
+    }
+}
+
+.btnApply {
+    width: 43%;
+    margin: 40px auto;
+}
+
+.roleTable {
+    margin: 15px 10px 0 10px;
+    .commonCon {
+        min-width: 378px;
+        background-color: #ffffff;
+        // border: solid 1px #e9e9e9;
+        background: #ffffff;
+        margin-top: 10px;
+        padding: 10px;
+        .clickBtn {
+            width: 80px;
+            height: 30px;
+            padding: 0;
+            font-size: 13px;
+            margin-left: 10px;
+            a {
+                color: #ffffff !important;
+            }
+        }
+        .btn {
+            margin: 0 20px !important;
+        }
+    }
+}
+
+.page {
+    width: 100%;
+    margin-top: 0px;
+    background: #fff;
+}
+
+//数据权限设置
+#provateSelectBox {
+    .checkBox {
+        padding: 0 40px 0 0;
+        margin: 0;
+    }
+    .checkClick {
+        margin-left: 0px;
+    }
+}
+
+.commonCon {
+    min-width: 378px;
+    background-color: #ffffff;
+    // border: solid 1px #e9e9e9;
+    margin: 15px 10px 10px 10px;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 10px;
+    .clickBtn {
+        width: 80px;
+        height: 30px;
+        padding: 0;
+        font-size: 13px;
+        margin-left: 10px;
+        a {
+            color: #ffffff !important;
+        }
+    }
+    .btn {
+        margin: 0 20px !important;
+    }
+    .clickBtn {
+        margin: 0 5px !important;
+    }
+}
+
+.btnApply {
+    width: 43%;
+    margin: 40px auto;
+    .btn {
+        margin: 0 2px !important;
+    }
+}
+
+.btnThree {
+    width: 77%;
+    margin: 30px auto;
+    text-align: center;
+    .btn {
+        margin: 0 6% !important;
+    }
+}
+
+.noEdit {
+    color: #cccccc !important;
+}

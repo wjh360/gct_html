@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>投标申请</title>
+</head>
+
+<body id="BiddingApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="commonCon">
+                <a data_power="Add-bid-application-operation" class="btn btn-primary clickBtn addBidding" style="width: 100px;line-height: 30px;"
+                    href="#">添加投标申请</a>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox " attr="easy high" val="请输入投标名称"></div>
+                </div>
+            </div>
+            <div class="searchList" style="display: none;border: solid 1px #e9e9e9; margin: 10px 10px 10px 10px;">
+                <div class="querytr clearfix">
+                    <div class="queryText ">投标名称</div>
+                    <div class="queryBox ">
+                        <input type="text" maxlength="100" class="queryInput bidName" placeholder="请输入投标名称">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">发标单位</div>
+                    <div class="queryBox">
+                        <input type="text" maxlength="11" class="queryInput bidUnit" placeholder="请输入发标单位">
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">项目类型</div>
+                    <div class="queryBox">
+                        <div id="type" class="downSelect" style="margin-top: 3px;width: 150px;"> </div>
+                    </div>
+                </div>
+                <div class="querytr clearfix">
+                    <div class="queryText ">状态</div>
+                    <div class="queryBox">
+                        <div id="status" class="downSelect" style="margin-top: 3px;width: 150px;">
+                            <span class="statusType downSet_s overf_E" index="" fl_val="请选择项目状态">
+                                <a href="javascript:void(0);" style="color:#666;">请选择项目状态</a>
+                            </span>
+                            <ul>
+                                <li class="overf_E" index="1" title="已保存">已保存</li>
+                                <li class="overf_E" index="3" title="审核中">审核中</li>
+                                <li class="overf_E" index="4" title="未过审">未过审</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div style="padding: 0 10px;">
+                <div class="page">
+                    <table id="biddingListTable"></table>
+                </div>
+            </div>
+            <div id="biddingListTablePage"></div>
+        </div>
+    </div>
+</body>
+
+</html>

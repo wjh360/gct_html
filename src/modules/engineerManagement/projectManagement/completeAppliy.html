@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>完工申请</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="project_Manager">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content completeAppliy">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="borderE9Mar10">
+                <!--市场资料-->
+                <div class="inforHeader clearfix auditSuggest" style="display: none">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">审核信息</div>
+                </div>
+                <div class="white_Page auditSuggest" style="display: none">
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">审核人</div>
+                        <span class="f_l details_Text overf_E auditName"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">审核时间</div>
+                        <span class="f_l details_Text overf_E auditTime"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">审核意见</div>
+                        <span class="f_l details_Text auditRemark"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <!--市场资料-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">完工说明信息</div>
+                </div>
+                <div class="white_Page">
+                    <textarea name="" id="completeTextarea" class="auditRemark" maxlength="1000" placeholder="请填写完工说明"></textarea>
+                </div>
+            </div>
+
+            <div class="btnApply  clearfix">
+                <button class="btn btn-primary  postBtn ">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

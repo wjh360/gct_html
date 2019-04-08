@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>供应商管理</title>
+</head>
+
+<body id="LowunitMsg" class="supplierManager">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <div class="" style="padding:10px;">
+                    <button data_power="Add-supplier-operation" class="zy btn btn-primary clickBtn add_supplier" style="width: 100px;">添加供应商</button>
+                    <a data_power="Export-supplier-operation" class="zy btn btn-primary clickBtn  export_Btn" style="line-height: 30px"
+                        href="" downLoad="downLoad">导出</a>
+                    <div class="clearfix f_r" style=" margin-top: -8px;">
+                        <div class="searchBox" attr="easy" val="请输入供应商名称"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="" style="margin:0 10px;">
+                <div style="background:#fff;">
+                    <div class="page">
+                        <table id="LowListTable"></table>
+                    </div>
+                </div>
+                <div class="LowListTablePage"></div>
+            </div>
+            <!-- 表格 -->
+
+        </div>
+    </div>
+</body>
+
+</html>

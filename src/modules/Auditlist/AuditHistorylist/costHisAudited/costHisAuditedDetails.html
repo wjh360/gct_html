@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>报销详情</title>
+</head>
+
+<body id="detailsNotice">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <div class="content ">
+            <div id="curHtmlPath"></div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">审核详情</div>
+                </div>
+                <div class="page" style="margin: 10px 0px;padding: 10px;">
+                    <table id="auditRecordList"></table>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">报销信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">项目名称：</span>
+                        <span class="nameCon projectName"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">工单名称：</span>
+                        <span class="nameCon taskName"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">费用总金额：</span>
+                        <span class="nameCon moneySum">
+                        </span>元
+                    </div>
+                </div>
+            </div>
+            <div class="reimburse">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../CostControl/ExpenseReimbursement/detailsReimbursement/detailsReimbursement.js"></script>
+
+</html>

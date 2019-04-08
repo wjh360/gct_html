@@ -1,0 +1,214 @@
+@import './../../../../css/common.less';
+#processDetail {
+    .addprocess_Content {
+        padding: 10px;
+        .applyContent {
+            background: #fff;
+            padding: 10px;
+            .applyTitle {
+                padding: 15px;
+                color: @_colorl;
+                font-size: 16px; // border-bottom: 1px solid #e9e9e9;
+            }
+            .applyCheck {
+                height: 316px;
+                .scord_box {
+                    float: left;
+                    overflow-y: auto; // border: 1px solid #e9e9e9;
+                    height: 316px;
+                    p {
+                        padding: 5px;
+                    }
+                    .applyPersonList {
+                        .applyPersonCheck {
+                            padding: 0 25px;
+                            margin: 5px 0;
+                            display: inline-block;
+                            width: 20%;
+                            height: 20px;
+                        }
+                        .applyPersonCheck:hover {
+                            color: @_colorl;
+                        }
+                    }
+                }
+            }
+            .apply_SelectedContent {
+                p {
+                    padding: 5px;
+                }
+                .apply_SelectedContent_list {
+                    margin: 20px;
+                    span {
+                        display: inline-block;
+                    }
+                    .selected_company {
+                        .com_icon {
+                            height: 30px;
+                            width: 16px;
+                            background: url('/img/selected_company.png') no-repeat center;
+                        }
+                        .com_cancel {
+                            height: 100%;
+                            width: 16px; // padding: 0 
+                            padding: 0 20px;
+                            background: url('/img/selected_cancel.png') no-repeat center;
+                        }
+                        .dep_icon {
+                            height: 30px;
+                            width: 16px;
+                            background: url('/img/selected_dep.png') no-repeat center;
+                        }
+                        .selected_dep {
+                            padding-left: 20px;
+                            .selected_person {
+                                padding-left: 20px;
+                            }
+                        }
+                        .sel_p {
+                            // border: 1px solid #e9e9e9;
+                            height: 30px; // padding: 5px;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            .sel_contnet {
+                                padding-left: 10px;
+                                float: left; // border-right: 1px solid #e9e9e9;
+                                // display: inline-block;
+                                line-height: 30px;
+                                height: 100%;
+                                width: 86px;
+                            }
+                        }
+                        li {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .auditContent {
+            margin-top: 10px;
+            padding: 5px;
+            background: #fff;
+            .auditTitle {
+                padding: 15px;
+                color: @_colorl;
+                font-size: 16px; // border-bottom: 1px solid #e9e9e9;
+            }
+            .auditCheck {
+                height: 316px;
+                .scord_box {
+                    float: left;
+                    overflow-y: auto; // border: 1px solid #e9e9e9;
+                    height: 316px;
+                    p {
+                        padding: 5px;
+                    }
+                    .auditPersonList {
+                        margin: 20px;
+                        .auditPersonCheck {
+                            padding: 0 25px;
+                            margin: 5px 0;
+                            display: inline-block;
+                            width: 20%;
+                            height: 20px;
+                        }
+                        .auditPersonCheck:hover {
+                            color: @_colorl;
+                        }
+                    }
+                }
+            }
+            .audit_SelectedContent {
+                p {
+                    padding: 5px;
+                }
+                .audit_SelectedContent_list {
+                    margin: 20px;
+                    span {
+                        display: inline-block;
+                    } // .selected_company{
+                    .audit_com_icon {
+                        height: 30px;
+                        width: 16px;
+                        margin: 0 10px; // background: url('/img/sel_sort.png') no-repeat center;
+                        .dis {
+                            display: none;
+                        }
+                        .dds {
+                            height: 100%;
+                        }
+                    }
+                    .audit_first_com_icon {
+                        display: inline-block;
+                        width: 100%;
+                        height: 40%; // height: 30px;
+                        // width: 16px;
+                        background: url('/img/sel_down.png') no-repeat center;
+                    }
+                    .audit_last_com_icon {
+                        display: inline-block;
+                        width: 100%;
+                        height: 40%; // height: 30px;
+                        // width: 16px;
+                        background: url('/img/sel_up.png') no-repeat center;
+                    }
+                    .audit_com_cancel {
+                        height: 100%;
+                        width: 16px; // padding: 0 
+                        padding: 0 20px;
+                        background: url('/img/selected_cancel.png') no-repeat center;
+                    } // .selected_dep{
+                    //     padding-left: 20px;
+                    .selected_person {
+                        padding-left: 20px;
+                    } // }
+                    .sel_p {
+                        // border: 1px solid #e9e9e9;
+                        height: 30px; // padding: 5px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        .sel_contnet {
+                            padding-left: 10px; // border-right: 1px solid #e9e9e9;
+                            // display: inline-block;
+                            line-height: 30px;
+                            float: left;
+                            height: 100%;
+                            width: 300px;
+                        }
+                    } // li{
+                    //     padding: 5px;
+                    // }
+                    // }
+                }
+            }
+        }
+    }
+    .iden {
+        font-weight: bolder;
+        padding: 0 5px;
+        font-size: 16px;
+    }
+}
+
+.ztree li a.curSelectedNode {
+    padding-top: 0px;
+    background-color: @_colorl;
+    color: #ffffff;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    opacity: 0.8;
+}
+
+// .node_name {
+    //     display: inline-block;
+    //     width: 90px !important;
+    //     overflow: hidden;
+    //     /*内容超出后隐藏*/
+    //     text-overflow: ellipsis;
+    //     /* 超出内容显示为省略号*/
+    //     white-space: nowrap;
+    //     /*文本不进行换行*/
+    //     cursor: pointer;
+    // }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>采购计划</title>
+</head>
+
+<body id="contractManagement">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container " id="project_Manager">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs">
+                    <li data_index="0" data_power='No-warehousing-plans-list' class="">
+                        <a class="overf_E" href="#unPlan" data-toggle="tab">未入库计划</a>
+                    </li>
+                    <li data_index="1" data_power='Warehousing-plan-list' class="">
+                        <a class="overf_E" href="#donePlan" data-toggle="tab">可入库计划</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox" attr="easy high" val="请输入采购计划名称" style="margin: -40px 20px;"></div>
+                </div>
+            </div>
+            <div style="margin: 10px">
+                <div class="searchList" style="display: none;border: solid 1px #e9e9e9;">
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">采购名称</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput purseName" placeholder="请输入采购计划名称">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">供应商单位</div>
+                        <div class="queryBox ">
+                            <input type="text" maxlength="100" class="queryInput supplierName" placeholder="请输入供应商单位">
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">付款方式</div>
+                        <div class="queryBox">
+                            <div id="payList" class="downSelect clearfix">
+                                <span class="payList downSet overf_Ec downSetOpen" index="" fl_val="请选择" title="请选择"><a
+                                        href="javascript:void(0);">请选择</a></span>
+                                <ul style="display: block;margin-top: -3px;">
+                                    <li class="overf_E" index="" title="请选择">请选择</li>
+                                    <li class="overf_E" index="1" title="电汇">电汇</li>
+                                    <li class="overf_E" index="2" title="现金">现金</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="querytr clearfix">
+                        <div class="queryText " style="text-align: center;padding-right:0px;">状态</div>
+                        <div class="queryBox">
+                            <div id="plan_status" class="downSelect clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="unPlan">
+                    <div class="borderE9 pad10 ">
+                        <button data_power="Add-purchase-plan-operation" class="zy btn btn-primary commonCliclk clickBtn plan_Add"
+                            style="width: 100px;margin-left:0px !important;">
+                            添加采购计划
+                        </button>
+                        <div class="page ">
+                            <table id="unPlanTable"></table>
+                        </div>
+                    </div>
+                    <div id="unPlanTablePage"></div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="donePlan">
+                    <div class="page ">
+                        <table id="donePlanTable"></table>
+                    </div>
+                    <div id="donePlanTablePage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加融资申请</title>
+</head>
+
+<body id="addBidding">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">添加融资申请</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>申请人：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入申请人" class="user" type="text" maxlength="10" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>联系电话：</span>
+                        <span class="nameCon">
+                            <input placeholder="请输入联系电话" class="phone tel" type="text" maxlength="11" style="width: 350px;">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>融资类型：</span>
+                        <span class="nameCon f_l">
+                            <div id="type" class="downSelect" style="margin-top: 3px;width: 150px;">
+                                <span class="type downSet_bid overf_E" index="" fl_val="请选择融资类型">
+                                    <a href="javascript:void(0);" style="color:#666;">请选择融资类型</a>
+                                </span>
+                                <ul>
+                                    <li class="overf_E" index="1" title="补充流动资金">补充流动资金</li>
+                                    <li class="overf_E" index="2" title="项目贷款">项目贷款</li>
+                                </ul>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>融资金额：</span>
+                        <span class="nameCon f_l ">
+                            <input placeholder="请输入融资金额" class="money apply" type="text" maxlength="13" style="width: 350px;">元
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>近三年利润:</span>
+                        <span class="nameCon"style="max-width:90% !important;">
+                            今年： <input placeholder="" class="money thisYear" type="text"  style="width: 350px;">元
+                            </br>
+                        </span> 
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top"></span>
+                        <span class="nameCon"style="max-width:90% !important;margin-left: 120px;">
+                            去年： <input placeholder="" class="money lastYear" type="text" style="width: 350px;">元
+                            </br>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top"></span>
+                        <span class="nameCon"style="max-width:90% !important; margin-left: 120px;">
+                            前年： <input placeholder="" class="money yeatBefor" type="text" style="width: 350px;">元
+                            </br>
+                        </span>  
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>还款来源:</span>
+                        <span class="nameCon">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="100" class="boderTextarea  repaymentSource"></textarea>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top">其他说明:</span>
+                        <span class="nameCon">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="100" class="boderTextarea remark "></textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        两年一期收入
+                        <span style="color:  #cccccc;">
+                            （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB）
+                        </span>
+                    </div>
+                    <div id="postFileBtn" class="postFileBtn">上传</div>
+                </div>
+                <div class="page" style="padding: 10px 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn">提交</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

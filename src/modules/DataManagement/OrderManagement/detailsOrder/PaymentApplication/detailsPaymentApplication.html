@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加付款申请</title>
+</head>
+
+<body id="addPaymentApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">付款申请信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="width: 110px;">付款申请金额：</span>
+                        <span class="nameCon">
+                            <span placeholder="" class="nowAmount money" type="text" maxlength="15" style="width: 350px;"></span>元
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="width: 110px;">付款申请凭证：</span>
+                        <span class="nameCon">
+                            <div class="applyVoucher clearfix">
+                                <div class="filesList f_l"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0" style="overflow: hidden;">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        发票
+                    </div>
+                </div>
+                <div>
+                    <div class="RoleDiv f_r" style="padding-top: 10px; margin-bottom: 0;">
+                        <span class="nameId" style="float: left;">开票日期：</span>
+                        <span class="nameCon ">
+                            <div class='startDate' style="width: 200px;"> </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="page uploader_Table" style="padding:  10px;">
+                    <table id="PaymentApplicationTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

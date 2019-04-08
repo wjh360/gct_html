@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>合同及订单明细</title>
+</head>
+
+<body id="BiddingApplication" class="detailsProgressOrder">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!--柱状图即-->
+            <div class="echartsBox clearfix ">
+                <div class="echartsLeft borderE9">
+                    <div class="echartHeader">框架合同年度完成情况</div>
+                    <div class="echartjD"></div>
+                </div>
+                <div class="echartsRight borderE9">
+                    <div class="echartHeader">合同进度统计</div>
+                    <div id="echartShowBox"></div>
+                </div>
+            </div>
+            <div class="borderE9 padB30" style="margin: 0 10px">
+                <div class="pad10 clearfix" style="border-bottom: 1px solid #e9e9e9">
+                    <a data_power="Progress-statistics_derived-operation" class="zy btn btn-primary clickBtn f_r export_depment1"
+                        style="width: 60px;margin:0px !important;line-height: 30px" href="" downLoad="downLoad">导出</a>
+                </div>
+                <div class="pad10">
+                    <div class="page ">
+                        <table id="depmentCostTable"></table>
+                        <div id="depmentCostTablePage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./../../../js/echarts/echarts.min.js"></script>
+
+</html>

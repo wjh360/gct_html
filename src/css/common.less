@@ -1,0 +1,22 @@
+@_color: #6590ff;
+/* 主题色  */
+@radius: 5px;
+/* 基础圆角值  */
+@_colorl: #4c8ffe;
+/* 第二基本色  */
+.b_rds(@_col: @_color) {
+    /* 圆角 默认主体色边框	 */
+    border: 1px solid @_col;
+    border-radius: @radius;
+}
+.boxCss(@wid: 50px, @hei: 50px, @co: #fff) {
+    /* 默认box */
+    width: @wid;
+    height: @hei;
+    background: @co;
+}
+// div{
+//   height: 150px;
+//   background: #666;
+//   float: left;
+// }

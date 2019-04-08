@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>工程款拨付明细</title>
+</head>
+
+<body id="BiddingApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon">
+                <a data_power="Progress-statistics_derived-operation" class="btn btn-primary clickBtn Funds_exportBtn"
+                    style="width: 60px;margin-bottom:20px;line-height: 30px;cursor: pointer;" href="" downLoad="downLoad">导出</a>
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox name" attr="easy" val="请输入支付对象名称"></div>
+                </div>
+            </div>
+            <!-- <div class="commonCon">
+                <div class="clearfix f_r" style=" margin-top: -8px;">
+                    <div class="searchBox name" attr="easy" val="请输入支付对象名称"></div>
+                </div>                
+                <a data_power="Progress-statistics_derived-operation" class="btn btn-primary clickBtn Funds_exportBtn" style="width: 60px;margin-bottom:20px;line-height: 30px;cursor: pointer;" href="" downLoad="downLoad">导出</a>
+            </div> -->
+            <!-- 表格 -->
+            <div style="padding: 0 10px;">
+                <div class="page">
+                    <table id="detailsProjectFundsListTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

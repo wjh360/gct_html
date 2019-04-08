@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>库存管理</title>
+    <link rel="stylesheet" href="/js/zTree_v3-master/css/zTreeStyleUpdate/zTreeStyle.css" media="screen"
+        type="text/css">
+</head>
+
+<body id="PersonnelMsg">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="inventory_Manage">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="personCon clearfix">
+                <!-- left -->
+                <div class="leftCon">
+                    <div class="companyListBox">
+                        <div id="companyList" class="downSelect clearfix"></div>
+                    </div>
+                    <button class="btn btn-primary clickLbtn  creatFirstStorage "
+                        data_power='Add-first-level-warehouse-operation'>创建一级库房</button>
+                    <div class="treesBox">
+                        <div id="trees" class="" style="cursor: pointer;">
+                            <ul id="treeDemo" class="ztree"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="rightCon" style="background-color: #f5f6fa">
+                    <div class="tabHeader clearfix borderE9">
+                        <ul class="nav nav-tabs">
+                            <li data_index="0" data_power='noPower' class="">
+                                <a class="overf_E" href="#materialList" data-toggle="tab">物料列表</a>
+                            </li>
+                            <li data_index="1" data_power='noPower' class="">
+                                <a class="overf_E" href="#issueList" data-toggle="tab">发料列表</a>
+                            </li>
+                            <li data_index="2" data_power='noPower' class="">
+                                <a class="overf_E" href="#returnMaterial" data-toggle="tab">退料列表</a>
+                            </li>
+                            <li data_index="3" data_power='noPower' class="">
+                                <a class="overf_E" href="#operationRecords" data-toggle="tab">操作记录</a>
+                            </li>
+                        </ul>
+                        <div class="clearfix f_r" style=" margin-top: -8px;">
+                            <div class="searchBox" attr="easy high" val="请输入物料名称"
+                                style="margin: -40px 20px;display: none"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="searchList " style="display: none;border: solid 1px #e9e9e9;">
+                            <div class="querytr clearfix">
+                                <div class="queryText " style="text-align: center;padding-right:0px;">物料名称</div>
+                                <div class="queryBox ">
+                                    <input type="text" maxlength="100" class="queryInput matterName "
+                                        placeholder="请输入物料名称">
+                                </div>
+                            </div>
+                            <div class="querytr clearfix">
+                                <div class="queryText " style="text-align: center;padding-right:0px;">物料编号</div>
+                                <div class="queryBox ">
+                                    <input type="text" maxlength="50" class="queryInput matterCode"
+                                        placeholder="请输入物料编号">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="materialList">
+                            <div class="borderE9 marT10 pad10 ">
+                                <button class="zy btn btn-primary commonCliclk clickBtn putWareHouse"
+                                    data_power="Material-storage-operation"
+                                    style="width: 60px;margin-left: 0px!important;">入库</button>
+                                <button class="zy btn btn-primary commonCliclk clickBtn transferMatter"
+                                    data_power="Transfer-operation"
+                                    style="width: 60px;margin-left: 0px!important;">调拨</button>
+                                <button class="zy btn btn-primary commonCliclk clickBtn sendMatter"
+                                    data_power="Feeding-operation"
+                                    style="width: 60px;margin-left: 0px!important;">发料</button>
+                                <div class="page " style="margin-top: 10px">
+                                    <table id="materialListTable"></table>
+                                </div>
+                            </div>
+                            <div id="materialListTablePage"></div>
+                        </div>
+                        <!-- tab内容 -->
+                        <div class="tab-pane fade" id="issueList">
+                            <div class="borderE9 marT10 pad10 ">
+                                <button class="zy btn btn-primary commonCliclk clickBtn sendMatter"
+                                    data_power="Feeding-operation"
+                                    style="width: 60px;;margin-left: 0px!important;">发料</button>
+                                <div class="page " style="margin-top: 10px">
+                                    <table id="issueListTable"></table>
+                                </div>
+                            </div>
+                            <div id="issueListTablePage"></div>
+                        </div>
+                        <!-- tab内容 -->
+                        <div class="tab-pane fade " id="returnMaterial" style="margin-top:10px;">
+                            <div class="page ">
+                                <table id="returnMaterialTable"></table>
+                            </div>
+                            <div id="returnMaterialTablePage"></div>
+                        </div>
+                        <div class="tab-pane fade " id="operationRecords" style="margin-top:10px;">
+                            <div class="page ">
+                                <table id="operationRecordsTable"></table>
+                            </div>
+                            <div id="operationRecordsTablePage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/zTree_v3-master/js/jquery.ztree.all.js"></script>
+
+</html>

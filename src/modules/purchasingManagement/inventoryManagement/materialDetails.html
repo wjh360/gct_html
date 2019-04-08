@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>项目详情</title>
+</head>
+
+<body id="project_Details">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="project_Manager">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix" style="border: 1px solid #e9e9e9;">
+                <ul class="nav nav-tabs" style="margin-bottom: 0px">
+                    <li data_index="0" data_power='noPower' class=""><a class="overf_E" href="#markMaterial"
+                            data-toggle="tab">物料详情</a></li>
+                    <li data_index="1" data_power='noPower' class=""><a class="overf_E" href="#applyRecord" data-toggle="tab">操作记录</a></li>
+                </ul>
+            </div>
+            <div style="margin: 0 10px 0 10px">
+                <div class="tab-pane fade" id="markMaterial">
+                    <!--市场资料-->
+                    <div class="borderColor bacFF">
+                        <div class="inforHeader clearfix">
+                            <div class="verHang f_l"></div>
+                            <div class="headerText f_l">物料信息</div>
+                        </div>
+                        <div class="white_Page">
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">物料编号：</div>
+                                <span class="f_l details_Text overf_E "></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">物料名称：</div>
+                                <span class="f_l details_Text overf_E "></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">规格：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">单位：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">单价：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">物料类型：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">供方属性：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">物料供应商：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">总入库量：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">总调拨量：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">总发料量：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">库存量：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                            <div class="boxtr  clearfix">
+                                <div class="boxText f_l">总使用量：</div>
+                                <span class="f_l details_Text overf_E"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="applyRecord">
+                    <div class="white_Page clearfix">
+                        <div class="page">
+                            <table id="operatorTable"></table>
+                        </div>
+                    </div>
+                    <div class="operatorTablePage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

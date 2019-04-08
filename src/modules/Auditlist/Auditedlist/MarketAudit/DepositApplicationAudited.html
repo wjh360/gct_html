@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>保证金申请详情</title>
+</head>
+
+<body id="editBidding">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="borderE9Mar10">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">投标信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">投标名称：</span>
+                        <span class="nameCon bidName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">发标单位：</span>
+                        <span class="nameCon bidUnit"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">联系人：</span>
+                        <span class="nameCon person"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">联系电话：</span>
+                        <span class="nameCon tel"></span>
+                    </div>
+                    <div class="Role-noticeCon addcountyMore"> </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">项目类型：</span>
+                        <span class="nameCon typeName"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">招标金额：</span>
+                        <span class="nameCon inviteAmount"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">预计中标金额：</span>
+                        <span class="nameCon bidAmount"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">预计中标价格：</span>
+                        <span class="nameCon bidOrice"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="float: left;">预计投标日期：</span>
+                        <span class="nameCon bidDate"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top">招标简介:</span>
+                        <span class="nameCon inviteDescr"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId f_l" style="vertical-align:top">备注：</span>
+                        <div class="nameCon remark_details"></div>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">项目发起人：</span>
+                        <span class="nameCon projectPerson"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">保证金附件</div>
+                </div>
+                <div class="page uploader_Table" style="margin:10px 10px;padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">保证金申请</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">保证金收款单位：</span>
+                        <span class="nameCon bondUnit"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">收款单位开户行：</span>
+                        <span class="nameCon openBank"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">银行账户：</span>
+                        <span class="nameCon bankAccount"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">保证金金额：</span>
+                        <span class="nameCon bondAmount"></span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">履约保证金金额：</span>
+                        <span class="nameCon perforAmount">
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">保证金缴纳日期：</span>
+                        <span class="nameCon bondDate"></span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">备注：</span>
+                        <span class="nameCon remark"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">保证金附件</div>
+                </div>
+                <div class="page uploader_Table" style="margin: 10px 0;padding: 10px;">
+                    <table id="fileListTable1"></table>
+                </div>
+            </div>
+            <div class="borderE9Mar10">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        审核意见
+                    </div>
+                </div>
+                <div class="Role-noticeCon">
+                    <textarea class="auditRemark" placeholder="请输入审核意见" maxlength="200" name="" id="" cols="" rows=""></textarea>
+                </div>
+            </div>
+            <div class="btnThree clearfix">
+                <button class="btn btn-primary postBtn auditPass">通过</button>
+                <button class="btn btn-primary saveBtn auditNoPass">驳回</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

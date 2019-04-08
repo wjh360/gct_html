@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>项目详情</title>
+</head>
+
+<body id="project_Details">
+<!-- 总盒子,最小宽度 -->
+<div class="container" id="project_Manager">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content" id="changeProject">
+        <div id="curHtmlPath"></div>
+        <!-- 搜索框 -->
+        <div style="margin: 10px">
+            <div class="auditNoPassRemark borderE9 marb10">
+            </div>
+            <div class="borderColor bacFF">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目变更说明</div>
+                </div>
+                <div class="white_Page " id="changeTemark" style="min-height: 100px;word-break: break-all;padding: 10px">
+
+                </div>
+            </div>
+            <div class="borderColor bacFF">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目信息</div>
+                </div>
+                <div class="white_Page">
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">框架合同：</div>
+                        <span class="f_l details_Text  contractName"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">合同编号：</div>
+                        <span class="f_l details_Text  contractNo"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">合同周期：</div>
+                        <span class="f_l details_Text  frameContractTime"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">折扣系数：</div>
+                        <span class="f_l details_Text  contractDiscount"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目名称：</div>
+                        <span class="f_l details_Text  projectName"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目编号：</div>
+                        <span class="f_l details_Text   projectCode"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目金额：</div>
+                        <span class="f_l details_Text  projectAmount"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">安全生产费：</div>
+                        <span class="f_l details_Text  sateAmount" style="width: 300px"></span>
+                        <div class="boxText f_l">施工服务费：</div>
+                        <span class="f_l details_Text  serveAmount" style="width: 300px"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">规费：</div>
+                        <span class="f_l details_Text  guiAmount" style="width: 300px">方法</span>
+                        <div class="boxText f_l">税金：</div>
+                        <span class="f_l details_Text  tax" style="width: 300px"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">计划开工日期：</div>
+                        <span class="f_l details_Text  planStartDate"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">计划完工日期：</div>
+                        <span class="f_l details_Text  planEndDate"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目类型：</div>
+                        <span class="f_l details_Text  projectType"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目周期：</div>
+                        <span class="f_l details_Text  projectCycle"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">施工类型：</div>
+                        <span class="f_l details_Text  constructType" ></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目区域：</div>
+                        <span class="f_l details_Text  projectAddress"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">建设单位：</div>
+                        <span class="f_l details_Text  operatorCompanyName" style="width: 600px">
+                            </span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">参与项目：</div>
+                        <span class="f_l details_Text  isParticipate">参与</span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">监理单位：</div>
+                        <div class="f_l details_Text constructStr" style="width: 600px">
+                        </div>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">设计单位：</div>
+                        <div class="f_l details_Text designUnit" style="width: 600px">
+                        </div>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">施工单位：</div>
+                        <span class="f_l details_Text createCompanyName"></span>
+                    </div>
+                    <div class="boxtr  clearfix">
+                        <div class="boxText f_l">项目说明：</div>
+                        <span class="f_l details_Text  remarks"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="fileTable_White borderColor">
+                <div class="inforHeader clearfix ">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目需求列表</div>
+                </div>
+                <div class="white_Page">
+                    <div class="page uploader_Table">
+                        <table id="projectTableRequire"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="fileTable_White borderColor">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">项目合同</div>
+                </div>
+                <div class="white_Page">
+                    <div class="page uploader_Table">
+                        <table id="projectTableContruct"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="fileTable_White borderColor">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">开工报告</div>
+                </div>
+                <div class="white_Page">
+                    <div class="page uploader_Table">
+                        <table id="projectTableRecord"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="borderE9BacFF">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        审核意见
+                    </div>
+                </div>
+                <div class="Role-noticeCon">
+                    <textarea class="auditRemark" placeholder="请输入审核意见" maxlength="200" name="" id="" cols="" rows=""></textarea>
+                </div>
+            </div>
+            <div class="btnThree clearfix">
+                <button class="btn btn-primary postBtn auditPass">通过</button>
+                <button class="btn btn-primary saveBtn auditNoPass">驳回</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编辑业务费用申请</title>
+</head>
+
+<body id="s">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- <div class="commonCon"> -->
+            <!--头部-->
+            <!-- <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">审核意见</div>
+                    </div>
+                <div class="Role-noticeCon">   
+                    <div >
+                        <textarea class="editTextarea" maxlength="200" style="border:1px solid #ffffff;min-height: 200px;width: 100%;text-indent: 2rem;padding: 5px;line-height: 35px;"></textarea>
+                    </div>
+                </div>
+                </div>   -->
+            <div class="commonCon pad0">
+                <!--头部-->
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">业务费用申请</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>投标名称：</span>
+                        <span class="nameCon">投标名称</span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId f_l"><i>*</i>费用类型：</span>
+                        <span class="nameCon f_l">
+                            <!-- <div id="proType" class="downSelect"> </div> -->
+                            <div id="costType" class="downSelect" style="margin-top: 3px;width: 150px;"> </div>
+
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>费用金额：</span>
+                        <span class="nameCon">
+                            <input placeholder="" class="costAmount money" type="text" style="width: 350px;">元
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top"><i>*</i>费用事由：</span>
+                        <span class="nameCon">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="200" class="boderTextarea costCause"></textarea>
+
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="float: left;"><i>*</i>费用日期：</span>
+                        <span class="nameCon ">
+                            <div class="jeinpbox f_l" style="width: 230px">
+                                <input type="text" class="jeinput costDate" id="bidTimeStr" placeholder="请选择日期" />
+                                <span class="jeinput_icons"></span>
+                            </div>
+                            <!-- <input type="text" class="jeinput costDate" id="bidTimeStr" placeholder="请选择日期" /> -->
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="vertical-align:top">备注：</span>
+                        <span class="nameCon">
+                            <textarea name="" id="" cols="30" rows="10" maxlength="200" class="boderTextarea remark "></textarea>
+                        </span>
+                    </div>
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId">费用申请人：</span>
+                        <span class="nameCon"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        费用附件
+                        <span style="color:  #cccccc;">
+                            （支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB）
+                        </span>
+                    </div>
+                    <div id="postFileBtn" class="postFileBtn f_r ">上传</div>
+                </div>
+                <div class="page uploader_Table" style="margin: 10px 0;padding: 10px;">
+                    <table id="fileListTable"></table>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply  clearfix" id="three_Btn_Style">
+                <button class="btn btn-primary f_l saveBtn">保存</button>
+                <!--middle_Btn中间按钮-->
+                <button class="btn btn-primary  postBtn  middle_Btn">提交</button>
+                <button class="btn btn-muted f_r cancelBtn">取消</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>发票池管理</title>
+</head>
+
+<body id="invoicePoolList">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix bacFF marT10 borderE9">
+                <ul class="nav nav-tabs f_l">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#useInvoice" data-toggle="tab">可用发票</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#expireInvoice" data-toggle="tab">到期发票</a>
+                    </li>
+                </ul>
+                <div class="clearfix f_r" style="margin-top: 10px">
+                    <button class="btn btn-primary clickBtn invoicePoolDetail" style="width: 100px;margin-left:0px !important;">发票池信息</button>
+                </div>
+            </div>
+            <div style="margin: 10px">
+                <div class="tab-pane fade" id="useInvoice">
+                    <div class="borderE9 pad10 padB30">
+                        <button data_power="Add-invoice-operation-f" class="zy btn btn-primary clickBtn invoicePoolAdd"
+                            style="width: 100px;margin-left:0px !important;margin-bottom: 10px !important;display: none!important;">
+                            添加发票
+                        </button>
+                        <div class="selectText">
+                            发票池金额：<span class="m_col pondAmount"></span>元，发票总金额：<span class="m_col invoiceTotalAmount"></span>元，可用总金额：<span
+                                class="m_col availableTotalAmount"></span>元
+                        </div>
+                        <div class="page ">
+                            <table id="useInvoiceTable"></table>
+                        </div>
+                    </div>
+                    <div id="useInvoiceTablePage"></div>
+                </div>
+                <!-- tab内容 -->
+                <div class="tab-pane fade" id="expireInvoice">
+                    <div class="page">
+                        <table id="expireInvoiceTable"></table>
+                    </div>
+                    <div id="expireInvoiceTablePage"></div>
+                </div>
+            </div>
+            <!-- 表格 -->
+        </div>
+    </div>
+</body>
+
+</html>

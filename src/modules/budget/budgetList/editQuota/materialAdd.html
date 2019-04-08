@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>添加材料</title>
+</head>
+
+<body id="detailsNotice">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content ExpenseBox">
+            <div id="curHtmlPath"></div>
+            <div class="reimburseMent">
+                <div class="commonCon materailSum">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">材料<span class="reimIndex">1</span></div>
+                        <button class="btn btn-primary clickBtn f_r addMaterail"
+                            style="margin: 5px 20px !important;">添加材料</button>
+                    </div>
+                    <!--内容区-->
+                    <div class="Role-noticeCon">
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>材料名称：</span>
+                            <span class="nameCon">
+                                <input placeholder="允许输入100个字，允许重复" class="matterName" type="text" maxlength="100"
+                                    style="width: 350px;">
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>材料类型：</span>
+                            <span class="nameCon">
+                                <div id="materialType1" class="downSelect f_l clearfix materialType"
+                                    style="width:170px;margin: 5px;">
+                                    <span class="materialType1List downSet overf_Ec type" index="" fl_val="请选择"><a
+                                            href="javascript:void(0);" style="color:#666;">请选择</a></span>
+                                    <ul>
+                                        <li class="overf_E" index="" title="请选择">请选择</li>
+                                        <li class="overf_E" index="1" title="光缆">光缆</li>
+                                        <li class="overf_E" index="2" title="电缆">电缆</li>
+                                        <li class="overf_E" index="3" title="塑料及塑料制品">塑料及塑料制品</li>
+                                        <li class="overf_E" index="4" title="木材及木制品">木材及木制品</li>
+                                        <li class="overf_E" index="5" title="水泥及水泥构件">水泥及水泥构件</li>
+                                        <li class="overf_E" index="6" title="其他">其他</li>
+                                    </ul>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top">规格程式：</span>
+                            <span class="nameCon">
+                                <input class="specFormat" placeholder="" class="" type="text" maxlength="100"
+                                    style="width: 350px;">
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>单位：</span>
+                            <span class="nameCon">
+                                <div id="measuringUnit1" class="downSelect measuringUnit"
+                                    style="margin-top: 3px;width: 150px;">
+                                </div>
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>单价：</span>
+                            <span class="nameCon ">
+                                <input placeholder="" class="money price" type="text" maxlength="13"
+                                    style="width: 350px;"> 元
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>数量：</span>
+                            <span class="nameCon ">
+                                <input placeholder="" class="money num" type="text" maxlength="13"
+                                    style="width: 350px;">
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top">备注：</span>
+                            <span class="nameCon">
+                                <input placeholder="允许输入20个字" class="remark" type="text" maxlength="20"
+                                    style="width: 350px;">
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn f_l">提交</button>
+                <button class="btn btn-muted  cancelBtn f_r">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

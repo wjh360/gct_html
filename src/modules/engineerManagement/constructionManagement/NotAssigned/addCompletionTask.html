@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加工单</title>
+</head>
+
+<body id="addNotAssigned">
+<!-- 总盒子,最小宽度 -->
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+        <div id="curHtmlPath"></div>
+        <div class="commonCon pad0">
+            <!--头部-->
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">工单信息</div>
+            </div>
+            <!--内容区-->
+            <div class="Role-noticeCon">
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>项目名称:</span>
+                    <span class="nameCon clearfix">
+                            <!-- <input placeholder="请输入项目名称" class="" type="text" style="width: 350px;"> -->
+                            <div id="projectId" class="downSelect f_l" style="width:230px;"> </div>
+                        </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>项目类型:</span>
+                    <span class="nameCon clearfix proJectType"> </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>工单名称:</span>
+                    <span class="nameCon">
+                            <input placeholder="请输入工单名称" class="taskName" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>工单类别:</span>
+                    <span class="nameCon clearfix">
+                            <div id="taskCategory" class="downSelect f_l" style="width:230px;"> </div>
+                        </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>计划开工日期:</span>
+                    <span class="nameCon">
+                            <div class="jeinpbox f_l">
+                                <input type="text" class="jeinput startTime startDate" id="startTime" placeholder="计划开工日期">
+                                <span class="jeinput_icons"></span>
+                            </div>
+                        </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>计划完工日期:</span>
+                    <span class="nameCon">
+                            <div class="jeinpbox f_l">
+                                <input type="text" class="jeinput endTime endDate" id="endTime" placeholder="计划完工日期">
+                                <span class="jeinput_icons "></span>
+                            </div>
+                        </span>
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId">工单周期:</span>
+                    <span class="nameCon jsShiJianCha hours" style="display: inline-block;min-width:50px;">
+                        </span> 天
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>施工造价估算:</span>
+                    <span class="nameCon">
+                            <input placeholder="请输入施工造价估算" class="estimate money" type="text" maxlength="13" style="width: 350px;">
+                            元
+                        </span>
+                </div>
+                <div class="RoleDiv clearfix">
+                    <span class="nameId f_l"><i>*</i>施工地点:</span>
+                    <span class="f_l nameCon clearfix">
+                            <div id="workAdrss" class="proCtiyCounty f_l"></div>
+                            <input placeholder="详细地址" class="f_l taskRegion" type="text" maxlength="100" style="width: 350px;">
+                        </span>
+                </div>
+                <div class="addcountyMore">
+
+                </div>
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>施工队长:</span>
+                    <span class="nameCon clearfix">
+                            <div id="taskCompany" class="downSelect f_l">
+                                <span class="taskCompany downSet overf_Ec" index="">
+                                    <a href="javascript:void(0);" style="color:#666;"> 请选择</a>
+                                </span>
+                            </div>
+                            <div id="taskDep" class="downSelect f_l">
+                                <span class="taskDep downSet overf_Ec" index="">
+                                    <a href="javascript:void(0);" style="color:#666;"> 请选择</a>
+                                </span>
+                            </div>
+                            <div id="user" class="downSelect f_l">
+                                <span class="user downSet overf_Ec" index="">
+                                    <a href="javascript:void(0);" style="color:#666;"> 请选择</a>
+                                </span>
+                            </div>
+                        </span>
+                </div>
+
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId" style="vertical-align:top">工单说明:</span>
+                    <span class="nameCon">
+
+                            <textarea name="" id="" cols="30" rows="10" maxlength="1000" class="boderTextarea commit "></textarea>
+                        </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="commonCon pad0">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">
+                    需求列表
+                    <span style="color:  #cccccc;">
+                            （允许选择一个需求）
+                        </span>
+                </div>
+            </div>
+            <div class="page uploader_Table" style="max-width:98%;margin:10px auto;">
+                <table id="ProjectRange"></table>
+            </div>
+        </div>
+        <div class="commonCon pad0">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">
+                    工单物料
+                </div>
+                <!-- <div class="f_r"> -->
+                <a  class="btn btn-primary downlown_template f_r"  href="" downLoad="downLoad" style="padding: 3px 9px;">下载模板</a>
+                <div id="workSheetMaterialFile" class="postFileBtn" style="margin-top: 0px;height: 28px;line-height: 28px;">上传</div>
+
+                <!-- </div> -->
+            </div>
+            <div class="page uploader_Table" style="max-width:98%;margin:10px auto;">
+                <table id="workSheetMaterial"></table>
+            </div>
+        </div>
+        <div class="commonCon pad0">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">
+                    设计文件<span style="color: #cccccc">（支持上传jpg、png、txt、doc、docx、xls、xlsx、pdf、rar、zip格式文件，最多10个文件，每个大小不超过100MB。）</span>
+                </div>
+                <div id="postFileBtn" class="postFileBtn">上传</div>
+
+            </div>
+            <div class="page uploader_Table" style="max-width:98%;margin:10px auto;">
+                <table id="fileListTable"></table>
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div class=" clearfix" style="width: 50%;margin: 50px auto">
+            <button class="btn btn-primary postBtn submitTask">提交</button>
+
+            <button class="btn btn-muted  cancelBtn f_r">取消</button>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="./addNotAssigned/addNotAssigned.js"></script>
+
+</html>

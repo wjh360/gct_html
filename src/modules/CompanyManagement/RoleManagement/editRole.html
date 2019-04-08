@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>添加角色</title>
+</head>
+<body id="Role-add">
+<!-- 总盒子,最小宽度 -->
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">@header</div>
+    <!-- 侧边栏 -->
+    <div class="asider">
+        <div id="navContent" class="div_radius"></div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content">
+        <div id="curHtmlPath"></div>
+        <div class="borderE9Mar10">
+            <!--头部-->
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">角色信息</div>
+            </div>
+            <!--内容区-->
+            <div class="Role-noticeCon">
+                <div class="RoleDiv" style="margin-bottom: 0;">
+                    <span class="nameId"><i>*</i>角色名称：</span>
+                    <span class="nameCon">
+                        <input placeholder="请输入角色名称" class="roleName" type="text" maxlength="10" style="width: 350px;">
+                    </span>
+                </div>
+                <div class="RoleDiv">
+                    <span class="nameId" style="vertical-align:top"><i>*</i>角色职责：</span>
+                    <span class="nameCon">
+	                        <textarea name="" id="" maxlength="100" class="boderTextarea"></textarea>
+                    </span>
+                </div>
+
+                <div class="RoleDiv">
+                    <span class="nameId" style="vertical-align:top">数据权限：</span>
+                    <div class="privateTd " id="provateSelectBox">
+                        <div class="checkBoxPr" style="margin-right: 20px">
+                            <span class="checkClick  viewDep"></span>
+                            <span class="checkBoxTex ">可查看本部门及下级部门的数据</span>
+                        </div>
+                        <div class="checkBoxPr" style="margin-right: 20px">
+                            <span class="checkClick  viewCompany"></span>
+                            <span class="checkBoxTex ">可查看本公司数据</span>
+                        </div>
+                        <div class="checkBoxPr">
+                            <span class="checkClick  viewDown"></span>
+                            <span class="checkBoxTex ">可查看所有下级单位数据</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="borderE9Mar10">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">平台权限</div>
+                <button class="zy btn btn-primary clickBtn f_r all_Cancel_Private" style="margin-top: 5px!important;">全部取消</button>
+                <button class="zy btn btn-primary clickBtn f_r all_Select_Private" style="margin-top: 5px!important;">全部选中</button>
+            </div>
+            <div class="unitInfo pcTab"></div>
+        </div>
+
+        <div class="borderE9Mar10">
+            <div class="inforHeader clearfix">
+                <div class="verHang f_l"></div>
+                <div class="headerText f_l">app权限</div>
+                <button class="zy btn btn-primary clickBtn f_r all_Cancel_Private" style="margin-top: 5px!important;">全部取消</button>
+                <button class="zy btn btn-primary clickBtn f_r all_Select_Private" style="margin-top: 5px!important;">全部选中</button>
+            </div>
+            <div class="unitInfo appTab">
+            </div>
+
+
+        </div>
+        <!-- 按钮 -->
+        <div class="btnApply clearfix">
+            <button class="btn btn-primary postBtn">提交</button>
+            <button class="btn btn-muted  cancelBtn">取消</button>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="./../../../js/zyCommon.js"></script>
+</html>

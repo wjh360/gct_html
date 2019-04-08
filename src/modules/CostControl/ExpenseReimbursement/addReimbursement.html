@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>添加报销</title>
+</head>
+
+<body id="detailsNotice">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content ExpenseBox">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">报销信息</div>
+                    <button class="btn btn-primary clickBtn f_r addMoney">添加费用</button>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId"><i>*</i>项目名称：</span>
+                        <span class="nameCon f_l">
+                            <div id="projectListBox" class="downSelect" style="margin-top: 3px;"></div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">工单名称：</span>
+                        <span class="nameCon">
+                            <div id="taskListBox" class="downSelect" style="margin-top: 3px;"></div>
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="vertical-align:top">费用总金额：</span>
+                        <span class="nameCon sumAmount">0</span>元
+                    </div>
+                </div>
+            </div>
+            <div class="reimburseMent">
+                <div class="commonCon ">
+                    <div class="inforHeader clearfix">
+                        <div class="verHang f_l"></div>
+                        <div class="headerText f_l">费用<span class="reimIndex">1</span></div>
+                    </div>
+                    <!--内容区-->
+                    <div class="Role-noticeCon">
+                        <div class="RoleDiv" style="margin-bottom: 0;">
+                            <span class="nameId"><i>*</i>费用日期：</span>
+                            <span class="nameCon">
+                                <div class="jeinpbox f_l" style="width: 230px">
+                                    <input type="text" class="jeinput dateS" id="bidTimeStr1" placeholder="请选择费用日期" />
+                                    <span class="jeinput_icons"></span>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>费用类型：</span>
+                            <span class="nameCon">
+                                <div id="type1" class="downSelect buyMoneyType" style="margin-top: 3px;width: 150px;">
+                                </div>
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>费用金额：</span>
+                            <span class="nameCon">
+                                <input placeholder="" class="applyAmount money" type="text" maxlength="13" style="width: 350px;">元
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>费用用途：</span>
+                            <span class="nameCon ">
+                                <input placeholder="" class="purpose" type="text" maxlength="100" style="width: 550px;">
+                            </span>
+                        </div>
+                        <div class="RoleDiv">
+                            <span class="nameId" style="vertical-align:top"><i>*</i>附件：</span>
+                            <div class="picTr f_l clearfix">
+                                <div class="nameCon" style="width: 100%">
+                                    最少上传一张，支持上传jpg、png格式文件，最多10张。
+                                </div>
+                                <div class="picBigContainer f_l" style="width: 100%">
+                                    <div id="uploaderFile1" class="uploaderFile"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addMoney_con"></div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn f_l">提交</button>
+                <button class="btn btn-muted  cancelBtn f_r">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../../../js/zyCommon.js"></script>
+
+</html>

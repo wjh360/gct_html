@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>发票池管理</title>
+</head>
+
+<body id="invoice_Pool_Manager">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container" id="project_Details">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <!-- 搜索框 -->
+            <div class="tabHeader clearfix borderE9">
+                <ul class="nav nav-tabs" style="margin-bottom: 0px">
+                    <li data_index="0" data_power='noPower' class="">
+                        <a class="overf_E" href="#finishDatum" data-toggle="tab">竣工技术文件</a>
+                    </li>
+                    <li data_index="1" data_power='noPower' class="">
+                        <a class="overf_E" href="#buyOrder" data-toggle="tab">采购订单</a>
+                    </li>
+                    <li data_index="2" data_power='noPower' class="">
+                        <a class="overf_E" href="#finishDatum1" data-toggle="tab">审计信息</a>
+                    </li>
+                    <li data_index="3" data_power='noPower' class="">
+                        <a class="overf_E" href="#invoiceList" data-toggle="tab">发票</a>
+                    </li>
+                    <li data_index="4" data_power='noPower' class="">
+                        <a class="overf_E" href="#payApplyList" data-toggle="tab">付款申请</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin: 10px;">
+                <!--竣工文件-->
+                <div class="tab-pane fade" id="finishDatum">
+                    <div class="page borderE9">
+                        <table id="finishDatumTable"></table>
+                    </div>
+                    <div id="finishDatumTablePage"></div>
+                </div>
+                <!--采购订单-->
+                <div class="tab-pane fade" id="buyOrder">
+
+                    <div class="detailsPurchaseOrder" >
+                        <div class="commonCon pad0" style="margin-left: 0;">
+                            <!--头部-->
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">订单信息</div>
+
+                            </div>
+                            <!--内容区-->
+                            <div class="Role-noticeCon">
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">框架合同：</span>
+                                    <span class="nameCon contractName"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">项目名称：</span>
+                                    <span class="nameCon projectName"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">项目编号：</span>
+                                    <span class="nameCon projectCode"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">采购订单编号：</span>
+                                    <span class="nameCon purchaseOrder_orderNo"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">订单属性：</span>
+                                    <span class="nameCon propertyName"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">订货单位：</span>
+                                    <span class="nameCon goodsUnit"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId" style="float: left;">开工日期：</span>
+                                    <span class="nameCon startDate"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId" style="float: left;">交工日期：</span>
+                                    <span class="nameCon finishDate"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId" style="float: left;">试运行开始日期：</span>
+                                    <span class="nameCon testStart"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId" style="float: left;">试运行结束日期：</span>
+                                    <span class="nameCon testEnd"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">供货商名称：</span>
+                                    <span class="nameCon centerUnitName"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">施工服务费：</span>
+                                    <span class="nameCon serveAmount"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">安全生产费：</span>
+                                    <span class="nameCon sateAmount"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">规费：</span>
+                                    <span class="nameCon guiAmount"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">订单名称：</span>
+                                    <span class="nameCon orderName"></span>
+                                </div>
+                                <div class="RoleDiv" style="margin-bottom: 0;">
+                                    <span class="nameId">订单编号：</span>
+                                    <span class="nameCon orderNo"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon pad0" style="margin-left: 0;">
+                            <div class="inforHeader clearfix" style="margin-bottom: 10px;">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">订单费用明细 </div>
+                            </div>
+                            <div class="" style="min-height: 200px">
+                                <div class="page uploader_Table " style="max-height: 400px">
+                                    <table id="FeeTable"></table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon pad0" style="margin-left: 0;">
+                            <div class="inforHeader clearfix" style="margin-bottom: 10px;">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">
+                                    施工清单明细表
+                                </div>
+                            </div>
+                            <div class="" style="min-height: 200px">
+                                <div class="page uploader_Table " style="max-height: 400px">
+                                    <table id="ConlistTable"></table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commonCon pad0" style="margin-left: 0;">
+                            <div class="inforHeader clearfix">
+                                <div class="verHang f_l"></div>
+                                <div class="headerText f_l">合同附件</div>
+                            </div>
+                            <div class="page uploader_Table" style="padding: 10px;">
+                                <table id="fileListTable"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab内容 -->
+                <!--审计-->
+                <div class="tab-pane fade" id="finishDatum1">
+                    <div class="page borderE9">
+                        <table id="finishDatum1Table"></table>
+                    </div>
+                    <div id="finishDatum1TablePage"></div>
+                </div>
+                <!--发票-->
+                <div class="tab-pane fade" id="invoiceList">
+                    <div class="borderE9 invoiceListBor  pad10">
+                        <button data_power="Register-invoice-operation" class="btn btn-primary clickBtn dengjiInvoice"
+                            style="display: none !important;">登记发票
+                        </button>
+                        <div class="page ">
+                            <table id="invoiceListTable"></table>
+                        </div>
+                    </div>
+                    <div id="invoiceListTablePage"></div>
+                </div>
+                <!--付款申请-->
+                <div class="tab-pane fade" id="payApplyList">
+                    <div class="borderE9 payApplyListBor ">
+                        <button data_power="Confirmation-of-return-operation" class="btn btn-primary clickBtn payApplyMoney"
+                            style="display: none !important">确认回款
+                        </button>
+                        <div class="page">
+                            <table id="payApplyListTable"></table>
+                        </div>
+                    </div>
+                    <div id="payApplyListTablePage"></div>
+                </div>
+            </div>
+            <!-- 表格 -->
+        </div>
+    </div>
+</body>
+
+</html>

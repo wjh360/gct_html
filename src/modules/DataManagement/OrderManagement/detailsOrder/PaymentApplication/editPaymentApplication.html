@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加付款申请</title>
+</head>
+
+<body id="addPaymentApplication">
+    <!-- 总盒子,最小宽度 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">@header</div>
+        <!-- 侧边栏 -->
+        <div class="asider">
+            <div id="navContent" class="div_radius"></div>
+        </div>
+        <!-- 内容区域 -->
+        <div class="content">
+            <div id="curHtmlPath"></div>
+            <div class="commonCon pad0">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">付款申请信息</div>
+                </div>
+                <!--内容区-->
+                <div class="Role-noticeCon">
+                    <div class="RoleDiv" style="margin-bottom: 0;">
+                        <span class="nameId" style="width: 110px;"><i>*</i>付款申请金额：</span>
+                        <span class="nameCon">
+                            <input placeholder="" class="nowAmount money" type="text" maxlength="15" style="width: 350px;">元
+                        </span>
+                    </div>
+                    <div class="RoleDiv">
+                        <span class="nameId" style="width: 110px;"><i>*</i>付款申请凭证：</span>
+                        <span class="nameCon">
+                            <span style="color: #cccccc;">最少上传一张，支持上传jpg、png格式文件，最多10张</span>
+                            <div class="applyVoucher clearfix">
+                                <div class="filesList f_l"></div>
+                                <span id="addFiles" class="f_l">
+
+                                </span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="commonCon pad0" style="overflow: hidden;">
+                <div class="inforHeader clearfix">
+                    <div class="verHang f_l"></div>
+                    <div class="headerText f_l">
+                        选择发票
+                    </div>
+                </div>
+                <div>
+                    <div style="padding: 20px; " class="f_l">
+                        已选发票可付款金额：<span class="ApplicationNum">0.00</span>元 需选择发票可付款金额：<span class="nowAmountView">0.00</span>元
+                    </div>
+                    <div class="RoleDiv f_r" style="padding-top: 10px;">
+                        <span class="nameId" style="float: left;"><i>*</i>开票日期：</span>
+                        <span class="nameCon ">
+                            <div id='startDate' class='downSelect f_l'> </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="page uploader_Table" style="padding:  10px;">
+                    <table id="PaymentApplicationTable"></table>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnApply clearfix">
+                <button class="btn btn-primary postBtn">提交</button>
+                <button class="btn btn-muted  cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
